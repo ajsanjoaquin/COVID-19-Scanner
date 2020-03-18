@@ -7,7 +7,7 @@ Final Model (Use with Pytorch) : https://drive.google.com/file/d/1OStKuxVubfb01Q
 
 Primary Dataset used: https://github.com/ieee8023/covid-chestxray-dataset <br/>
 
-Secondary Dataset: TBA <br/>
+Secondary Dataset: https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia <br/>
 
 Test_results: check the csv file in the repository <br/>
 
