@@ -12,3 +12,6 @@ Secondary Dataset: TBA <br/>
 Test_results: check the csv file in the repository <br/>
 
 Rationale/More information: https://towardsdatascience.com/using-deep-learning-to-detect-ncov-19-from-x-ray-images-1a89701d1acd<br/>
+
+# LICENSE
+<a rel="license" href="https://opensource.org/licenses/MIT"><img alt="Creative Commons Licence" style="border-width:0" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/220px-MIT_logo.svg.png" /></a>
