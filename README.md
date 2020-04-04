@@ -3,13 +3,15 @@ I built a CNN neural network that classifies a given Chest X-ray as positive for
 
 
 ## Resources
-Final Model (Use with Pytorch; .pth) : https://www.dropbox.com/s/j5bvl1uj4o9th91/Corona_model_stage5.pth?dl=0 <br/>
+Updated Model (Use with Pytorch; .pth) : https://drive.google.com/open?id=1hXFVQuX7LRpbW5P6OU9YFXkxYJEQIPxw <br/>
 
 Primary Dataset used: https://github.com/ieee8023/covid-chestxray-dataset <br/>
 
 Secondary Dataset: https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia <br/>
 
 Test_results: check the csv file in the repository <br/>
+
+Colab_notebook: check repository (Notice: <strong>NOT A DIAGNOSTIC TOOL</strong>) <br/>
 
 Rationale/More information: https://towardsdatascience.com/using-deep-learning-to-detect-ncov-19-from-x-ray-images-1a89701d1acd<br/>
 
