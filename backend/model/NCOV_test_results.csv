@@ -1,0 +1,79 @@
+Filename,Predicted Label,,"Positive, Negative (COVID-19)",,,Remark,,,,References
+1.jpg,covid,tensor(0),"tensor([0.9923, 0.0077])",,,TRUE POSITIVE,,figure1,,https://www.kjronline.org/DOIx.php?id=10.3348/kjr.2020.0132
+2.jpg,covid,tensor(0),"tensor([0.9990, 0.0010])",,,TRUE POSITIVE,,figure2,,https://www.kjronline.org/DOIx.php?id=10.3348/kjr.2020.0132
+2602ea3e16a6d7e22204ac78382d1c_jumbo.jpg,covid,tensor(0),"tensor([9.9999e-01, 1.3328e-05])",,,TRUE POSITIVE,,COPY WAS ALSO IN TRAINING SET (VOID RESULT),,https://radiopaedia.org/cases/covid-19-pneumonia-15
+NORMAL2-IM-0195-0001.jpeg,other,tensor(1),"tensor([0.0014, 0.9986])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0196-0001.jpeg,other,tensor(1),"tensor([0.0196, 0.9804])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0198-0001.jpeg,other,tensor(1),"tensor([0.0744, 0.9256])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0199-0001.jpeg,other,tensor(1),"tensor([0.1779, 0.8221])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0201-0001.jpeg,other,tensor(1),"tensor([0.1149, 0.8851])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0206-0001.jpeg,other,tensor(1),"tensor([0.3055, 0.6945])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0207-0001.jpeg,covid,tensor(0),"tensor([0.5877, 0.4123])",,,FALSE POSITIVE,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0210-0001.jpeg,other,tensor(1),"tensor([0.0126, 0.9874])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0213-0001.jpeg,other,tensor(1),"tensor([0.3185, 0.6815])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0217-0001.jpeg,other,tensor(1),"tensor([0.0149, 0.9851])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0219-0001.jpeg,other,tensor(1),"tensor([0.3007, 0.6993])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0221-0001.jpeg,other,tensor(1),"tensor([0.2562, 0.7438])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0222-0001.jpeg,other,tensor(1),"tensor([0.0086, 0.9914])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0229-0001.jpeg,other,tensor(1),"tensor([0.0288, 0.9712])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0232-0001.jpeg,other,tensor(1),"tensor([0.0101, 0.9899])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0233-0001.jpeg,other,tensor(1),"tensor([0.0037, 0.9963])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0237-0001.jpeg,other,tensor(1),"tensor([0.0168, 0.9832])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0238-0001.jpeg,other,tensor(1),"tensor([0.0653, 0.9347])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0241-0001.jpeg,other,tensor(1),"tensor([0.0727, 0.9273])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0246-0001-0001.jpeg,other,tensor(1),"tensor([0.0516, 0.9484])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0246-0001-0002.jpeg,other,tensor(1),"tensor([0.0516, 0.9484])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0246-0001.jpeg,other,tensor(1),"tensor([0.1870, 0.8130])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0249-0001.jpeg,covid,tensor(0),"tensor([0.5045, 0.4955])",,,FALSE POSITIVE,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0251-0001.jpeg,other,tensor(1),"tensor([0.0993, 0.9007])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0252-0001.jpeg,other,tensor(1),"tensor([0.0309, 0.9691])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0256-0001.jpeg,other,tensor(1),"tensor([0.0270, 0.9730])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0259-0001.jpeg,other,tensor(1),"tensor([0.1493, 0.8507])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0267-0001.jpeg,other,tensor(1),"tensor([0.0295, 0.9705])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0271-0001.jpeg,other,tensor(1),"tensor([0.0022, 0.9978])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0272-0001.jpeg,other,tensor(1),"tensor([0.0582, 0.9418])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0273-0001.jpeg,other,tensor(1),"tensor([0.0312, 0.9688])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0274-0001.jpeg,other,tensor(1),"tensor([0.1868, 0.8132])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0275-0001.jpeg,other,tensor(1),"tensor([0.1186, 0.8814])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0276-0001.jpeg,other,tensor(1),"tensor([0.0379, 0.9621])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0277-0001.jpeg,other,tensor(1),"tensor([0.0654, 0.9346])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0278-0001.jpeg,other,tensor(1),"tensor([0.0195, 0.9805])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0279-0001.jpeg,other,tensor(1),"tensor([0.0959, 0.9041])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0280-0001.jpeg,other,tensor(1),"tensor([0.0939, 0.9061])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0281-0001.jpeg,other,tensor(1),"tensor([0.0334, 0.9666])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0282-0001.jpeg,other,tensor(1),"tensor([0.1910, 0.8090])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0283-0001.jpeg,other,tensor(1),"tensor([0.1356, 0.8644])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0285-0001.jpeg,other,tensor(1),"tensor([0.2508, 0.7492])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0286-0001.jpeg,other,tensor(1),"tensor([0.0690, 0.9310])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0287-0001.jpeg,other,tensor(1),"tensor([0.0049, 0.9951])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0288-0001.jpeg,covid,tensor(0),"tensor([0.5756, 0.4244])",,,FALSE POSITIVE,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0289-0001.jpeg,other,tensor(1),"tensor([0.0169, 0.9831])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0290-0001.jpeg,other,tensor(1),"tensor([0.0458, 0.9542])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0292-0001.jpeg,other,tensor(1),"tensor([0.0285, 0.9715])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0294-0001.jpeg,other,tensor(1),"tensor([0.2321, 0.7679])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0297-0001.jpeg,other,tensor(1),"tensor([0.1335, 0.8665])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0300-0001.jpeg,other,tensor(1),"tensor([0.0483, 0.9517])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0301-0001.jpeg,other,tensor(1),"tensor([0.0084, 0.9916])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0302-0001.jpeg,other,tensor(1),"tensor([0.3687, 0.6313])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0303-0001.jpeg,other,tensor(1),"tensor([0.0482, 0.9518])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0304-0001.jpeg,other,tensor(1),"tensor([0.0469, 0.9531])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0305-0001.jpeg,other,tensor(1),"tensor([0.0765, 0.9235])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0307-0001.jpeg,other,tensor(1),"tensor([0.0360, 0.9640])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0309-0001.jpeg,other,tensor(1),"tensor([0.0217, 0.9783])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0310-0001.jpeg,other,tensor(1),"tensor([0.0224, 0.9776])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0311-0001.jpeg,other,tensor(1),"tensor([0.0286, 0.9714])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0312-0001.jpeg,other,tensor(1),"tensor([0.0589, 0.9411])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0313-0001.jpeg,other,tensor(1),"tensor([0.1215, 0.8785])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0315-0001.jpeg,other,tensor(1),"tensor([0.2068, 0.7932])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0351-0001.jpeg,other,tensor(1),"tensor([0.0715, 0.9285])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0352-0001.jpeg,other,tensor(1),"tensor([0.0376, 0.9624])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0360-0001.jpeg,other,tensor(1),"tensor([0.2651, 0.7349])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0361-0001.jpeg,other,tensor(1),"tensor([0.2000, 0.8000])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0362-0001.jpeg,other,tensor(1),"tensor([0.1096, 0.8904])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0370-0001.jpeg,other,tensor(1),"tensor([0.0454, 0.9546])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0372-0001.jpeg,other,tensor(1),"tensor([0.0128, 0.9872])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0373-0001.jpeg,other,tensor(1),"tensor([0.1990, 0.8010])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0378-0001.jpeg,other,tensor(1),"tensor([0.1903, 0.8097])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0380-0001.jpeg,other,tensor(1),"tensor([0.0566, 0.9434])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+NORMAL2-IM-0381-0001.jpeg,other,tensor(1),"tensor([0.0359, 0.9641])",,,,,,,https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+kjr-21-e24-g003-m.jpg,covid,tensor(0),"tensor([9.9930e-01, 7.0420e-04])",,,TRUE POSITIVE,,figure 3,,https://www.kjronline.org/DOIx.php?id=10.3348/kjr.2020.0132
