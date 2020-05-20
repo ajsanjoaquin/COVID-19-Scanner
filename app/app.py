@@ -9,7 +9,7 @@ import cv2
 import pydicom
 import png
 import numpy as np
-
+import matplotlib.pyplot as plt
 
 import torch,torchvision
 from torch import nn
@@ -28,10 +28,8 @@ UPLOAD_FOLDER = 'backend/input_folder'
 ALLOWED_EXTENSIONS = {'png', 'dcm'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-#CLASSES: [0] covid, [1] opacity, [2] nofinding 
-#imagenet_class_index = json.load(open('covid_model.json'))
-
-################ MODEL ################
+################ START_OF_MODEL ################
+#Code modified and taken from Andrea de Luca (https://bit.ly/2YXW6xN)
 device = torch.device("cpu")
 
 class Flatten(nn.Module):
@@ -91,7 +89,7 @@ model_r34.load_state_dict(state['model'])
 #important to set to evaluation mode
 model_r34.eval()
 
-################ MODEL ################
+################ END_OF_MODEL ################
 
 test_transforms = transforms.Compose([
     transforms.Resize(512),
@@ -146,12 +144,6 @@ def predict():
     Returns: a json of predictions_df
     '''
     if request.method == 'POST':
-        '''        # we will get the file from the request
-        data = dict(request.files)
-        images = []
-        for key in data.keys():
-            images.append(data[key]) #if data[key].endswith(('.png','.jpg','.jpeg')):
-        df_results={}'''
         data = dict(request.files)
         
         for key in data.keys():
@@ -166,8 +158,6 @@ def predict():
         attributes = ['PatientID','PatientSex', 'PatientAge', 'ViewPosition']
         for a in attributes:
             result_df[a] = result_df['filename'].apply(lambda x: get_metadata(UPLOAD_FOLDER, x, a))
-
-        print("Attributes Extracted!")
 
         #each image in test_files must be a filename.png from the upload folder
         test_files=[file for file in sorted(os.listdir(UPLOAD_FOLDER))if file.endswith(('.png','.jpg','.jpeg'))]
@@ -195,6 +185,78 @@ def predict():
         result = final_df.to_json(orient='records') #format: [{"filename":a,... metadata( 'PatientID','PatientSex', 'PatientAge', 'ViewPosition')..., "Predicted Label":f}]
         print(result)
         return result;
+
+#############################GRAD-Cam#############################
+
+#@title Grad-CAM code with full-credit to Jimin Tan (https://github.com/tanjimin/grad-cam-pytorch-light)
+class InfoHolder():
+
+    def __init__(self, heatmap_layer):
+        self.gradient = None
+        self.activation = None
+        self.heatmap_layer = heatmap_layer
+
+    def get_gradient(self, grad):
+        self.gradient = grad
+
+    def hook(self, model, input, output):
+        output.register_hook(self.get_gradient)
+        self.activation = output.detach()
+
+def generate_heatmap(weighted_activation):
+    raw_heatmap = torch.mean(weighted_activation, 0)
+    heatmap = np.maximum(raw_heatmap.detach().cpu(), 0)
+    heatmap /= torch.max(heatmap) + 1e-10
+    return heatmap.numpy()
+
+def superimpose(input_img, heatmap):
+    img = to_RGB(input_img)  
+    heatmap = cv2.resize(heatmap, (img.shape[0], img.shape[1]))
+    heatmap = np.uint8(255 * heatmap)
+    heatmap = cv2.applyColorMap(heatmap, cv2.COLORMAP_JET)
+    superimposed_img = np.uint8(heatmap * 0.6 + img * 0.4)
+    pil_img = cv2.cvtColor(superimposed_img,cv2.COLOR_BGR2RGB)
+    return pil_img
+
+def to_RGB(tensor):
+    tensor = (tensor - tensor.min())
+    tensor = tensor/(tensor.max() + 1e-10)
+    image_binary = np.transpose(tensor.numpy(), (1, 2, 0))
+    image = np.uint8(255 * image_binary)
+    return image
+
+def grad_cam(model, input_tensor, heatmap_layer, truelabel=None):
+    info = InfoHolder(heatmap_layer)
+    heatmap_layer.register_forward_hook(info.hook)
+    
+    output = model(input_tensor.unsqueeze(0))[0]
+    truelabel = truelabel if truelabel else torch.argmax(output)
+
+    output[truelabel].backward()
+
+    weights = torch.mean(info.gradient, [0, 2, 3])
+    activation = info.activation.squeeze(0)
+
+    weighted_activation = torch.zeros(activation.shape)
+    for idx, (weight, activation) in enumerate(zip(weights, activation)):
+        weighted_activation[idx] = weight * activation
+
+    heatmap = generate_heatmap(weighted_activation)
+    
+
+    return superimpose(input_tensor, heatmap)
+
+def use_gradcam(img_path):
+    image=Image.open(img_path).convert('RGB')
+    layer4=model_r34[0][-1]
+    heatmap_layer=layer4[2].conv2
+    input_tensor=test_transforms(image)
+
+    #get filename without extension
+    filename=os.path.basename(img_path)[:-4]
+    grad_image = grad_cam(model_r34, input_tensor, heatmap_layer)
+    plt.savefig('(grad-cam)'+filename)
+
 
 if __name__ == '__main__':
     app.run()
