@@ -1,10 +1,16 @@
 import io
 import json
-
-from torchvision import models
-import torchvision.transforms as transforms
+from typing import Optional # required for "Optional[type]"
 from PIL import Image
 from flask import Flask, jsonify, request
+
+from torch import nn
+from torch import Tensor
+from torchvision import models
+import torchvision.transforms as transforms
+
+
+
 
 app = Flask(__name__)
 #CLASSES: [0] covid, [1] opacity, [2] nofinding 
