@@ -4,6 +4,7 @@ from typing import Optional # required for "Optional[type]"
 from PIL import Image
 from flask import Flask, jsonify, request
 
+import torch,torchvision
 from torch import nn
 from torch import Tensor
 from torchvision import models
