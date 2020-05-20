@@ -152,6 +152,12 @@ def predict():
         for key in data.keys():
             images.append(data[key]) #if data[key].endswith(('.png','.jpg','.jpeg')):
         df_results={}'''
+        data = dict(request.files)
+        
+        for key in data.keys():
+            data[key].save('./backend/input_folder/{}'.format(data[key].filename))
+        
+        print("images saved!")
         #list of files to be converted
         files = [f[:-4] for f in os.listdir(UPLOAD_FOLDER) if f.endswith('.dcm')]
         result_df=pd.DataFrame(files,columns=['filename'])
@@ -161,6 +167,7 @@ def predict():
         for a in attributes:
             result_df[a] = result_df['filename'].apply(lambda x: get_metadata(UPLOAD_FOLDER, x, a))
 
+        print("Attributes Extracted!")
 
         #each image in test_files must be a filename.png from the upload folder
         test_files=[file for file in sorted(os.listdir(UPLOAD_FOLDER))if file.endswith(('.png','.jpg','.jpeg'))]
@@ -184,8 +191,10 @@ def predict():
             final_df=pd.merge(result_df,predictions_df[['filename','Predicted Label']], on='filename')
             #convert age to int to be used later
             final_df['PatientAge'] = pd.to_numeric(final_df['PatientAge'], errors='coerce')
-
-        return (final_df.to_json(orient='records')) #format: [{"filename":a,... metadata( 'PatientID','PatientSex', 'PatientAge', 'ViewPosition')..., "Predicted Label":f}]
+        print("Generating Results!")
+        result = final_df.to_json(orient='records') #format: [{"filename":a,... metadata( 'PatientID','PatientSex', 'PatientAge', 'ViewPosition')..., "Predicted Label":f}]
+        print(result)
+        return result;
 
 if __name__ == '__main__':
     app.run()

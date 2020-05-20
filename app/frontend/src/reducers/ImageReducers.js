@@ -8,19 +8,22 @@ export default (state = INITIAL_STATE, actions) => {
         case "POST_IMAGE":
             let new_state = {...state}
             new_state['curr_results'] = {}
-            for(let i = 0;i<actions.payload.data.predictions.length;i++){
-                let item = actions.payload.data.predictions[i]
-                new_state['prev_results'][item.image] = {
-                    "name":item.image,
-                    "file":actions.images[item.image],
-                    "prediction":item.result
-                }
-                new_state['curr_results'][item.image] = {
-                    "name":item.image,
-                    "file":actions.images[item.image],
-                    "prediction":item.result
-                }
-            }
+            // for(let i = 0;i<actions.payload.data.predictions.length;i++){
+            //     let item = actions.payload.data.predictions[i]
+            //     new_state['prev_results'][item.image] = {
+            //         "name":item.image,
+            //         "file":actions.images[item.image],
+            //         "prediction":item.result
+            //     }
+            //     new_state['curr_results'][item.image] = {
+            //         "name":item.image,
+            //         "file":actions.images[item.image],
+            //         "prediction":item.result
+            //     }
+            // }
+            
+            new_state['prev_results'].push(...actions.payload.data)
+            
             return new_state
         default:
             return state

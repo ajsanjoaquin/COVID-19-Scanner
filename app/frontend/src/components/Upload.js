@@ -17,8 +17,6 @@ class Upload extends Component {
             loading: true
         })
         this.props.postRequest(filesUploaded)
-
-        
     }
 
     componentDidUpdate(){

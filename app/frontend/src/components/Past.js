@@ -28,11 +28,21 @@ class Past extends Component {
     }
 
     renderData(){
-        let parsedData = this.parseData()
-        console.log("Parsed Data is ...")
-        console.log(parsedData)
-        return(parsedData.map(item=>
-            <TableRow filename={item.name} prediction={item.prediction} img = {item.image}/>))
+        if(this.props.images){
+            console.log(this.props.image)
+            debugger;
+            return (
+                this.props.images['prev_results'].map(item=>
+                <TableRow 
+                    filename = {item.filename}
+                    patientId = {item.patientID}
+                    sex = {item.PatientSex}
+                    Age = {item.PatientAge}
+                    view = {item.ViewPosition}
+                    prediction = {item["Predicted Label"]} />
+            ))
+        }
+        return "No Data found at the moment"
     }
 
 
@@ -98,14 +108,24 @@ class Past extends Component {
                                 </th>
                                 <th
                                     class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                    Image
+                                    Patient ID
                                 </th>
                                 <th
                                     class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                    Prediction Score
+                                    Patient Sex
                                 </th>
-
-                                
+                                <th
+                                    class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                    Patient Age
+                                </th>
+                                <th
+                                    class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                    View Position
+                                </th>
+                                <th
+                                    class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                    Predicted Label
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
