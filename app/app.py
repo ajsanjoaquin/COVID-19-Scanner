@@ -9,11 +9,18 @@ from torch import nn
 from torch import Tensor
 from torchvision import models
 import torchvision.transforms as transforms
+import torch
+import torchvision
 
-
-
+from flask_cors import CORS
 
 app = Flask(__name__)
+app.config["DEBUG"] = True
+CORS(app)
+UPLOAD_FOLDER = './uploaded_images/'
+ALLOWED_EXTENSIONS = {'png', 'dcm'}
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
 #CLASSES: [0] covid, [1] opacity, [2] nofinding 
 imagenet_class_index = json.load(open('covid_model.json'))
 
@@ -90,21 +97,34 @@ def transform_image(image_bytes):
     return test_transforms(image).unsqueeze(0)
     
 def get_prediction(image_bytes):
+    
     tensor = transform_image(image_bytes=image_bytes)
+    
     outputs = model_r34.forward(tensor)
     _, y_hat = outputs.max(1)
     predicted_idx = str(y_hat.item())
     return imagenet_class_index[predicted_idx]
     
-@app.route('/predict', methods=['POST'])
+@app.route('/', methods=['POST'])
 def predict():
     if request.method == 'POST':
         # we will get the file from the request
-        file = request.files['file']
+        data = dict(request.files)
+        images = []
+        for key in data.keys():
+            images.append(data[key])
+        
+        result = []
+        for image in images:
         # convert that to bytes
-        img_bytes = file.read()
-        class_name= get_prediction(image_bytes=img_bytes)
-        return jsonify({'Prediction': class_name})
+            img_bytes = image.read()
+            import pdb
+            pdb.set_trace()
+            prediction= get_prediction(image_bytes=img_bytes)
+            result.append({"image":image.filename,"result":prediction})
+            
+
+        return jsonify(predictions=result)
 
 if __name__ == '__main__':
     app.run()
