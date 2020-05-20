@@ -2,6 +2,7 @@ import io
 import json
 from typing import Optional # required for "Optional[type]"
 from PIL import Image
+import pandas as pd
 from flask import Flask, jsonify, request
 
 import torch,torchvision
@@ -86,45 +87,70 @@ model_r34.eval()
 
 ################ MODEL ################
 
-def transform_image(image_bytes):
-    test_transforms = transforms.Compose([
+test_transforms = transforms.Compose([
     transforms.Resize(512),
     transforms.CenterCrop(512),
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.485, 0.456, 0.406],
-                    std=[0.229, 0.224, 0.225])])
-    image= Image.open(io.BytesIO(image_bytes))
-    return test_transforms(image).unsqueeze(0)
+                    std=[0.229, 0.224, 0.225])
+])
     
-def get_prediction(image_bytes):
-    
-    tensor = transform_image(image_bytes=image_bytes)
-    
-    outputs = model_r34.forward(tensor)
-    _, y_hat = outputs.max(1)
+#accepts png files
+def predict_image(image):
+    softmaxer = torch.nn.Softmax(dim=1)
+    image_tensor = Image.open(image)
+    image_tensor = image_tensor.convert('RGB')
+    image_tensor = test_transforms(image_tensor).float()
+    image_tensor=image_tensor.unsqueeze(0)
+
+    #convert evaluation to probabilities with softmax
+    with torch.no_grad(): #turn off backpropagation
+      processed=softmaxer(model_r34(image_tensor))
+
+      #for json
+      _, y_hat = processed.max(1)
     predicted_idx = str(y_hat.item())
-    return imagenet_class_index[predicted_idx]
+
+    return (processed[0], imagenet_class_index[predicted_idx]) #[0]return probabilities, [1] for json
     
 @app.route('/', methods=['POST'])
 def predict():
+    '''
+    Inputs: a list of image filenames ending with an extension (e.x. .png)
+    Returns: a tuple of [0] results in json, [1] dataframe results
+    '''
     if request.method == 'POST':
         # we will get the file from the request
         data = dict(request.files)
         images = []
         for key in data.keys():
-            images.append(data[key])
-        
+            if data[key].endswith(('.png','.jpg','.jpeg')):
+                images.append(data[key])
         result = []
+        df_results={}
+        #each image in images must be a filename.png from the upload folder
         for image in images:
-        # convert that to bytes
-            img_bytes = image.read()
+        # code for json
             import pdb
             pdb.set_trace()
-            prediction= get_prediction(image_bytes=img_bytes)
-            result.append({"image":image.filename,"result":prediction})
-            
+            prediction= predict_image(image)
+            result.append({"image":image,"result":prediction[1]})
 
-        return jsonify(predictions=result)
+
+        #Results dataframe
+            df_results[image]=prediction[0] #still within for loop
+
+        predictions_df=pd.DataFrame.from_dict(df_results,orient='index',columns=['covid','nofinding','opacity']).rename_axis('filename').reset_index()
+        predictions_df['covid']=predictions_df['covid'].apply(lambda x: x.item())
+        predictions_df['nofinding']=predictions_df['nofinding'].apply(lambda x: x.item())
+        predictions_df['opacity']=predictions_df['opacity'].apply(lambda x: x.item())
+
+        #get the column name of the highest probability
+        predictions_df['Predicted Label'] =predictions_df[['covid','opacity','nofinding']].idxmax(axis=1)
+        predictions_df['filename']=predictions_df['filename'].str.slice(stop=-4) #remove .png suffix
+
+
+        return (jsonify(predictions=result),predictions_df)
 
 if __name__ == '__main__':
     app.run()
