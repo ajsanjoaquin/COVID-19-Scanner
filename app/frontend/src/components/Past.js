@@ -29,8 +29,6 @@ class Past extends Component {
 
     renderData(){
         if(this.props.images){
-            console.log(this.props.image)
-            debugger;
             return (
                 this.props.images['prev_results'].map(item=>
                 <TableRow 
@@ -125,6 +123,10 @@ class Past extends Component {
                                 <th
                                     class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                     Predicted Label
+                                </th>
+                                <th
+                                    class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                    X-Ray Image
                                 </th>
                             </tr>
                         </thead>

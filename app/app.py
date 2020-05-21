@@ -3,7 +3,7 @@ import json
 from typing import Optional # required for "Optional[type]"
 from PIL import Image
 import pandas as pd
-from flask import Flask, request
+from flask import Flask, request,send_from_directory
 import os
 import cv2
 import pydicom
@@ -136,6 +136,10 @@ def get_metadata(folder,filename, attribute):
       attribute_value = getattr(ds, attribute)
       return attribute_value
     except: return np.NaN
+
+@app.route('/uploads/<path:filename>')
+def download_file(filename):
+    return send_from_directory(UPLOAD_FOLDER,'{}.png'.format(filename), as_attachment=True)
     
 @app.route('/', methods=['POST'])
 def predict():
