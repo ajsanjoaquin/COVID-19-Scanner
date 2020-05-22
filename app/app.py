@@ -195,8 +195,6 @@ def grad_cam(model, input_tensor, heatmap_layer, truelabel=None):
     for idx, (weight, activation) in enumerate(zip(weights, activation)):
         weighted_activation[idx] = weight * activation
     heatmap = generate_heatmap(weighted_activation)
-    
-
     return superimpose(input_tensor, heatmap)
 
 def use_gradcam(img_path,dest_path):
