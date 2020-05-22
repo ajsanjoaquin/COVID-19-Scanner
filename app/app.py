@@ -25,6 +25,7 @@ app = Flask(__name__)
 app.config["DEBUG"] = True
 CORS(app)
 UPLOAD_FOLDER = 'backend/input_folder'
+GRADCAM_FOLDER='backend/gradcam_imgs'
 ALLOWED_EXTENSIONS = {'png', 'dcm'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
@@ -137,58 +138,6 @@ def get_metadata(folder,filename, attribute):
       return attribute_value
     except: return np.NaN
 
-@app.route('/uploads/<path:filename>')
-def download_file(filename):
-    return send_from_directory(UPLOAD_FOLDER,'{}.png'.format(filename), as_attachment=True)
-    
-@app.route('/', methods=['POST'])
-def predict():
-    '''
-    Inputs: a list of image filenames ending with an extension (e.x. .png) taken from UPLOAD_FOLDER
-    Returns: a json of predictions_df
-    '''
-    if request.method == 'POST':
-        data = dict(request.files)
-        
-        for key in data.keys():
-            data[key].save('./backend/input_folder/{}'.format(data[key].filename))
-        
-        print("images saved!")
-        #list of files to be converted
-        files = [f[:-4] for f in os.listdir(UPLOAD_FOLDER) if f.endswith('.dcm')]
-        result_df=pd.DataFrame(files,columns=['filename'])
-
-        #list of essential attributes
-        attributes = ['PatientID','PatientSex', 'PatientAge', 'ViewPosition']
-        for a in attributes:
-            result_df[a] = result_df['filename'].apply(lambda x: get_metadata(UPLOAD_FOLDER, x, a))
-
-        #each image in test_files must be a filename.png from the upload folder
-        test_files=[file for file in sorted(os.listdir(UPLOAD_FOLDER))if file.endswith(('.png','.jpg','.jpeg'))]
-        df_results={filename:predict_image(UPLOAD_FOLDER+'/'+filename) for filename in test_files}
-
-        predictions_df=pd.DataFrame.from_dict(df_results,orient='index',columns=['covid','nofinding','opacity']).rename_axis('filename').reset_index()
-        predictions_df['covid']=predictions_df['covid'].apply(lambda x: x.item())
-        predictions_df['nofinding']=predictions_df['nofinding'].apply(lambda x: x.item())
-        predictions_df['opacity']=predictions_df['opacity'].apply(lambda x: x.item())
-
-        #get the column name of the highest probability
-        predictions_df['Predicted Label'] =predictions_df[['covid','opacity','nofinding']].idxmax(axis=1)
-        predictions_df['filename']=predictions_df['filename'].str.slice(stop=-4) #remove .png suffix
-
-        #merge result_df and final_df
-        if result_df.empty:
-            for a in attributes:
-                predictions_df[a]="" #include empty columns for proper json formatting
-            final_df=predictions_df
-        else:
-            final_df=pd.merge(result_df,predictions_df[['filename','Predicted Label']], on='filename')
-            #convert age to int to be used later
-            final_df['PatientAge'] = pd.to_numeric(final_df['PatientAge'], errors='coerce')
-        print("Generating Results!")
-        result = final_df.to_json(orient='records') #format: [{"filename":a,... metadata( 'PatientID','PatientSex', 'PatientAge', 'ViewPosition')..., "Predicted Label":f}]
-        print(result)
-        return result;
 
 #############################GRAD-Cam#############################
 
@@ -250,7 +199,7 @@ def grad_cam(model, input_tensor, heatmap_layer, truelabel=None):
 
     return superimpose(input_tensor, heatmap)
 
-def use_gradcam(img_path):
+def use_gradcam(img_path,dest_path):
     image=Image.open(img_path).convert('RGB')
     layer4=model_r34[0][-1]
     heatmap_layer=layer4[2].conv2
@@ -258,9 +207,75 @@ def use_gradcam(img_path):
 
     #get filename without extension
     filename=os.path.basename(img_path)[:-4]
-    grad_image = grad_cam(model_r34, input_tensor, heatmap_layer)
-    plt.savefig('(grad-cam)'+filename)
+    grad_cam_image= grad_cam(model_r34, input_tensor, heatmap_layer)
+    grad_cam_image.save(dest_path+'/(gradcam)'+filename+'.png')
 
+########Implementation Part###################################
+#for original images
+@app.route('/uploads/<path:filename>')
+def download_file(filename):
+    return send_from_directory(UPLOAD_FOLDER,'{}.png'.format(filename), as_attachment=True)
+
+#for gradcam images
+@app.route('/uploads/<path:filename>')
+def download_gradcam_file(filename):
+    return send_from_directory(GRADCAM_FOLDER,'{}.png'.format(filename), as_attachment=True)
+    
+@app.route('/', methods=['POST'])
+def predict():
+    '''
+    Inputs: a list of image filenames ending with an extension (e.x. .png) taken from UPLOAD_FOLDER
+    Returns: a json of predictions_df
+    '''
+    if request.method == 'POST':
+        data = dict(request.files)
+        
+        for key in data.keys():
+            data[key].save('./backend/input_folder/{}'.format(data[key].filename))
+        
+        print("images saved!")
+
+        #METADATA and CONVERT TO PNG
+        #list of files to be converted
+        files = [f[:-4] for f in os.listdir(UPLOAD_FOLDER) if f.endswith('.dcm')]
+        result_df=pd.DataFrame(files,columns=['filename'])
+
+        #list of essential attributes
+        attributes = ['PatientID','PatientSex', 'PatientAge', 'ViewPosition']
+        for a in attributes:
+            result_df[a] = result_df['filename'].apply(lambda x: get_metadata(UPLOAD_FOLDER, x, a))
+
+        #PREDICTION
+        #each image in test_files must be a filename.png from the upload folder
+        test_files=[file for file in sorted(os.listdir(UPLOAD_FOLDER))if file.endswith(('.png','.jpg','.jpeg'))]
+        df_results={filename:predict_image(UPLOAD_FOLDER+'/'+filename) for filename in test_files}
+
+        #OUTPUT DATAFRAMES
+        predictions_df=pd.DataFrame.from_dict(df_results,orient='index',columns=['covid','nofinding','opacity']).rename_axis('filename').reset_index()
+        predictions_df['covid']=predictions_df['covid'].apply(lambda x: x.item())
+        predictions_df['nofinding']=predictions_df['nofinding'].apply(lambda x: x.item())
+        predictions_df['opacity']=predictions_df['opacity'].apply(lambda x: x.item())
+        #get the column name of the highest probability
+        predictions_df['Predicted Label'] =predictions_df[['covid','opacity','nofinding']].idxmax(axis=1)
+
+        #GRADCAM
+        #get gradcam for images with predictions of either covid or opacity only
+        predictions_df[(predictions_df['Predicted Label'] == 'covid') | (predictions_df['Predicted Label'] == 'opacity')]['filename'].apply(lambda x: use_gradcam(UPLOAD_FOLDER+'/'+x,GRADCAM_FOLDER))
+
+        predictions_df['filename']=predictions_df['filename'].str.slice(stop=-4) #remove .png suffix
+        #merge result_df and final_df
+        if result_df.empty:
+            for a in attributes:
+                predictions_df[a]="" #include empty columns for proper json formatting
+            final_df=predictions_df
+        else:
+            final_df=pd.merge(result_df,predictions_df[['filename','Predicted Label']], on='filename')
+            #convert age to int to be used later
+            final_df['PatientAge'] = pd.to_numeric(final_df['PatientAge'], errors='coerce')
+        
+        print("Generating Results!")
+        result = final_df.to_json(orient='records') #format: [{"filename":a,... metadata( 'PatientID','PatientSex', 'PatientAge', 'ViewPosition')..., "Predicted Label":f}]
+        return result;
 
 if __name__ == '__main__':
     app.run()
