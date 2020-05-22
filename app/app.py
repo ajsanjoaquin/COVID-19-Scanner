@@ -179,6 +179,7 @@ def to_RGB(tensor):
     return image
 
 def grad_cam(model, input_tensor, heatmap_layer, truelabel=None):
+    
     info = InfoHolder(heatmap_layer)
     heatmap_layer.register_forward_hook(info.hook)
     
@@ -193,7 +194,6 @@ def grad_cam(model, input_tensor, heatmap_layer, truelabel=None):
     weighted_activation = torch.zeros(activation.shape)
     for idx, (weight, activation) in enumerate(zip(weights, activation)):
         weighted_activation[idx] = weight * activation
-
     heatmap = generate_heatmap(weighted_activation)
     
 
@@ -208,8 +208,8 @@ def use_gradcam(img_path,dest_path):
     #get filename without extension
     filename=os.path.basename(img_path)[:-4]
     grad_cam_image= grad_cam(model_r34, input_tensor, heatmap_layer)
-    grad_cam_image.save(dest_path+'/(gradcam)'+filename+'.png')
-
+    cv2.imwrite(dest_path+'/(gradcam)'+filename+'.png',grad_cam_image)
+    
 ########Implementation Part###################################
 #for original images
 @app.route('/uploads/<path:filename>')
@@ -217,9 +217,9 @@ def download_file(filename):
     return send_from_directory(UPLOAD_FOLDER,'{}.png'.format(filename), as_attachment=True)
 
 #for gradcam images
-@app.route('/uploads/<path:filename>')
+@app.route('/gradcam/<path:filename>')
 def download_gradcam_file(filename):
-    return send_from_directory(GRADCAM_FOLDER,'{}.png'.format(filename), as_attachment=True)
+    return send_from_directory(GRADCAM_FOLDER,'(gradcam){}.png'.format(filename), as_attachment=True)
     
 @app.route('/', methods=['POST'])
 def predict():
