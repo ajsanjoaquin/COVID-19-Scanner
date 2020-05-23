@@ -1,10 +1,38 @@
 import React,{useEffect,useState} from 'react'
 
 const TableRow = (props) => {
-    const [image, updateImage] = React.useState([]);
+    const [image, updateImage] = React.useState("");
     //Create new_state Object for Gradcam
-    const [GradCam, updateGradCam] = React.useState([]);
-   
+    const [GradCam, updateGradCam] = React.useState("");
+//    {"0":["covid"],"1":["nofinding"],"2":["opacity"]}
+
+    const createTag = (tag) =>{
+        if(tag=="covid"){
+            return(<span
+                class="relative inline-block px-3 py-1 font-semibold text-orange-900 leading-tight">
+                <span aria-hidden
+                    class="absolute inset-0 bg-red-200 opacity-50 rounded-full"></span>
+                <span class="relative">Suspected Covid</span>
+            </span>)
+        }
+        if(tag=="nofinding"){
+            return(<span
+                class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
+                <span aria-hidden
+                    class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
+                <span class="relative">No Findings</span>
+            </span>)
+        }
+        if(tag=="opacity"){
+            return(<span
+                class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
+                <span aria-hidden
+                    class="absolute inset-0 bg-orange-200 opacity-50 rounded-full"></span>
+                <span class="relative">Opacity</span>
+            </span>)
+        }
+    }
+
     useEffect(() => {
         // Create an scoped async function in the hook
         async function getImage() {
@@ -20,8 +48,28 @@ const TableRow = (props) => {
         }
         
         getImage();
-        getGradcam();
+        if(props.prediction=="nofinding"){
+            updateGradCam("NA")
+        }else{
+            getGradcam();
+        }
+        
       }, []);
+
+    const createGradCamImage = (gc) => {
+        if(gc=="NA"){
+            return <p>No Gradcam Produced</p>
+        }
+        else if(gc===""){
+            return null
+        }
+        else{
+            return <img alt="home" src={ GradCam }></img>
+        }
+        
+    }
+    const GradcamImage = createGradCamImage(GradCam)
+    const Tag = createTag(props.prediction)
     return (
         <tr>                        
             <td class="px-5 py-5 bg-white text-sm">
@@ -40,13 +88,13 @@ const TableRow = (props) => {
                 <p class="text-gray-900 whitespace-no-wrap">{props.view}</p>
             </td>
             <td class="px-5 py-5 bg-white text-sm">
-                <p class="text-gray-900 whitespace-no-wrap">{props.prediction}</p>
+                <p class="text-gray-900 whitespace-no-wrap">{Tag}</p>
             </td>
             <td class="px-5 py-5 bg-white text-sm">
                 { image && <img alt="home" src={ image }></img> }
             </td>
             <td class="px-5 py-5 bg-white text-sm">
-                { GradCam && <img alt="home" src={ GradCam }></img> }
+                {GradcamImage}
             </td>
            
         </tr>
