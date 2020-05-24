@@ -25,9 +25,6 @@ const App = () => {
                     <Route exact path = '/past'>
                         <Past />
                     </Route>
-                    <Route exact path = '/login'>
-                        <Login />
-                    </Route>
 
                 </Switch>
                 </div>

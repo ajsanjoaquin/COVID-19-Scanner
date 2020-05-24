@@ -12,6 +12,7 @@ const headers  = [
     { label: "Predicted Label", key: "Predicted Label" }
   ];
 
+  
 
 class Past extends Component {
     state = {
@@ -21,7 +22,21 @@ class Past extends Component {
     }
 
 
-    covidFilter = (tag) => {
+    covidFilter = (tag,element) => {
+        
+        const buttons = document.querySelectorAll(".predictButtons")
+        for(let i = 0;i<buttons.length;i++){
+            if(buttons[i].classList.contains("bg-blue-400")){
+                buttons[i].classList.remove('bg-blue-400')
+            }
+        }
+        for(let i = 0;i<buttons.length;i++){
+            console.log(buttons[i].innerHTML)
+            if(buttons[i].innerHTML===element){
+                buttons[i].classList.add('bg-blue-400')
+            }
+        }
+
         const new_items = this.state.images.map(item=>{
             if(tag == "both"){
                 if(item["Predicted Label"]=="covid" || item["Predicted Label"]=="opacity"){
@@ -59,7 +74,20 @@ class Past extends Component {
         this.setState({images:new_items})
     }
 
-    viewFilter = (view) => {
+    viewFilter = (view,element) => {
+        const buttons = document.querySelectorAll(".viewButtons")
+        for(let i = 0;i<buttons.length;i++){
+            if(buttons[i].classList.contains("bg-blue-400")){
+                buttons[i].classList.remove('bg-blue-400')
+            }
+        }
+        for(let i = 0;i<buttons.length;i++){
+            if(buttons[i].innerHTML===element){
+                buttons[i].classList.add('bg-blue-400')
+            }
+        }
+        
+        console.log(element)
         const new_items = this.state.images.map(item=>{
             if(view == "all"){
                 return {
@@ -105,7 +133,7 @@ class Past extends Component {
     
 
     render() {
-        console.log(this.state)
+        
         return (
             <div class="container mx-auto px-4 sm:px-8">
         <div class="py-8">
@@ -118,77 +146,84 @@ class Past extends Component {
                     <br />
                     <input 
                     style = {{width:"100px"}}
-                    className = "outline-none mx-2 border-solid border-2 border-black-600" 
+                    className = "ageButtons outline-none mx-2 border-solid border-2 border-black-600 py-2 px-4" 
                     type="number" id="age" name="age" min="1" max="100" 
                     value = {this.state.age}
                     onChange = {(e)=>{this.setState({age:e.target.value})}}
                     />
-                    <button onClick={()=>this.ageFilter()} class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 rounded-full">
+                    <span onClick={()=>this.ageFilter()} class="cursor-pointer ageButtons bg-transparent mx-2 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                     Apply Age Filter
-                    </button>
-                    <button onClick={()=>{
+                    </span>
+                    <span onClick={()=>{
                         this.viewFilter("all")
                         this.setState({age:""})
-                        }} class="mx-2 bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 rounded-full">
+                        }} class="cursor-pointer bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                     Reset Age Filter
-                    </button>
+                    </span>
                </div>
                <div>
                     <h1 className = " my-2">Filter By View Position</h1> 
                    <div>
-                   <span class=" cursor-pointer tracking-wider text-white bg-green-500 hover:bg-green-800 px-4 py-1 text-sm rounded-full leading-loose mx-2 font-semibold" title=""
-                            onClick = {()=>this.viewFilter("all")}
+                   <span class="cursor-pointer viewButtons mx-2 bg-blue-400 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" title=""
+                            onClick = {()=>this.viewFilter("all","All")}
                             >
                             All
                             </span>
-                    <span class=" cursor-pointer tracking-wider text-white bg-blue-500 hover:bg-blue-800 px-4 py-1 text-sm rounded-full leading-loose mx-2 font-semibold" title=""
-                            onClick = {()=>this.viewFilter("PA")}
+                    <span class="cursor-pointer viewButtons mx-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" title=""
+                            onClick = {()=>this.viewFilter("PA","PA")}
                             >
                             PA
                             </span>
                         <span 
-                        class="cursor-pointer tracking-wider text-white bg-orange-500 hover:bg-orange-700 px-4 py-1 text-sm rounded-full leading-loose font-semibold" 
+                        class="cursor-pointer viewButtons mx-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
                         title=""
-                        onClick = {()=>this.viewFilter("LL")}>
+                        onClick = {()=>this.viewFilter("LL","LL")}>
                             LL
                         </span>
                    </div>
                </div>
 
                <h1 className = " my-2">Filter By Prediction</h1> 
-               <div class="relative">
-                    <span class=" cursor-pointer tracking-wider text-white bg-green-500 hover:bg-green-800 px-4 py-1 text-sm rounded-full leading-loose mx-2 font-semibold" title=""
-                        onClick = {()=>this.covidFilter("all")}
+               <div class="flex flex-wrap ">
+                    <span class="predictButtons my-2 cursor-pointer mx-2 bg-blue-400 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"  title=""
+                        onClick = {()=>this.covidFilter("all","All")}
                         >
                         All
                         </span>
                         <span 
-                    class="cursor-pointer tracking-wider text-white bg-orange-500 hover:bg-orange-700 px-4 py-1 text-sm rounded-full mx-2 leading-loose font-semibold" 
+                    class="predictButtons my-2 cursor-pointer mx-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" 
                     title=""
-                    onClick = {()=>this.covidFilter("both")}>
+                    onClick = {()=>this.covidFilter("both","Suspected/Opacity")}>
                         Suspected/Opacity
                     </span>
                     <span 
-                    class="cursor-pointer tracking-wider text-white bg-orange-500 hover:bg-orange-700 px-4 py-1 text-sm rounded-full leading-loose font-semibold" 
+                    class="predictButtons my-2 cursor-pointer mx-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" 
                     title=""
-                    onClick = {()=>this.covidFilter("covid")}>
+                    onClick = {()=>this.covidFilter("covid","Suspected")}>
                         Suspected
                     </span>
 
-                        <span class="cursor-pointer tracking-wider text-white bg-red-500 hover:bg-red-700 px-4 py-1 text-sm rounded-full leading-loose mx-2 font-semibold" title=""
-                        onClick = {()=>this.covidFilter("opacity")}
+                        <span 
+                        class="predictButtons my-2 cursor-pointer mx-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" 
+                        title=""
+                        onClick = {()=>this.covidFilter("opacity","Opacity")}
                         >
                         Opacity
                         </span>
 
-                        <span class="cursor-pointer tracking-wider text-white bg-blue-500 hover:bg-blue-700 px-4 py-1 text-sm rounded-full leading-loose mx-2 font-semibold" title=""
-                        onClick = {()=>this.covidFilter("nofinding")}
-                        >
-                        No Findings
-                        </span>
+                        <span 
+                        class="predictButtons my-2 cursor-pointer mx-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" 
+                        title=""
+                        onClick = {()=>this.covidFilter("nofinding","No Findings")}>No Findings</span>
                     </div>
                 
-                
+                    <CSVLink data={this.state.images} headers={headers}>
+                <button class="my-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" style = {{}}>
+                    
+                    Download Data as CSV
+                    
+                </button>
+                </CSVLink>
             </div>
             <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
                 <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
@@ -264,13 +299,7 @@ class Past extends Component {
                 </div>
             </div>
         </div>
-        <CSVLink data={this.state.images} headers={headers}>
-                <button class="my-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" style = {{}}>
-                    
-                    Download Data as CSV
-                    
-                </button>
-                </CSVLink>
+        
     </div>
         )
     }
