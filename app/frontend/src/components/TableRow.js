@@ -70,6 +70,7 @@ const TableRow = (props) => {
     }
     const GradcamImage = createGradCamImage(GradCam)
     const Tag = createTag(props.prediction)
+    
     return (
         <tr>                        
             <td class="px-5 py-5 bg-white text-sm">
