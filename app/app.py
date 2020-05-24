@@ -18,6 +18,7 @@ from torchvision import models
 import torchvision.transforms as transforms
 import torch
 import torchvision
+from Utils import use_gradcam
 
 from flask_cors import CORS
 
@@ -50,7 +51,8 @@ class AdaptiveConcatPool2d(nn.Module):
         self.output_size = sz or 1
         self.ap = nn.AdaptiveAvgPool2d(self.output_size)
         self.mp = nn.AdaptiveMaxPool2d(self.output_size)
-    def forward(self, x): return torch.cat([self.mp(x), self.ap(x)], 1)
+    def forward(self, x): 
+        return torch.cat([self.mp(x), self.ap(x)], 1)
     
 def myhead(nf, nc):
     '''
@@ -137,76 +139,6 @@ def get_metadata(folder,filename, attribute):
       attribute_value = getattr(ds, attribute)
       return attribute_value
     except: return np.NaN
-
-
-#############################GRAD-Cam#############################
-
-#@title Grad-CAM code with full-credit to Jimin Tan (https://github.com/tanjimin/grad-cam-pytorch-light)
-class InfoHolder():
-
-    def __init__(self, heatmap_layer):
-        self.gradient = None
-        self.activation = None
-        self.heatmap_layer = heatmap_layer
-
-    def get_gradient(self, grad):
-        self.gradient = grad
-
-    def hook(self, model, input, output):
-        output.register_hook(self.get_gradient)
-        self.activation = output.detach()
-
-def generate_heatmap(weighted_activation):
-    raw_heatmap = torch.mean(weighted_activation, 0)
-    heatmap = np.maximum(raw_heatmap.detach().cpu(), 0)
-    heatmap /= torch.max(heatmap) + 1e-10
-    return heatmap.numpy()
-
-def superimpose(input_img, heatmap):
-    img = to_RGB(input_img)  
-    heatmap = cv2.resize(heatmap, (img.shape[0], img.shape[1]))
-    heatmap = np.uint8(255 * heatmap)
-    heatmap = cv2.applyColorMap(heatmap, cv2.COLORMAP_JET)
-    superimposed_img = np.uint8(heatmap * 0.6 + img * 0.4)
-    pil_img = cv2.cvtColor(superimposed_img,cv2.COLOR_BGR2RGB)
-    return pil_img
-
-def to_RGB(tensor):
-    tensor = (tensor - tensor.min())
-    tensor = tensor/(tensor.max() + 1e-10)
-    image_binary = np.transpose(tensor.numpy(), (1, 2, 0))
-    image = np.uint8(255 * image_binary)
-    return image
-
-def grad_cam(model, input_tensor, heatmap_layer, truelabel=None):
-    
-    info = InfoHolder(heatmap_layer)
-    heatmap_layer.register_forward_hook(info.hook)
-    
-    output = model(input_tensor.unsqueeze(0))[0]
-    truelabel = truelabel if truelabel else torch.argmax(output)
-
-    output[truelabel].backward()
-
-    weights = torch.mean(info.gradient, [0, 2, 3])
-    activation = info.activation.squeeze(0)
-
-    weighted_activation = torch.zeros(activation.shape)
-    for idx, (weight, activation) in enumerate(zip(weights, activation)):
-        weighted_activation[idx] = weight * activation
-    heatmap = generate_heatmap(weighted_activation)
-    return superimpose(input_tensor, heatmap)
-
-def use_gradcam(img_path,dest_path):
-    image=Image.open(img_path).convert('RGB')
-    layer4=model_r34[0][-1]
-    heatmap_layer=layer4[2].conv2
-    input_tensor=test_transforms(image)
-
-    #get filename without extension
-    filename=os.path.basename(img_path)[:-4]
-    grad_cam_image= grad_cam(model_r34, input_tensor, heatmap_layer)
-    cv2.imwrite(dest_path+'/(gradcam)'+filename+'.png',grad_cam_image)
     
 ########Implementation Part###################################
 #for original images
@@ -234,7 +166,7 @@ def predict():
                 if os.path.isfile(file_path) or os.path.islink(file_path):
                     os.unlink(file_path)
                 elif os.path.isdir(file_path):
-                    shutil.rmtree(file_path)
+                    os.shutil.rmtree(file_path)
             except Exception as e:
                 print('Failed to delete %s. Reason: %s' % (file_path, e))
         for filename in os.listdir(folder2):
@@ -243,7 +175,7 @@ def predict():
                 if os.path.isfile(file_path) or os.path.islink(file_path):
                     os.unlink(file_path)
                 elif os.path.isdir(file_path):
-                    shutil.rmtree(file_path)
+                    os.shutil.rmtree(file_path)
             except Exception as e:
                 print('Failed to delete %s. Reason: %s' % (file_path, e))
         data = dict(request.files)
@@ -278,7 +210,7 @@ def predict():
 
         #GRADCAM
         #get gradcam for images with predictions of either covid or opacity only
-        predictions_df[(predictions_df['Predicted Label'] == 'covid') | (predictions_df['Predicted Label'] == 'opacity')]['filename'].apply(lambda x: use_gradcam(UPLOAD_FOLDER+'/'+x,GRADCAM_FOLDER))
+        predictions_df[(predictions_df['Predicted Label'] == 'covid') | (predictions_df['Predicted Label'] == 'opacity')]['filename'].apply(lambda x: use_gradcam(os.path.join(UPLOAD_FOLDER,x),GRADCAM_FOLDER,model_r34,test_transforms))
 
         predictions_df['filename']=predictions_df['filename'].str.slice(stop=-4) #remove .png suffix
         #merge result_df and final_df
