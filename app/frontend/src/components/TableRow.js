@@ -64,7 +64,7 @@ const TableRow = (props) => {
             return null
         }
         else{
-            return <img alt="home" src={ GradCam }></img>
+            return <img style = {{minWidth:"130px",maxWidth:"130px"}} alt="home" src={ GradCam }></img>
         }
         
     }
@@ -92,7 +92,7 @@ const TableRow = (props) => {
                 <p class="text-gray-900 whitespace-no-wrap">{Tag}</p>
             </td>
             <td class="px-5 py-5 bg-white text-sm">
-                { image && <img alt="home" src={ image }></img> }
+                { image && <img style = {{minWidth:"130px",maxWidth:"130px"}} alt="home" src={ image }></img> }
             </td>
             <td class="px-5 py-5 bg-white text-sm">
                 {GradcamImage}
