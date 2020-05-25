@@ -18,7 +18,8 @@ class Past extends Component {
     state = {
         images:this.props.images["prev_results"]
         .map(item=>{return {...item,display:true}}),
-        age: null
+        age: null,
+        filename: "results"
     }
 
 
@@ -111,9 +112,27 @@ class Past extends Component {
         this.setState({images:new_items})
     }
 
-    ageFilter = () => {
+    ageFilter = (tag) => {
+        const ageButton = document.querySelector(".ageFilter")
+        if (tag == "all"){
+            if(ageButton.classList.contains("bg-blue-400")){
+                ageButton.classList.remove('bg-blue-400')
+            }
+        }
+        else{
+            ageButton.classList.add('bg-blue-400')
+        }
+        
+        
+        
+
         const new_items = this.state.images.map(item=>{
-            
+            if(tag == "all"){
+                return {
+                    ...item,
+                    display:true
+                }
+            }
             if (item.PatientAge==this.state.age){
                 return {
                     ...item,
@@ -139,6 +158,7 @@ class Past extends Component {
         <div class="py-8">
             <div>
                 <h2 class="text-2xl font-semibold leading-tight">Results</h2>
+                <p>* Only PA and AP X-ray views are accepted</p>
             </div>
             <div class="my-2 flex flex-col px-4">
                <div>
@@ -151,11 +171,11 @@ class Past extends Component {
                     value = {this.state.age}
                     onChange = {(e)=>{this.setState({age:e.target.value})}}
                     />
-                    <span onClick={()=>this.ageFilter()} class="cursor-pointer ageButtons bg-transparent mx-2 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                    <span onClick={()=>this.ageFilter("")} class="ageFilter cursor-pointer ageButtons bg-transparent mx-2 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                     Apply Age Filter
                     </span>
                     <span onClick={()=>{
-                        this.viewFilter("all")
+                        this.ageFilter("all")
                         this.setState({age:""})
                         }} class="cursor-pointer bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                     Reset Age Filter
@@ -177,8 +197,8 @@ class Past extends Component {
                         <span 
                         class="cursor-pointer viewButtons mx-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
                         title=""
-                        onClick = {()=>this.viewFilter("LL","LL")}>
-                            LL
+                        onClick = {()=>this.viewFilter("AP","AP")}>
+                            AP
                         </span>
                    </div>
                </div>
@@ -216,14 +236,29 @@ class Past extends Component {
                         title=""
                         onClick = {()=>this.covidFilter("nofinding","No Findings")}>No Findings</span>
                     </div>
+                <h1 className = " my-2">Download Results</h1>
+                <div>
                 
-                    <CSVLink data={this.state.images} headers={headers}>
+                <input 
+                    style = {{width:"100px"}}
+                    className = "ageButtons outline-none mx-2 border-solid border-2 border-black-600 py-2 px-4" 
+                    type="text" id="age" name="age" min="1" max="100" 
+                    value = {this.state.filename}
+                    onChange = {(e)=>{this.setState({filename:e.target.value})}}
+                    />
+                <CSVLink 
+                data={this.state.images} 
+                headers={headers}
+                filename = {`${this.state.filename}.csv`}
+                >
                 <button class="my-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" style = {{}}>
                     
                     Download Data as CSV
                     
                 </button>
                 </CSVLink>
+                </div>
+                
             </div>
             <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
                 <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">

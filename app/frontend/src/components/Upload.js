@@ -27,13 +27,12 @@ class Upload extends Component {
             loading: false,
             error: "Upload Failed. Please try again"
         })).then(()=>this.setState({loading:false, error:"Data Succesfully Loaded"})
-        
         ).catch((e)=>this.setState({error: "Upload Failed. Please try again"}))
     }
 
     renderError = () => {
         if(this.state.error == "Data Succesfully Loaded"){
-            return <p style ={{fontSize:"10px", margin:"20px 0px"}}>Your results have been loaded, click <Link to ='/past'>Here</Link> to find out more</p>
+            return <p style ={{fontSize:"10px", margin:"20px 0px"}}>Your results have been loaded, check out <Link to ='/past' class="no-underline hover:underline text-blue-500 px-1">past results</Link> to view them</p>
         }
         if(this.state.error){
             return  <p style = {{color: "red", fontSize:"10px", margin:"20px 0px"}}>{this.state.error}</p>
@@ -55,8 +54,8 @@ class Upload extends Component {
         }
         else{
             return (
-                <>
-                <div class="flex w-full h-screen items-center justify-center bg-grey-lighter">
+                <div className = "h-screen" style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
+                <div class="flex w-full items-center justify-center bg-grey-lighter">
                 <button onChange = {this.handleFileUpload}>
                 <label class="w-64 flex flex-col items-center px-4 py-6 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer">
                     
@@ -65,14 +64,14 @@ class Upload extends Component {
                         </svg>
                         <span class="mt-2 text-base leading-normal">Upload your image</span>
                         <input type='file' multiple class="hidden" />
-            {this.state.error &&  this.renderError()  }
+            
                 </label>
                 
                 </button>
                 
                 </div>
-                
-                </>
+                {this.state.error &&  this.renderError()  }
+                </div>
                 )
         }
         
