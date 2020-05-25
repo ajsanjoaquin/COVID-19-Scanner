@@ -1,4 +1,5 @@
-FROM python:3.6-stretch
+FROM python:3.6-slim-buster
+
 MAINTAINER Ayrton San Joaquin <ajsanjoaquin@gmail.com>
 
 # check our python environment
