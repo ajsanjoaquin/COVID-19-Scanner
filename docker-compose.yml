@@ -1,11 +1,12 @@
-version: '3.3'
+version: '3'
 services:
   backend:
     build: ./app
-    ports:
+    ports: #expose our IP
       - "5000:5000"
   frontend:
     build: ./app/frontend
-    ports:
+    ports: #expose our IP
       - "3000:3000"
-    
+    depends_on:
+      - backend
