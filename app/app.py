@@ -158,10 +158,12 @@ def predict():
     Returns: a json of predictions_df
     '''
     if request.method == 'POST':
-        folder = './backend/input_folder'
-        folder2 = './backend/gradcam_imgs'
-        for filename in os.listdir(folder):
-            file_path = os.path.join(folder, filename)
+        if not os.path.isdir(UPLOAD_FOLDER):
+            os.mkdirs(UPLOAD_FOLDER)
+        if not os.path.isdir(GRADCAM_FOLDER):
+            os.mkdirs(GRADCAM_FOLDER)
+        for filename in os.listdir(UPLOAD_FOLDER):
+            file_path = os.path.join(UPLOAD_FOLDER, filename)
             try:
                 if os.path.isfile(file_path) or os.path.islink(file_path):
                     os.unlink(file_path)
@@ -169,8 +171,8 @@ def predict():
                     os.shutil.rmtree(file_path)
             except Exception as e:
                 print('Failed to delete %s. Reason: %s' % (file_path, e))
-        for filename in os.listdir(folder2):
-            file_path = os.path.join(folder2, filename)
+        for filename in os.listdir(GRADCAM_FOLDER):
+            file_path = os.path.join(GRADCAM_FOLDER, filename)
             try:
                 if os.path.isfile(file_path) or os.path.islink(file_path):
                     os.unlink(file_path)
