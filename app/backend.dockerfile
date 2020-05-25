@@ -6,7 +6,7 @@ RUN python3 --version
 RUN pip3 --version
 
 # set work directory for the container
-WORKDIR  .
+WORKDIR .
 #install reqs
 RUN pip install --no-cache-dir -r requirements.txt
 #get model weights
