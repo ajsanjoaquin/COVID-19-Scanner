@@ -25,8 +25,8 @@ from flask_cors import CORS
 app = Flask(__name__)
 app.config["DEBUG"] = True
 CORS(app)
-UPLOAD_FOLDER = 'backend/input_folder'
-GRADCAM_FOLDER='backend/gradcam_imgs'
+UPLOAD_FOLDER = './input_folder'
+GRADCAM_FOLDER='./gradcam_imgs'
 ALLOWED_EXTENSIONS = {'png', 'dcm'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
@@ -183,7 +183,7 @@ def predict():
         data = dict(request.files)
         
         for key in data.keys():
-            data[key].save('./backend/input_folder/{}'.format(data[key].filename))
+            data[key].save('./input_folder/{}'.format(data[key].filename))
         
         print("images saved!")
 
