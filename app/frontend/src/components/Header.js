@@ -12,7 +12,7 @@ class Header extends Component {
     render() {
         return (
             <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6 lg:" >
-                <Link to ='/'><span class="font-semibold text-xl text-white mr-6 tracking-tight">COVID X-Ray Predictor</span></Link>
+                <Link to ='/'><span class="font-semibold text-xl text-white mr-6 tracking-tight">COVID X-Ray Triage Assistant</span></Link>
                 
                 <div class="text-sm flex items-center justify-center" >
                 

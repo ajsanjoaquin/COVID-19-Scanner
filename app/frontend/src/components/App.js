@@ -1,8 +1,7 @@
 import React from 'react'
 
-import Header from './Header';
-import Past from './Past';
-import Login from './Login';
+import Header from './Header'
+import Past from './Past'
 import Upload from './Upload'
 
 import {

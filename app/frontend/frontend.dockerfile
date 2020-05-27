@@ -1,11 +1,13 @@
 FROM node:7
 MAINTAINER Ayrton San Joaquin <ajsanjoaquin@gmail.com>
 
-# set frontend as the work directory
-#WORKDIR .
+WORKDIR /app
+COPY . /app
 
 #run npm commands
-RUN npm install
+RUN npm install --production --loglevel=warn 
+#COPY . /app
 
+EXPOSE 3000
 
-RUN npm start
+RUN npm start 
