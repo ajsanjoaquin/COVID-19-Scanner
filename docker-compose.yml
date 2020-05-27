@@ -5,9 +5,10 @@ services:
     ports: #expose our IP
       - "5000:5000"
   frontend:
-    build: 
-      conext: ./app/frontend
-      dockerfile: frontend
+    build: ./app/frontend
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
     ports: #expose our IP
       - "3000:3000"
     depends_on:

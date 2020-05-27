@@ -1,13 +1,18 @@
-FROM node:7
+FROM node:13.12.0-alpine
 MAINTAINER Ayrton San Joaquin <ajsanjoaquin@gmail.com>
 
 WORKDIR /app
-COPY . /app
 
-#run npm commands
-RUN npm install --production --loglevel=warn 
-#COPY . /app
+ENV PATH /app/node_modules/.bin:$PATH
 
-EXPOSE 3000
+COPY package.json ./
+COPY package-lock.json ./
 
-RUN npm start 
+# install app dependencies
+RUN npm install --production --silent
+
+# add app
+COPY . ./
+
+# start app
+CMD ["npm", "start"]
