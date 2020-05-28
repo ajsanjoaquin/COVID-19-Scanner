@@ -221,7 +221,7 @@ def predict():
         #get gradcam for images with predictions of either covid or opacity only
         predictions_df[(predictions_df['Predicted Label'] == 'covid') | (predictions_df['Predicted Label'] == 'opacity')]['filename'].apply(lambda x: use_gradcam(os.path.join(UPLOAD_FOLDER,x),GRADCAM_FOLDER,model_r34,test_transforms))
 
-        predictions_df['filename']=predictions_df['filename'].str.slice(stop=-4) #remove .png suffix
+        predictions_df['filename']=predictions_df['filename'].apply(lambda file: os.path.splitext(file)[0]) #remove .png suffix
         #merge result_df and final_df
         if result_df.empty:
             for a in attributes:
