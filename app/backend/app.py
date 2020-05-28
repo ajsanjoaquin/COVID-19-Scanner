@@ -210,7 +210,7 @@ def predict():
         #each image in test_files must be a filename.png from the upload folder
         test_files=[file for file in sorted(os.listdir(UPLOAD_FOLDER))if file.endswith(('.png','.jpg','.jpeg'))]
         df_results={filename:predict_image(UPLOAD_FOLDER+'/'+filename) for filename in test_files}
-
+        print("predictions done")
         #OUTPUT DATAFRAMES
         predictions_df=pd.DataFrame.from_dict(df_results,orient='index',columns=['covid','nofinding','opacity']).rename_axis('filename').reset_index()
         predictions_df['covid']=predictions_df['covid'].apply(lambda x: x.item())
@@ -218,11 +218,11 @@ def predict():
         predictions_df['opacity']=predictions_df['opacity'].apply(lambda x: x.item())
         #get the column name of the highest probability
         predictions_df['Predicted Label'] =predictions_df[['covid','opacity','nofinding']].idxmax(axis=1)
-
+        print("table done")
         #GRADCAM
         #get gradcam for images with predictions of either covid or opacity only
         predictions_df[(predictions_df['Predicted Label'] == 'covid') | (predictions_df['Predicted Label'] == 'opacity')]['filename'].apply(lambda x: use_gradcam(os.path.join(UPLOAD_FOLDER,x),GRADCAM_FOLDER,model_r34,test_transforms))
-
+        print("gradcam done")
         predictions_df['filename']=predictions_df['filename'].apply(lambda file: os.path.splitext(file)[0]) #remove .png suffix
         #merge result_df and final_df
         if result_df.empty:
