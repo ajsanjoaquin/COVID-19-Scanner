@@ -159,6 +159,7 @@ class Past extends Component {
             <div>
                 <h2 class="text-2xl font-semibold leading-tight">Results</h2>
                 <p>* Only PA and AP X-ray views are accepted</p>
+                <p>*GRADCAM and the predictions of the model is still experimental and the clinician has the final decision on the validity of the model's results</p>
             </div>
             <div class="my-2 flex flex-col px-4">
                <div>
@@ -214,7 +215,7 @@ class Past extends Component {
                     class="predictButtons my-2 cursor-pointer mx-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" 
                     title=""
                     onClick = {()=>this.covidFilter("both","Suspected/Opacity")}>
-                        Suspected/Opacity
+                        Showing COVID symptoms (Suspected & Opacity)
                     </span>
                     <span 
                     class="predictButtons my-2 cursor-pointer mx-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" 
