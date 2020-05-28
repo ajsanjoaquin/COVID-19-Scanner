@@ -70,7 +70,7 @@ const TableRow = (props) => {
     }
     
     const Tag = createTag(props.prediction)
-    const Warning = (props.view!="PA"&&props.view!="AP")? <p>This View Position is unsupported. Predictions might not be as accurate</p> : null
+    
     const Gradcam = createGradCamImage(GradCam)
     
         return (
@@ -92,7 +92,6 @@ const TableRow = (props) => {
                 </td>
                 <td class="px-5 py-5 bg-white text-sm">
                     <p class="text-gray-900 whitespace-no-wrap">{Tag}</p>
-                    {Warning}
                 </td>
                 <td class="px-5 py-5 bg-white text-sm">
                     { image && <img style = {{minWidth:"130px",maxWidth:"130px"}} alt="home" src={ image }></img> }
