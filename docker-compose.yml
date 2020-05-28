@@ -2,6 +2,8 @@ version: '3'
 services:
   backend:
     build: ./app/backend
+    volumes:
+      - '.:/app'
     ports: #expose our IP
       - "5000:5000"
   frontend:
