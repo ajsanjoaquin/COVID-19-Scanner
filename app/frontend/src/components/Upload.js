@@ -19,15 +19,17 @@ class Upload extends Component {
         let filesUploaded = e.target.files
         
         this.setState({
-            loading: true
+            
         },
         ()=>console.log("Just Set to Loading!"))
         
-        this.props.postRequest(filesUploaded).catch(()=>this.setState({
-            loading: false,
-            error: "Upload Failed. Please try again"
-        })).then(()=>this.setState({loading:false, error:"Data Succesfully Loaded"})
-        ).catch((e)=>this.setState({error: "Upload Failed. Please try again"}))
+        this.props.postRequest(filesUploaded)
+        
+        // .catch(()=>this.setState({
+        //     loading: false,
+        //     error: "Upload Failed. Please try again"
+        // })).then(()=>this.setState({loading:false, error:"Data Succesfully Loaded"})
+        // ).catch((e)=>this.setState({error: "Upload Failed. Please try again"}))
     }
 
     renderError = () => {
