@@ -152,7 +152,7 @@ class Past extends Component {
     
 
     render() {
-        
+        console.log(this.props)
         return (
             <div class="container mx-auto px-4 sm:px-8">
         <div class="py-8">

@@ -144,7 +144,14 @@ def get_metadata(folder,filename, attribute):
 #for original images
 @app.route('/uploads/<path:filename>')
 def download_file(filename):
-    return send_from_directory(UPLOAD_FOLDER,'{}.png'.format(filename), as_attachment=True)
+    if os.path.exists('./input_folder/{}.png'.format(filename)):
+        return send_from_directory(UPLOAD_FOLDER,'{}.png'.format(filename), as_attachment=True)
+    
+    if os.path.exists('./input_folder/{}.jpg'.format(filename)):
+        return send_from_directory(UPLOAD_FOLDER,'{}.jpg'.format(filename), as_attachment=True)
+    
+    if os.path.exists('./input_folder/{}.jpeg'.format(filename)):
+        return send_from_directory(UPLOAD_FOLDER,'{}.jpeg'.format(filename), as_attachment=True)
 
 #for gradcam images
 @app.route('/gradcam/<path:filename>')
