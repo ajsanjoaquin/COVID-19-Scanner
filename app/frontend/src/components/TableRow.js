@@ -68,10 +68,11 @@ const TableRow = (props) => {
         }
         
     }
-    const GradcamImage = createGradCamImage(GradCam)
-    const Tag = createTag(props.prediction)
     
-    if(props.view!="PA" && props.view!="AP"){
+    const Tag = createTag(props.prediction)
+    const Warning = (props.view!="PA"&&props.view!="AP")? <p>This View Position is unsupported. Predictions might not be as accurate</p> : null
+    const Gradcam = createGradCamImage(GradCam)
+    
         return (
             <tr>
                 <td class="px-5 py-5 bg-white text-sm">
@@ -90,47 +91,18 @@ const TableRow = (props) => {
                     <p class="text-gray-900 whitespace-no-wrap">{props.view}</p>
                 </td>
                 <td class="px-5 py-5 bg-white text-sm">
-                    <p class="text-gray-900 whitespace-no-wrap">View Position Unsupported</p>
-                </td>
-                <td class="px-5 py-5 bg-white text-sm">
-                    { image && <img style = {{minWidth:"130px",maxWidth:"130px"}} alt="home" src={ image }></img> }
-                </td>
-                <td class="px-5 py-5 bg-white text-sm">
-                    Gradcam Unavaliable
-                </td>
-            </tr>
-        )
-    }else{
-        return (
-            <tr>                        
-                <td class="px-5 py-5 bg-white text-sm">
-                    <p class="text-gray-900 whitespace-no-wrap">{props.filename}</p>
-                </td>
-                <td class="px-5 py-5 bg-white text-sm">
-                    <p class="text-gray-900 whitespace-no-wrap">{props.patientId}</p>
-                </td>
-                <td class="px-5 py-5 bg-white text-sm">
-                    <p class="text-gray-900 whitespace-no-wrap">{props.sex}</p>
-                </td>
-                <td class="px-5 py-5 bg-white text-sm">
-                    <p class="text-gray-900 whitespace-no-wrap">{props.Age}</p>
-                </td>
-                <td class="px-5 py-5 bg-white text-sm">
-                    <p class="text-gray-900 whitespace-no-wrap">{props.view}</p>
-                </td>
-                <td class="px-5 py-5 bg-white text-sm">
                     <p class="text-gray-900 whitespace-no-wrap">{Tag}</p>
+                    {Warning}
                 </td>
                 <td class="px-5 py-5 bg-white text-sm">
                     { image && <img style = {{minWidth:"130px",maxWidth:"130px"}} alt="home" src={ image }></img> }
                 </td>
                 <td class="px-5 py-5 bg-white text-sm">
-                    {GradcamImage}
+                    {Gradcam}
                 </td>
-               
             </tr>
         )
-    }
+    
     
 }
 
