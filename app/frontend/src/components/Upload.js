@@ -19,11 +19,14 @@ class Upload extends Component {
         let filesUploaded = e.target.files
         
         this.setState({
-            
+            loading:true
         },
         ()=>console.log("Just Set to Loading!"))
         
-        this.props.postRequest(filesUploaded)
+        this.props.postRequest(filesUploaded).then(()=>this.setState({
+            loading:false,
+            error:"Data Succesfully Loaded"
+        }))
         
         // .catch(()=>this.setState({
         //     loading: false,
@@ -65,6 +68,7 @@ class Upload extends Component {
                         <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
                         </svg>
                         <span class="mt-2 text-base leading-normal">Upload your image</span>
+                        <span style = {{fontSize:"8px"}}>* Only PA and AP X-ray views are supported at the moment. Prediction accuracy might be affected if other views are used</span>
                         <input type='file' multiple class="hidden" />
             
                 </label>
@@ -72,7 +76,7 @@ class Upload extends Component {
                 </button>
                 
                 </div>
-                {this.state.error &&  this.renderError()  }
+                {this.renderError()}
                 </div>
                 )
         }

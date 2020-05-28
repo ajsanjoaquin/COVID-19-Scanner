@@ -144,6 +144,8 @@ def get_metadata(folder,filename, attribute):
 #for original images
 @app.route('/uploads/<path:filename>')
 def download_file(filename):
+    if filename[-1]==".":
+        filename = filename[:-1]
     if os.path.exists('./input_folder/{}.png'.format(filename)):
         return send_from_directory(UPLOAD_FOLDER,'{}.png'.format(filename), as_attachment=True)
     
