@@ -14,15 +14,11 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 RUN apt-get install wget
 #get model weights
-<<<<<<< HEAD:app/backend/backend.dockerfile
-RUN wget -q -O corona_resnet34.pth https://www.dropbox.com/s/o27w0dik8hdjaab/corona_resnet34.pth?dl=0
-=======
 RUN apt-get update
 RUN apt-get -y install wget
 RUN apt-get install libgtk2.0-dev -y
 RUN wget -O corona_resnet34.pth https://www.dropbox.com/s/o27w0dik8hdjaab/corona_resnet34.pth?dl=1
 RUN mv corona_resnet34.pth /corona_resnet34.pth
->>>>>>> 22ae2796ef2caaa3fc73ad480b0b342738474e13:app/backend/Dockerfile
 
 COPY . /app
 # RUN mv /corona_resnet34.pth /app/corona_resnet34.pth

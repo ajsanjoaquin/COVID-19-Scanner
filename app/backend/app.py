@@ -22,6 +22,8 @@ from Utils import use_gradcam
 
 from flask_cors import CORS
 
+from pathlib import Path
+
 app = Flask(__name__)
 app.config["DEBUG"] = True
 CORS(app)
@@ -45,15 +47,15 @@ class Flatten(nn.Module):
 
 class AdaptiveConcatPool2d(nn.Module):
     "Layer that concats `AdaptiveAvgPool2d` and `AdaptiveMaxPool2d`." # from pytorch
-    def __init__(self, sz:Optional[int]=None): 
+    def __init__(self, sz:Optional[int]=None):
         "Output will be 2*sz or 2 if sz is None"
         super().__init__()
         self.output_size = sz or 1
         self.ap = nn.AdaptiveAvgPool2d(self.output_size)
         self.mp = nn.AdaptiveMaxPool2d(self.output_size)
-    def forward(self, x): 
+    def forward(self, x):
         return torch.cat([self.mp(x), self.ap(x)], 1)
-    
+
 def myhead(nf, nc):
     '''
     Inputs: nf=  # of in_features in the 4th layer , nc= # of classes
@@ -72,12 +74,12 @@ def myhead(nf, nc):
         )
 
 
-my_model=torchvision.models.resnet34() 
+my_model=torchvision.models.resnet34()
 modules=list(my_model.children())
-modules.pop(-1) 
-modules.pop(-1) 
+modules.pop(-1)
+modules.pop(-1)
 temp=nn.Sequential(nn.Sequential(*modules))
-tempchildren=list(temp.children()) 
+tempchildren=list(temp.children())
 
 #append the special fastai head
 #Configured according to Model Architecture
@@ -85,8 +87,14 @@ tempchildren=list(temp.children())
 tempchildren.append(myhead(1024,3))
 model_r34=nn.Sequential(*tempchildren)
 
+print(os.listdir('..'))
+print(os.listdir('/app/'))
+print(os.listdir('.'))
+print(os.listdir('./app'))
+print(os.listdir('./app/backend'))
+
 #LOAD MODEL
-state = torch.load('corona_resnet34.pth',map_location=torch.device('cpu'))
+state = torch.load(Path('/corona_resnet34.pth').resolve(),map_location=torch.device('cpu'))
 model_r34.load_state_dict(state['model'])
 
 #important to set to evaluation mode
@@ -101,7 +109,7 @@ test_transforms = transforms.Compose([
     transforms.Normalize(mean=[0.485, 0.456, 0.406],
                     std=[0.229, 0.224, 0.225])
 ])
-    
+
 #accepts png files
 def predict_image(image):
     softmaxer = torch.nn.Softmax(dim=1)
@@ -135,11 +143,11 @@ def get_metadata(folder,filename, attribute):
     with open(os.path.join(folder,filename+'.png'), 'wb') as png_file:
         w = png.Writer(shape[1], shape[0], greyscale=True)
         w.write(png_file, image_2d_scaled)
-    try: 
+    try:
       attribute_value = getattr(ds, attribute)
       return attribute_value
     except: return np.NaN
-    
+
 ########Implementation Part###################################
 #for original images
 @app.route('/uploads/<path:filename>')
@@ -148,10 +156,10 @@ def download_file(filename):
         filename = filename[:-1]
     if os.path.exists('./input_folder/{}.png'.format(filename)):
         return send_from_directory(UPLOAD_FOLDER,'{}.png'.format(filename), as_attachment=True)
-    
+
     if os.path.exists('./input_folder/{}.jpg'.format(filename)):
         return send_from_directory(UPLOAD_FOLDER,'{}.jpg'.format(filename), as_attachment=True)
-    
+
     if os.path.exists('./input_folder/{}.jpeg'.format(filename)):
         return send_from_directory(UPLOAD_FOLDER,'{}.jpeg'.format(filename), as_attachment=True)
 
@@ -159,7 +167,7 @@ def download_file(filename):
 @app.route('/gradcam/<path:filename>')
 def download_gradcam_file(filename):
     return send_from_directory(GRADCAM_FOLDER,'(gradcam){}.png'.format(filename), as_attachment=True)
-    
+
 @app.route('/', methods=['POST'])
 def predict():
     '''
@@ -168,9 +176,9 @@ def predict():
     '''
     if request.method == 'POST':
         if not os.path.isdir(UPLOAD_FOLDER):
-            os.mkdirs(UPLOAD_FOLDER)
+            os.makedirs(UPLOAD_FOLDER)
         if not os.path.isdir(GRADCAM_FOLDER):
-            os.mkdirs(GRADCAM_FOLDER)
+            os.makedirs(GRADCAM_FOLDER)
         for filename in os.listdir(UPLOAD_FOLDER):
             file_path = os.path.join(UPLOAD_FOLDER, filename)
             try:
@@ -190,10 +198,10 @@ def predict():
             except Exception as e:
                 print('Failed to delete %s. Reason: %s' % (file_path, e))
         data = dict(request.files)
-        
+
         for key in data.keys():
             data[key].save('./input_folder/{}'.format(data[key].filename))
-        
+
         print("images saved!")
 
         #METADATA and CONVERT TO PNG
@@ -233,10 +241,10 @@ def predict():
             final_df=pd.merge(result_df,predictions_df[['filename','Predicted Label']], on='filename')
             #convert age to int to be used later
             final_df['PatientAge'] = pd.to_numeric(final_df['PatientAge'], errors='coerce')
-        
+
         print("Generating Results!")
         result = final_df.to_json(orient='records') #format: [{"filename":a,... metadata( 'PatientID','PatientSex', 'PatientAge', 'ViewPosition')..., "Predicted Label":f}]
         return result;
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
