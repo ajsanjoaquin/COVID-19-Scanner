@@ -87,14 +87,8 @@ tempchildren=list(temp.children())
 tempchildren.append(myhead(1024,3))
 model_r34=nn.Sequential(*tempchildren)
 
-print(os.listdir('..'))
-print(os.listdir('/app/'))
-print(os.listdir('.'))
-print(os.listdir('./app'))
-print(os.listdir('./app/backend'))
-
 #LOAD MODEL
-state = torch.load(Path('/corona_resnet34.pth').resolve(),map_location=torch.device('cpu'))
+state = torch.load(Path('corona_resnet34.pth').resolve(),map_location=torch.device('cpu'))
 model_r34.load_state_dict(state['model'])
 
 #important to set to evaluation mode
