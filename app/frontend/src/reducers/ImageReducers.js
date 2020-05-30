@@ -4,10 +4,13 @@ const INITIAL_STATE = {
 }
 
 export default (state = INITIAL_STATE, actions) => {
+    
     switch(actions.type){
+        
         case "POST_IMAGE":
             let new_state = {...state}
-            new_state['curr_results'] = {}
+            new_state['curr_results'] = []
+            console.log("Called")   
             // for(let i = 0;i<actions.payload.data.predictions.length;i++){
             //     let item = actions.payload.data.predictions[i]
             //     new_state['prev_results'][item.image] = {
@@ -25,6 +28,12 @@ export default (state = INITIAL_STATE, actions) => {
             new_state['prev_results'].push(...actions.payload.data)
             
             return new_state
+        case "REMOVE_DATA":
+            console.log("State was reset")
+            let resetState = {...state}
+            resetState['curr_results'] = []
+            resetState["prev_results"] = []
+            return resetState
         default:
             return state
     }

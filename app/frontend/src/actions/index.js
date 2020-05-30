@@ -21,6 +21,8 @@ export const postRequest = (images) => async dispatch => {
     dispatch({type:"POST_IMAGE",payload: response,images:imageDict})
 }
 
-export const UserLogin = () => {
-    return({type:"LOGIN_USER"})
+
+export const removeData = () => {
+    console.log("removeData was called")
+    return({type:"REMOVE_DATA"})
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux';
 import { CSVLink } from "react-csv"
+import {removeData} from '../actions'
 
 import TableRow from './TableRow';
 const headers  = [
@@ -22,6 +23,11 @@ class Past extends Component {
         filename: "results"
     }
 
+    removeData = () => {
+        this.setState({images:[]})
+        console.log(this.state)
+        this.props.removeData()
+    }
 
     covidFilter = (tag,element) => {
         
@@ -257,8 +263,15 @@ class Past extends Component {
                     Download Data as CSV
                     
                 </button>
+                
                 </CSVLink>
+                <button class="mx-2 my-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick = {()=>this.removeData()}>
+                    
+                    Clear Current Data
+                    
+                </button>
                 </div>
+                
                 
             </div>
             <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
@@ -347,4 +360,6 @@ const mapStateToProps = state =>{
     }
 }
 
-export default connect(mapStateToProps,null)(Past);
+export default connect(mapStateToProps,{
+    removeData
+})(Past);
