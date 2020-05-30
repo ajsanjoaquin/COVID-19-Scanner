@@ -4,8 +4,6 @@ services:
     build: ./app/backend
     volumes:
       - '.:/app'
-    ports: #expose our IP
-      - "5000:5000"
     stdin_open: true
   frontend:
     build: ./app/frontend

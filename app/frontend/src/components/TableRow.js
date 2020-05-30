@@ -36,13 +36,13 @@ const TableRow = (props) => {
     useEffect(() => {
         // Create an scoped async function in the hook
         async function getImage() {
-            fetch(`http://localhost:5000/uploads/${props.filename}`)
+            fetch(`http://backend:5000/uploads/${props.filename}`)
             .then(response => response.blob())
             .then(blob => updateImage(URL.createObjectURL(blob)))
         }
         //Modify this to the api endpoint for the gradcam
         async function getGradcam() {
-            fetch(`http://localhost:5000/gradcam/${props.filename}`)
+            fetch(`http://backend:5000/gradcam/${props.filename}`)
             .then(response => response.blob())
             .then(blob => updateGradCam(URL.createObjectURL(blob)))
         }
