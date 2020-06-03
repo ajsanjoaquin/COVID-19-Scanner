@@ -200,7 +200,7 @@ def predict():
 
         #METADATA and CONVERT TO PNG
         #list of files to be converted
-        files = [f[:-4] for f in os.listdir(UPLOAD_FOLDER) if f.endswith('.dcm')]
+        files = [f[:-4]+'.png' for f in os.listdir(UPLOAD_FOLDER) if f.endswith('.dcm')]
         result_df=pd.DataFrame(files,columns=['filename'])
 
         #list of essential attributes
@@ -221,11 +221,8 @@ def predict():
         #get the column name of the highest probability
         predictions_df['Predicted Label'] =predictions_df[['covid','opacity','nofinding']].idxmax(axis=1)
         print("table done")
-        #GRADCAM
-        #get gradcam for images with predictions of either covid or opacity only
-        predictions_df[(predictions_df['Predicted Label'] == 'covid') | (predictions_df['Predicted Label'] == 'opacity')]['filename'].apply(lambda x: use_gradcam(os.path.join(UPLOAD_FOLDER,x),GRADCAM_FOLDER,model_r34,test_transforms))
         print("gradcam done")
-        predictions_df['filename']=predictions_df['filename'].apply(lambda file: os.path.splitext(file)[0]) #remove .png suffix
+        #predictions_df['filename']=predictions_df['filename'].apply(lambda file: os.path.splitext(file)[0]) #remove .png suffix
         #merge result_df and final_df
         if result_df.empty:
             for a in attributes:
@@ -238,6 +235,14 @@ def predict():
 
         print("Generating Results!")
         result = final_df.to_json(orient='records') #format: [{"filename":a,... metadata( 'PatientID','PatientSex', 'PatientAge', 'ViewPosition')..., "Predicted Label":f}]
+
+        #GRADCAM
+        #get gradcam for images with predictions of either covid or opacity only
+        grad_df=predictions_df[(predictions_df['Predicted Label'] == 'covid') | (predictions_df['Predicted Label'] == 'opacity')]['filename']
+        if button on an image:
+            for image in grad_df.values:
+                if image == select_image:
+                    use_gradcam(os.path.join(UPLOAD_FOLDER,select_image),GRADCAM_FOLDER,model_r34,test_transforms)
         return result;
 
 if __name__ == '__main__':
