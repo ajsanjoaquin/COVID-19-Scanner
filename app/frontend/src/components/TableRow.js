@@ -3,7 +3,7 @@ import React,{useEffect,useState} from 'react'
 const TableRow = (props) => {
     const [image, updateImage] = React.useState("");
     //Create new_state Object for Gradcam
-    const [GradCam, updateGradCam] = React.useState("");
+    const [GradCam, updateGradCam] = React.useState(null);
 //    {"0":["covid"],"1":["nofinding"],"2":["opacity"]}
 
     const createTag = (tag) =>{
@@ -41,37 +41,38 @@ const TableRow = (props) => {
             .then(blob => updateImage(URL.createObjectURL(blob)))
         }
         //Modify this to the api endpoint for the gradcam
-        async function getGradcam() {
-            fetch(`http://backend:5000/gradcam/${props.filename}`)
-            .then(response => response.blob())
-            .then(blob => updateGradCam(URL.createObjectURL(blob)))
-        }
         
+        //Only Image is called by default
         getImage();
-        if(props.prediction=="nofinding"){
-            updateGradCam("NA")
-        }else{
-            getGradcam();
-        }
+        // if(props.prediction!="nofinding"){
+        //     updateGradCam("NA")
+        // }else{
+        //     getGradcam();
+        // }
         
       }, []);
 
-    const createGradCamImage = (gc) => {
-        if(gc=="NA"){
-            return <p>No Gradcam Produced</p>
-        }
-        else if(gc===""){
-            return null
+    async function getGradcam() {
+        fetch(`http://backend:5000/gradcam/${props.filename}`)
+        .then(response => response.blob())
+        .then(blob => updateGradCam(URL.createObjectURL(blob)))
+    }
+
+    const renderGradcam = (GradCam) => {
+        if(GradCam === null){
+            return (
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick = {()=>getGradcam()}>
+                Generate Gradcam
+                </button>
+            )
         }
         else{
             return <img style = {{minWidth:"130px",maxWidth:"130px"}} alt="home" src={ GradCam }></img>
         }
-        
     }
-    
+
     const Tag = createTag(props.prediction)
     
-    const Gradcam = createGradCamImage(GradCam)
     
         return (
             <tr>
@@ -97,7 +98,7 @@ const TableRow = (props) => {
                     { image && <img style = {{minWidth:"130px",maxWidth:"130px"}} alt="home" src={ image }></img> }
                 </td>
                 <td class="px-5 py-5 bg-white text-sm">
-                    {Gradcam}
+                    {props.prediction === "nofinding" ? "No Gradcam Avaliable" : renderGradcam()}
                 </td>
             </tr>
         )
