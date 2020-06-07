@@ -70,4 +70,4 @@ def use_gradcam(img_path,dest_path,model,transforms):
     #get filename without extension
     filename=os.path.splitext(os.path.basename(img_path))[0]
     grad_cam_image= grad_cam(model, input_tensor, heatmap_layer)
-    cv2.imwrite(dest_path+'/(gradcam)'+filename+'.png',grad_cam_image)
+    cv2.imwrite(os.path.join(dest_path,'(gradcam)',filename+'.png'),grad_cam_image)

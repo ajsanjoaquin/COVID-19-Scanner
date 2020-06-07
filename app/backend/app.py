@@ -159,7 +159,9 @@ def download_file(filename):
 
 #for gradcam images
 @app.route('/gradcam/<path:filename>')
-def download_gradcam_file(filename):
+def get_gradcam(filename):
+    return use_gradcam(os.path.join(UPLOAD_FOLDER,filename),GRADCAM_FOLDER,model_r34,test_transforms)
+def download_gradcam_file(filename):        
     return send_from_directory(GRADCAM_FOLDER,'(gradcam){}.png'.format(filename), as_attachment=True)
 
 @app.route('/', methods=['POST'])
@@ -239,10 +241,6 @@ def predict():
         #GRADCAM
         #get gradcam for images with predictions of either covid or opacity only
         grad_df=predictions_df[(predictions_df['Predicted Label'] == 'covid') | (predictions_df['Predicted Label'] == 'opacity')]['filename']
-        if button on an image:
-            for image in grad_df.values:
-                if image == select_image:
-                    use_gradcam(os.path.join(UPLOAD_FOLDER,select_image),GRADCAM_FOLDER,model_r34,test_transforms)
         return result;
 
 if __name__ == '__main__':
