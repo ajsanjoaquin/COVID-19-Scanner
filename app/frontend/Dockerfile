@@ -15,5 +15,5 @@ RUN npm install --production --silent
 COPY . ./
 
 # start app
-CMD ["cd", "app/frontend"]
+CMD ["cd", "app"]
 CMD ["npm", "start"]

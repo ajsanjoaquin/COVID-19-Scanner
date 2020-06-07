@@ -12,7 +12,6 @@ WORKDIR /app
 COPY requirements.txt ./
 
 RUN pip install --no-cache-dir -r requirements.txt
-RUN apt-get install wget
 #get model weights
 RUN apt-get update
 RUN apt-get -y install wget
@@ -26,4 +25,4 @@ COPY . /app
 EXPOSE 5000
 
 # Running Python Application
-CMD ["python3", "app/backend/app.py"]
+CMD ["python3", "app/app.py"]

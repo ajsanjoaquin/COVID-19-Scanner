@@ -1,0 +1,1001 @@
+patientId,class,PatientSex,PatientAge,ViewPosition,Actual Label,Predicted Label
+ec60f8bf-72eb-488f-ab84-5d45767d1261,No Lung Opacity / Not Normal,F,35,PA,nofinding,opacity
+e21cf265-67df-4c9d-a046-f35b267785e0,No Lung Opacity / Not Normal,F,40,PA,nofinding,nofinding
+a5a9dd5d-a04a-4085-a84f-3fb30f1ffba3,No Lung Opacity / Not Normal,M,77,PA,nofinding,nofinding
+79f3d786-46c4-497f-a10a-f07eb7dfa209,No Lung Opacity / Not Normal,M,55,PA,nofinding,opacity
+f1bc26f1-19a5-4513-8a79-4083b27c0325,Normal,F,28,PA,nofinding,nofinding
+4aa05040-a8cb-41b9-a613-d8e858de6419,No Lung Opacity / Not Normal,M,24,AP,nofinding,nofinding
+7ed72508-4582-4d16-8df2-724ba106e692,No Lung Opacity / Not Normal,M,59,PA,nofinding,nofinding
+972fd317-0c35-4a56-aca3-4dcf1ec1fb95,No Lung Opacity / Not Normal,F,55,AP,nofinding,nofinding
+d4aafd46-960c-4cb3-aecd-49a783ab0d02,Normal,M,59,PA,nofinding,nofinding
+8eee2836-b938-4953-b394-99facc3f78e1,Lung Opacity,M,36,AP,opacity,opacity
+f1c1c792-af12-4b8a-bc67-317347a7e8d8,Lung Opacity,F,56,AP,opacity,opacity
+fc79453b-0369-4c86-9024-6f12b8d0ec86,Normal,M,20,AP,nofinding,nofinding
+0b3b1768-5926-4084-bed0-ad9ae886d13a,Lung Opacity,F,11,AP,opacity,opacity
+a1925427-ba38-45c0-a39f-7435ddba97b2,No Lung Opacity / Not Normal,M,47,AP,nofinding,opacity
+53553403-f449-4bf1-9d54-b76827ef7ffc,Normal,F,49,PA,nofinding,nofinding
+0736db5d-1989-4e0f-99c2-c72c7fa90e8e,Normal,F,32,PA,nofinding,nofinding
+e32c79df-9fe1-4ed0-bde4-eba4e341936d,Lung Opacity,M,40,AP,opacity,opacity
+91ffea2c-cabd-4e92-9250-9498ecbd424c,Lung Opacity,M,51,PA,opacity,opacity
+fd38ecb1-d5fa-49ca-9244-9571f3999c96,No Lung Opacity / Not Normal,M,56,AP,nofinding,opacity
+60c7d6a1-9aad-452f-9789-918056b955ad,Normal,F,56,PA,nofinding,nofinding
+a47c09af-6f13-4057-a0e6-6e1f422b584d,Lung Opacity,M,22,AP,opacity,opacity
+bb6988b6-86f7-442c-83dc-c013e08aeb65,No Lung Opacity / Not Normal,F,26,PA,nofinding,nofinding
+f5808231-bcfc-4205-95cd-9ba5ed5bed03,Normal,M,64,PA,nofinding,nofinding
+b241dfb4-3ba4-40b0-93de-2eaafaa13dfc,Normal,F,69,PA,nofinding,nofinding
+b89bd111-9093-46cd-a75c-c58c58b80824,No Lung Opacity / Not Normal,M,63,PA,nofinding,nofinding
+f627cd4f-39f4-4b3f-8729-1dfad8fce3fb,No Lung Opacity / Not Normal,F,48,PA,nofinding,opacity
+a6b9565f-bc91-4841-8969-ff94c3b687b3,Lung Opacity,M,68,AP,opacity,opacity
+ced1a8b4-ad38-452b-84e3-56b75ff72741,No Lung Opacity / Not Normal,M,69,PA,nofinding,nofinding
+5c3a572d-819e-4024-a3ec-ae09278f4232,No Lung Opacity / Not Normal,M,18,PA,nofinding,nofinding
+f5107d16-3da1-4258-8d9a-02e45c3c0d00,Normal,F,26,PA,nofinding,nofinding
+c9e21f1e-cea9-4862-93b1-4a06364d3ee7,Normal,F,35,PA,nofinding,nofinding
+4586263a-a2e0-4484-ac01-968b45a3b897,Lung Opacity,M,56,AP,opacity,opacity
+32cb4127-e504-417f-a30d-e072601d86cb,No Lung Opacity / Not Normal,M,55,PA,nofinding,nofinding
+da681fc0-f813-484e-b4e5-5730f3fb5782,Normal,M,45,PA,nofinding,nofinding
+e7311442-71c2-49cf-9c71-188a3169c26d,Normal,M,69,PA,nofinding,nofinding
+c8e575e9-626d-498d-aa11-748d650d7e0c,No Lung Opacity / Not Normal,M,30,AP,nofinding,opacity
+1f393b78-0251-4f0c-8ca7-39fc54f8ddc2,Lung Opacity,F,60,AP,opacity,opacity
+7206e817-2998-472c-ac26-bb3ebee5e833,No Lung Opacity / Not Normal,M,28,PA,nofinding,nofinding
+f0ed5daf-f633-4f39-9369-3a59ff411927,Normal,M,39,PA,nofinding,nofinding
+9d5b8701-9073-4cac-a1fd-c80a6d1404a7,No Lung Opacity / Not Normal,M,30,AP,nofinding,nofinding
+3a0fb504-c7fe-4f7e-9bf1-98560c74614d,Lung Opacity,F,61,PA,opacity,opacity
+37cee605-4445-412a-95b3-009af9f59edb,Normal,M,64,PA,nofinding,nofinding
+a2dc86d5-a117-467e-afce-8cd12ba32d18,No Lung Opacity / Not Normal,F,65,PA,nofinding,nofinding
+7bf67db4-a2bd-40f1-a0aa-611dd1eb4809,No Lung Opacity / Not Normal,M,32,AP,nofinding,opacity
+9681620c-bb96-4a93-b0c8-2e10912e88ee,Normal,M,59,PA,nofinding,nofinding
+3b637053-8dd4-4651-8170-080d1a1a4e3a,Lung Opacity,F,58,AP,opacity,opacity
+faac8c86-e421-4dee-bcc8-200026cd17fc,No Lung Opacity / Not Normal,M,61,PA,nofinding,nofinding
+54d621b6-41b4-4c23-aa7e-39312b8e86cf,No Lung Opacity / Not Normal,M,18,PA,nofinding,opacity
+75026295-2eb4-45e9-b745-db0fcf1eacb4,No Lung Opacity / Not Normal,M,58,PA,nofinding,nofinding
+94546cc0-c51b-4302-bac2-f80a91f94ce6,No Lung Opacity / Not Normal,F,53,PA,nofinding,nofinding
+e294484c-a1f2-4011-a62c-69b303b0895f,No Lung Opacity / Not Normal,F,55,AP,nofinding,nofinding
+add89c20-44cf-461a-9857-c41d753d4062,Lung Opacity,F,27,AP,opacity,opacity
+80adb2dd-4b99-4c06-9411-d5e80f42c2cf,Normal,F,49,PA,nofinding,nofinding
+bdd6e1f0-8bf1-4be7-b9a4-b48d19cb720b,Normal,M,30,PA,nofinding,nofinding
+3993a64f-ab45-4594-abe9-2807e19a1d71,Lung Opacity,F,53,AP,opacity,opacity
+ad7bfead-6c0b-436f-9d0b-92827be703c3,Lung Opacity,M,16,AP,opacity,opacity
+af7dd745-4d4e-4253-bf32-f16e26747977,Normal,M,15,PA,nofinding,nofinding
+bb6ea1d5-3343-4acf-a00c-091803bdb0f3,Normal,F,64,PA,nofinding,nofinding
+8d2681aa-f9f9-4ca6-92e9-27fbb546d0e5,Lung Opacity,M,33,PA,opacity,opacity
+4a2abe71-8cd4-4d57-978d-2da7d67bd80d,No Lung Opacity / Not Normal,F,4,AP,nofinding,opacity
+a3d7d366-e56a-4f7a-81ae-cf3922497b5a,No Lung Opacity / Not Normal,M,58,PA,nofinding,nofinding
+32187df2-931a-456c-a4b7-c447e2039f7a,No Lung Opacity / Not Normal,F,60,PA,nofinding,nofinding
+ab9b509a-4d80-47d5-96a6-1ce2b6914cb6,Normal,M,62,AP,nofinding,nofinding
+a94dac79-854c-49a5-bae0-98397ecbef81,No Lung Opacity / Not Normal,M,48,PA,nofinding,nofinding
+90e0bb9c-20a2-4a20-ab79-57ad5c2386aa,Normal,M,44,PA,nofinding,nofinding
+17c89450-d10e-4041-afa0-4c5a39adccdd,Normal,M,64,PA,nofinding,nofinding
+69b99b7a-439a-4813-97c9-58b48f7ff969,Lung Opacity,F,34,AP,opacity,opacity
+3f79f27a-6d84-4ff1-88a2-eb05ff9a5f57,Lung Opacity,M,35,AP,opacity,opacity
+090f0fcb-98c9-4324-9857-3bc2a9cfd4e8,No Lung Opacity / Not Normal,M,29,PA,nofinding,nofinding
+590def43-a762-460d-a25c-24f1d49859e7,No Lung Opacity / Not Normal,F,56,PA,nofinding,opacity
+91a5547f-487a-4b7c-9761-9f55cc1c15d2,No Lung Opacity / Not Normal,M,44,PA,nofinding,nofinding
+bf152efc-210c-4f7a-b112-bf49164d8a1e,Normal,M,35,PA,nofinding,nofinding
+df1179b1-ff4d-4f34-9768-a4abccea5f8b,No Lung Opacity / Not Normal,M,55,PA,nofinding,nofinding
+edf9ef50-a66f-47b4-b05c-4e322000a587,No Lung Opacity / Not Normal,F,37,PA,nofinding,nofinding
+847f25e9-6983-4c5f-a1e6-f3629557f1a3,Lung Opacity,M,46,AP,opacity,opacity
+e0e3585f-8df6-45e6-a7f1-f9c376a8e375,No Lung Opacity / Not Normal,M,46,PA,nofinding,nofinding
+d15c9821-189e-42c0-89e4-48e30067f658,No Lung Opacity / Not Normal,M,62,AP,nofinding,opacity
+077780cb-eb05-478f-a7d7-f0576e4c34df,Lung Opacity,M,86,AP,opacity,opacity
+92307af5-1f76-473f-beb1-45d94fe66a7c,No Lung Opacity / Not Normal,F,75,PA,nofinding,nofinding
+45f8b38c-130a-4f00-9553-0837279af932,Normal,M,64,PA,nofinding,nofinding
+fe8c4d70-fa9d-4bb5-b0c8-43bde0bc4e04,Normal,M,45,PA,nofinding,nofinding
+f7baf04d-3174-4711-b697-87792749d612,Normal,F,49,PA,nofinding,nofinding
+d90bf380-aa92-4125-82b7-397a5dada589,Lung Opacity,M,64,AP,opacity,opacity
+6c4c47b3-ef67-4403-bdbc-9193f5435996,Normal,F,42,PA,nofinding,nofinding
+e75bd6e1-d290-4ba0-9b70-acb451a44eea,No Lung Opacity / Not Normal,F,50,PA,nofinding,opacity
+d21e3291-a64b-405c-8a71-8fae7041b138,Lung Opacity,F,22,AP,opacity,opacity
+e09671f9-3b0a-4552-a0a6-af0d18bc52b9,No Lung Opacity / Not Normal,M,41,AP,nofinding,opacity
+a3173197-b2f2-440a-abef-5617013b16a5,No Lung Opacity / Not Normal,M,59,AP,nofinding,opacity
+5bd84e26-fe41-4661-8fe6-d443473e4914,No Lung Opacity / Not Normal,F,67,AP,nofinding,opacity
+c0018701-b726-4c75-b5fb-686be2d8b00d,Lung Opacity,M,42,AP,opacity,opacity
+6fd5262a-db7f-43b9-b29d-cfba322b8ba1,Normal,F,52,PA,nofinding,nofinding
+b54df7bb-39f6-454d-bb1f-4eceb2d08d3c,Lung Opacity,M,15,AP,opacity,opacity
+e107c973-27c9-43a7-9527-2af8b89267ca,No Lung Opacity / Not Normal,M,73,AP,nofinding,nofinding
+9e98ccb4-e0b8-44de-acd0-4927030264d3,Lung Opacity,F,41,AP,opacity,opacity
+44a9d61a-ff2c-40f9-b3de-7865a2f00993,No Lung Opacity / Not Normal,M,41,AP,nofinding,nofinding
+779e0af8-53e5-4f43-818b-6d0bf9e1b9a5,No Lung Opacity / Not Normal,F,41,AP,nofinding,opacity
+205f5b04-b42a-4890-af36-0ed2de7a56a1,Lung Opacity,M,32,AP,opacity,opacity
+d95cc647-caee-42f2-8229-0d22d64d92f6,No Lung Opacity / Not Normal,F,63,PA,nofinding,nofinding
+750a3646-6058-4a95-88ce-853a72cbc959,Normal,M,21,PA,nofinding,nofinding
+84c7222e-0f68-4de6-9f85-9e3fd1089f79,Lung Opacity,F,44,PA,opacity,opacity
+b3a7782d-13d4-417f-b897-67e873c757c7,Normal,M,43,PA,nofinding,nofinding
+21cbfa1b-6faa-4356-b1eb-a180d7d9b4ac,Normal,M,48,PA,nofinding,nofinding
+4420f319-187a-4f84-ae5a-595ab6805fc0,No Lung Opacity / Not Normal,M,54,PA,nofinding,nofinding
+bd9eaecd-1c8a-4be5-873b-ef4738c852f3,No Lung Opacity / Not Normal,M,64,AP,nofinding,nofinding
+1ba253cb-105f-4250-80bf-be5565bd359c,Lung Opacity,M,57,AP,opacity,opacity
+c8ad3d6f-19c7-4188-be0c-ad2c16b51c44,Normal,M,44,PA,nofinding,nofinding
+3f2b878e-9e3b-410b-a739-b43d81b98692,Lung Opacity,M,69,PA,opacity,opacity
+958f4388-559f-482c-9b7f-33eb9d64ea61,No Lung Opacity / Not Normal,F,72,AP,nofinding,nofinding
+8aa93e86-e189-4412-ba91-725813f54b56,Lung Opacity,F,52,AP,opacity,opacity
+1fa87ba3-8da3-4248-9245-4286c2434f69,No Lung Opacity / Not Normal,F,54,PA,nofinding,opacity
+560994a6-904c-4ba5-acbe-fb4bba7dad25,Normal,M,28,AP,nofinding,nofinding
+9f3893a1-3983-461c-a04f-f8701d4668ee,No Lung Opacity / Not Normal,M,55,AP,nofinding,opacity
+dd654777-8f6b-44ce-8c87-72cdf4cefac9,Normal,F,30,AP,nofinding,nofinding
+7828ad2d-6180-4903-aee4-e63fe42e63dc,Lung Opacity,F,68,AP,opacity,opacity
+ad825d6b-f63d-43ad-a7a2-198eea0b08f5,Normal,M,36,PA,nofinding,nofinding
+fcc073e9-7cb2-44ac-81f2-1ebb32c88dc1,Normal,M,56,PA,nofinding,nofinding
+d53cee27-787e-4136-aaf6-03bcff985ac9,No Lung Opacity / Not Normal,M,66,PA,nofinding,nofinding
+6c5784c1-91f9-4339-921b-f654456bc9a1,No Lung Opacity / Not Normal,F,41,AP,nofinding,opacity
+df2f801a-f8db-45b0-94a0-5e82ff2f3646,No Lung Opacity / Not Normal,F,68,PA,nofinding,nofinding
+353a3a8c-0b05-4f05-87d9-42d0b069d664,No Lung Opacity / Not Normal,F,60,PA,nofinding,opacity
+d231e9fb-3282-4a1f-b0d5-2c61d7ede550,No Lung Opacity / Not Normal,M,27,PA,nofinding,nofinding
+17d8f693-4ff8-41d7-b25d-8972f8a7899c,No Lung Opacity / Not Normal,F,30,PA,nofinding,nofinding
+67c85c48-cceb-406e-900d-a76083578981,No Lung Opacity / Not Normal,M,39,AP,nofinding,nofinding
+8cf2eb4c-fcac-4398-83d1-fba18320cb6f,Normal,F,58,AP,nofinding,nofinding
+80f0c0af-f93c-4d16-ad28-5f2bde2d4684,Lung Opacity,M,51,AP,opacity,opacity
+4ff19c2f-91f1-40ed-a0d0-72534db6d71e,No Lung Opacity / Not Normal,M,65,AP,nofinding,opacity
+634b4289-f604-4c8d-bfcd-8b33388333d1,No Lung Opacity / Not Normal,F,74,PA,nofinding,nofinding
+5bfa4ba1-9ea6-42c5-b44f-1a58dfe648bf,Normal,M,36,PA,nofinding,nofinding
+a2572ca9-37e1-4558-b260-17a877ce78e5,Normal,M,34,AP,nofinding,nofinding
+a8694bb6-3038-4277-a2e6-6dd6abd2cf2d,Normal,M,21,PA,nofinding,nofinding
+d1df51ed-53b9-4ec6-b798-6c4e1a31bc6d,Normal,F,52,PA,nofinding,nofinding
+925f5f2f-a22a-431d-bf1a-2e45d8afaa38,Normal,M,39,PA,nofinding,nofinding
+549ee5af-e19d-4483-9f7b-d3025dbb1979,Lung Opacity,M,73,PA,opacity,opacity
+f3826a5e-d3ca-41c5-b389-c128589aacd1,No Lung Opacity / Not Normal,M,44,AP,nofinding,nofinding
+3c66e4d3-1167-4322-8367-b50e762c138b,Lung Opacity,F,38,AP,opacity,nofinding
+45ab69d2-a5d7-42a3-a216-56dbb2a0a239,No Lung Opacity / Not Normal,M,38,AP,nofinding,nofinding
+530d6e7c-d441-4827-8f51-a5e3cc436892,No Lung Opacity / Not Normal,F,56,PA,nofinding,opacity
+38fe4a2d-b910-4eb6-9465-64a353d66c02,No Lung Opacity / Not Normal,M,34,AP,nofinding,opacity
+f391ffd3-b44b-43b5-9d07-28595a4168d1,No Lung Opacity / Not Normal,M,72,PA,nofinding,nofinding
+bc816a92-976c-41d6-9659-6fc32281231a,Normal,F,38,PA,nofinding,nofinding
+462ccf28-7555-44f0-8d76-176de69d4c06,Normal,F,55,PA,nofinding,nofinding
+93d82d12-f314-4014-ae0d-05dca0e77674,Normal,F,24,PA,nofinding,nofinding
+2e5dc881-3eef-4f78-96f8-2e240bbede2a,Normal,M,67,PA,nofinding,nofinding
+ad486d32-da7c-4283-9fab-cd08e1c36584,No Lung Opacity / Not Normal,F,51,AP,nofinding,nofinding
+fb92d9dc-51e7-4311-8e68-ccc610fc175a,Normal,F,45,PA,nofinding,nofinding
+e84ee874-b441-479c-ae54-c8e21845cb2c,Normal,F,55,AP,nofinding,nofinding
+d6f42116-609f-4108-8371-60a90563489c,No Lung Opacity / Not Normal,F,57,PA,nofinding,nofinding
+8cc5d0ca-5397-4b48-aee5-0a9448269911,No Lung Opacity / Not Normal,M,29,PA,nofinding,opacity
+7bbed221-966f-4365-a673-7b1e485357cd,No Lung Opacity / Not Normal,M,58,AP,nofinding,opacity
+6b9f7b91-8530-45e3-be03-e2f2c0b0a708,No Lung Opacity / Not Normal,M,55,PA,nofinding,nofinding
+b064fcb9-571e-49f5-beac-5f036d5c9b51,Normal,M,25,PA,nofinding,nofinding
+82ea83ad-2425-4bcf-a113-520b8b0f7c79,No Lung Opacity / Not Normal,M,60,AP,nofinding,opacity
+4688892f-076f-4d48-85e3-34da2c3bf7f3,No Lung Opacity / Not Normal,F,47,PA,nofinding,nofinding
+665e0932-179e-49e4-99a7-05d1e310d14d,No Lung Opacity / Not Normal,M,54,PA,nofinding,nofinding
+5382542a-4669-4044-bd7a-9ff2dad7db6b,No Lung Opacity / Not Normal,F,17,AP,nofinding,nofinding
+2a55f0bc-4943-4473-8f08-5c0a36fdc929,Normal,F,49,PA,nofinding,nofinding
+3434bd60-a1d3-45b1-8565-1cac209cf1f2,No Lung Opacity / Not Normal,M,67,AP,nofinding,nofinding
+9ddf1e98-5f30-496e-9c50-5db659effe2a,No Lung Opacity / Not Normal,F,31,PA,nofinding,opacity
+d639e1f9-5b7b-42d3-8a46-1c5eeaa7f4ac,No Lung Opacity / Not Normal,M,28,PA,nofinding,nofinding
+60c3a86e-4268-45f6-ae8c-003a5833287d,Lung Opacity,F,52,AP,opacity,opacity
+16ff6076-49e4-4e35-9ecc-2fd80c9d0508,No Lung Opacity / Not Normal,M,49,PA,nofinding,nofinding
+e7f17ecb-3848-4edf-a51d-9d9fe1d4e8eb,Normal,F,58,PA,nofinding,nofinding
+ef9fa526-2cc6-4950-af5c-11e9624fb611,No Lung Opacity / Not Normal,M,72,AP,nofinding,opacity
+f01a7f1d-e30c-4114-889f-0ba7547a2479,Normal,F,66,PA,nofinding,nofinding
+ebef5e0c-ebd3-4d53-9ccd-18b7f800356d,No Lung Opacity / Not Normal,F,61,PA,nofinding,opacity
+d4911016-ade1-4a4c-86b2-7fc3dffb326a,No Lung Opacity / Not Normal,M,54,PA,nofinding,opacity
+9779f8e2-a2b0-4673-9ff8-4890bc26bd20,No Lung Opacity / Not Normal,F,67,AP,nofinding,opacity
+4e74d69f-2afb-4db2-b253-a93ecc61e1ef,No Lung Opacity / Not Normal,M,51,PA,nofinding,opacity
+53c275e1-e692-4445-bb4f-b740d117712f,Normal,M,67,PA,nofinding,nofinding
+ce76e195-c9ba-4669-ae41-d81fe95979e2,No Lung Opacity / Not Normal,F,36,PA,nofinding,nofinding
+b566301f-cc02-40f9-a324-6a2a91e51245,No Lung Opacity / Not Normal,F,40,AP,nofinding,nofinding
+e718f826-3561-446e-bd2c-d9a12a0cd67c,No Lung Opacity / Not Normal,F,80,AP,nofinding,opacity
+bb9a72f0-c455-471a-a511-ae90d0215adb,No Lung Opacity / Not Normal,M,34,AP,nofinding,nofinding
+8798a1de-a9d2-46c3-8512-c94c231ec982,No Lung Opacity / Not Normal,M,55,AP,nofinding,nofinding
+14fb269f-0b01-43c0-ac49-74f8394a6353,Lung Opacity,F,54,AP,opacity,opacity
+407fe04d-4749-493a-b2e3-7493baf8b6ab,Normal,F,40,PA,nofinding,nofinding
+061bb9bf-13c6-4ea0-bd82-5768fb83dff8,Lung Opacity,M,22,AP,opacity,opacity
+cc843bab-5068-4e18-a3fd-a597faea82df,Lung Opacity,F,19,AP,opacity,opacity
+3a8a880f-c71c-4130-b220-77896771715b,No Lung Opacity / Not Normal,F,89,PA,nofinding,nofinding
+5dff6446-bad1-4a42-af53-b02cd1e51b71,No Lung Opacity / Not Normal,M,26,AP,nofinding,nofinding
+a6a47c69-13d5-46ff-a73f-6005b6647f8e,No Lung Opacity / Not Normal,F,49,PA,nofinding,nofinding
+3be59bb1-6183-4c8d-9ac8-4591b6ab90d0,Lung Opacity,F,65,AP,opacity,opacity
+7deab1f8-2471-4603-912b-8ba96bac49f4,No Lung Opacity / Not Normal,F,36,PA,nofinding,opacity
+494e613b-e81b-4ae0-856b-178c0310552b,No Lung Opacity / Not Normal,M,10,AP,nofinding,nofinding
+8f66472e-29c1-4dc5-86d7-8e0fa67e9f74,Normal,M,47,PA,nofinding,nofinding
+3c785e01-bc52-4467-9429-623abf2e521d,No Lung Opacity / Not Normal,M,60,AP,nofinding,opacity
+64a18f17-de76-44d1-9d6e-16267870298b,No Lung Opacity / Not Normal,M,60,PA,nofinding,opacity
+faf33ba3-c694-4e86-809d-ff468b6a4021,Normal,M,31,PA,nofinding,nofinding
+b3ccf99e-b31f-4705-8d69-211b6cf1d78d,Normal,F,36,PA,nofinding,nofinding
+a4a90296-f230-475f-b396-a828e3a53baf,Normal,F,28,PA,nofinding,nofinding
+b4eba4ea-6143-4988-a05a-b0f25d6c0b1a,Normal,F,25,PA,nofinding,nofinding
+5a0710a6-1396-40ff-91a0-d5b8e38b7836,Normal,F,44,PA,nofinding,nofinding
+87cd0c03-f49f-4001-8457-10c659890cb8,No Lung Opacity / Not Normal,F,62,AP,nofinding,opacity
+610753bd-0800-4312-8989-edbcb8a94bf0,No Lung Opacity / Not Normal,M,56,AP,nofinding,opacity
+3bb9b9b3-b086-4083-ae6f-d1f86c3eb089,Lung Opacity,M,58,AP,opacity,nofinding
+4e26d7a9-e0ee-4116-a887-d1fca71d7372,No Lung Opacity / Not Normal,F,43,AP,nofinding,opacity
+10163e08-1de2-44e1-9145-1922f4dd6805,Normal,M,75,AP,nofinding,nofinding
+ae3976d5-7ba9-482c-bc12-ebae8c4375dc,Normal,F,41,PA,nofinding,nofinding
+98325e35-8c87-418b-a7c3-81b1180e85ea,Lung Opacity,M,41,PA,opacity,opacity
+f632328d-5819-4b29-b54f-adf4934bbee6,Normal,F,155,PA,nofinding,nofinding
+be678f2e-918d-4fb6-ade5-02a9469ad899,Normal,M,66,PA,nofinding,nofinding
+688a3275-9225-4e2e-b719-0c754d6b222b,Lung Opacity,M,58,AP,opacity,opacity
+e45b9db9-3ac8-4b4e-9e5c-2ed56b8af6e1,No Lung Opacity / Not Normal,M,61,AP,nofinding,opacity
+9a202892-1eda-4fee-a4fa-652e7e835ea3,Normal,M,48,PA,nofinding,opacity
+7d402380-193a-4aef-92aa-8c80e11217fb,Lung Opacity,M,43,AP,opacity,opacity
+8e6ab6c7-99f4-44b3-82a0-91ca0b07556a,Normal,M,35,PA,nofinding,nofinding
+afeaa6a4-59e1-4bd5-9d2b-41fe94e789fe,Normal,M,47,PA,nofinding,nofinding
+acee926a-5141-461f-b0c7-edbbf8bf51c8,Lung Opacity,F,53,PA,opacity,opacity
+5a2f8c86-f21d-4815-98a3-1bb5fa6d9f44,Normal,M,68,PA,nofinding,nofinding
+335a9cea-7399-40d9-8743-7dc70f44110b,Normal,F,27,PA,nofinding,nofinding
+be2c9d90-ba76-4bad-b9c1-2e73ecfd4bfa,Normal,M,44,PA,nofinding,nofinding
+93f8e10c-5649-4f31-9dbf-b8e025e08cd1,No Lung Opacity / Not Normal,F,13,AP,nofinding,nofinding
+393af041-d791-44c9-9126-17c47bb099a2,Normal,M,70,PA,nofinding,nofinding
+cacb73b0-9922-40a5-aace-e546c229ad09,No Lung Opacity / Not Normal,F,32,AP,nofinding,opacity
+388d9b4f-6c31-44ac-b878-8f5c3843fd1f,Lung Opacity,F,62,PA,opacity,opacity
+514d710f-123b-4fcc-b8e0-e1d389ff55c1,Normal,F,6,PA,nofinding,nofinding
+cdad2755-5a5e-440e-a815-c1f9342821a6,No Lung Opacity / Not Normal,F,52,PA,nofinding,nofinding
+c2c02d5c-cfb1-4813-b266-5b09fea53521,No Lung Opacity / Not Normal,M,67,AP,nofinding,nofinding
+d7b62687-ce89-4c08-936e-fac5b3ee4b01,Normal,M,46,AP,nofinding,nofinding
+f62488bf-6241-453e-af87-c7649ec75780,Normal,F,35,PA,nofinding,nofinding
+d3495d40-c1fb-4dfb-804e-1a9741f7cff1,No Lung Opacity / Not Normal,F,49,PA,nofinding,opacity
+cd8b9ac2-ce74-45e4-a243-41f013f5e47e,Normal,F,46,PA,nofinding,nofinding
+d6fad98b-6794-45c0-9f12-360c1635d4f1,No Lung Opacity / Not Normal,M,54,AP,nofinding,opacity
+59890003-bd22-4e24-8cc0-0d5daa2aa613,No Lung Opacity / Not Normal,M,41,PA,nofinding,opacity
+991f4b19-f068-4b13-8329-58adac3b0555,No Lung Opacity / Not Normal,M,77,PA,nofinding,nofinding
+cad06d1b-2759-4c5b-9330-47ec69b2d547,No Lung Opacity / Not Normal,F,55,AP,nofinding,opacity
+64b1aa7c-42aa-4685-8acd-4ff0eae65117,Normal,F,34,PA,nofinding,nofinding
+3ccba5a4-1aff-41c8-967c-af086e10d071,No Lung Opacity / Not Normal,F,68,AP,nofinding,nofinding
+b288e186-5de5-47d6-a20f-ddad34f1e05a,Normal,F,40,PA,nofinding,nofinding
+7251ea5b-92d5-4474-8f1c-462c204923bf,Normal,F,34,PA,nofinding,nofinding
+80915b6d-b13b-4506-98b8-73f6c10dc32d,No Lung Opacity / Not Normal,M,62,PA,nofinding,nofinding
+6906cdfa-c8bc-4e34-99d2-cd71019a2a19,Normal,M,51,AP,nofinding,nofinding
+dd530604-c307-405e-b1ab-6419fe00ea85,No Lung Opacity / Not Normal,M,57,AP,nofinding,opacity
+4cf82164-6678-4864-bbc4-5a93419424f7,Normal,M,64,PA,nofinding,nofinding
+3b1e6d35-ec24-41f0-b5cd-ae2c7f814e5e,Normal,F,55,PA,nofinding,nofinding
+f3a19c20-4fc9-4c5a-b9bb-26baff924c6a,Normal,M,69,PA,nofinding,nofinding
+94ec3073-e050-4eb0-82f4-058250f1de3a,No Lung Opacity / Not Normal,M,47,PA,nofinding,nofinding
+79f76e04-510e-463d-a3d5-9585cbb249ff,Normal,F,58,PA,nofinding,nofinding
+4cbab323-9aa3-49cd-97c7-5fbae3e53a66,No Lung Opacity / Not Normal,F,27,PA,nofinding,opacity
+aaab7a82-b63a-46eb-9d03-b9fba96ca983,Normal,M,61,PA,nofinding,nofinding
+6eff15a3-997a-4e53-ac2e-24e748fb7c36,No Lung Opacity / Not Normal,M,58,PA,nofinding,nofinding
+b1c607c2-6651-4bfa-8a6c-ba85c349927a,Lung Opacity,M,78,AP,opacity,opacity
+877b9210-bba9-4c32-acb4-82498f175a2b,Normal,M,65,PA,nofinding,nofinding
+4a3b9bb7-f250-48f3-9ad2-a67999f53431,No Lung Opacity / Not Normal,M,46,AP,nofinding,opacity
+7c3d5c7d-8ce1-4dd6-ad27-587d6aa5ef88,No Lung Opacity / Not Normal,M,25,AP,nofinding,nofinding
+acd35df7-0450-4696-8e83-df3dd8cb8ecc,No Lung Opacity / Not Normal,M,54,PA,nofinding,nofinding
+8698df10-24b5-4b01-ab93-373ba59e26ba,Normal,F,34,PA,nofinding,nofinding
+657e2cb9-e776-4aad-80a4-f3826adb26eb,Lung Opacity,F,32,AP,opacity,opacity
+8fac10c1-1b23-447b-9169-ea50cae270c2,Lung Opacity,F,36,PA,opacity,opacity
+6a4d75d0-51ae-4952-ad56-132474a2cf7b,Lung Opacity,M,43,PA,opacity,opacity
+e4aa4784-5c72-46be-bede-aaa85f35adaa,No Lung Opacity / Not Normal,F,55,PA,nofinding,nofinding
+4c779fad-6e35-42c7-b35e-dc6ec50ccf33,Normal,M,32,PA,nofinding,nofinding
+9943ede9-e63e-444e-9039-a563119f5359,No Lung Opacity / Not Normal,M,74,PA,nofinding,opacity
+ff30520c-68c9-4d17-acb0-f44eb1f4eb1c,No Lung Opacity / Not Normal,F,41,AP,nofinding,nofinding
+ea7e10de-91f0-44b7-88ed-6e42f2e83ae7,Lung Opacity,M,66,PA,opacity,opacity
+a4e87cc6-a623-4f64-9c68-c8de4760a7de,No Lung Opacity / Not Normal,M,45,PA,nofinding,nofinding
+45b4a690-d6a0-400b-bd1e-80ce669bc5c4,Normal,F,33,PA,nofinding,nofinding
+3f55962b-e0d8-4b8e-b44a-23009ccaab33,Normal,M,60,PA,nofinding,nofinding
+bbadc8c2-77eb-420e-af31-a238a11856e8,Lung Opacity,M,9,AP,opacity,opacity
+3596a38f-dcd0-471a-bf3c-32d221d98184,Normal,M,51,AP,nofinding,covid
+bd4fa84d-813d-4ed5-b68f-c88127ed2f80,Lung Opacity,M,19,AP,opacity,opacity
+d70ac124-a501-4d71-b97a-b07f3170694f,No Lung Opacity / Not Normal,F,59,AP,nofinding,nofinding
+9e7593a3-98a3-4f85-b42e-07899895acb7,Normal,M,47,PA,nofinding,nofinding
+66d6805f-88d7-4f0c-b7c5-7a702c3bd70b,Lung Opacity,M,27,AP,opacity,opacity
+b35d57ee-f22b-4c8c-b959-3ee8eecef555,Lung Opacity,F,2,AP,opacity,opacity
+616eebe3-4c7e-4d8a-9ed9-5ecbece4933a,No Lung Opacity / Not Normal,F,73,AP,nofinding,nofinding
+f82e1593-34de-4cd1-8a54-bf7f25f22e44,Normal,F,29,AP,nofinding,nofinding
+1e919d0a-d02e-424b-abf4-6bbf4f6f9ad3,Lung Opacity,M,48,AP,opacity,nofinding
+5cd6aa0a-1681-4b75-bd21-407ca3fb5229,No Lung Opacity / Not Normal,M,49,AP,nofinding,opacity
+dca9672d-86ec-407f-b8f5-ac86bcd36bf3,No Lung Opacity / Not Normal,M,49,AP,nofinding,opacity
+ee519be9-bdf5-47e5-96d0-765efdc27936,No Lung Opacity / Not Normal,M,18,AP,nofinding,opacity
+f19fbdc4-6627-49b8-956b-d754a227efac,No Lung Opacity / Not Normal,F,19,AP,nofinding,opacity
+417e52bd-2248-439c-ae7d-671ebecc93dd,Normal,F,40,PA,nofinding,nofinding
+167c8c5b-551b-4c01-b208-0d8d7f35a6a4,Normal,M,50,AP,nofinding,nofinding
+9ab07674-10bd-458c-86b1-541c3b69b944,No Lung Opacity / Not Normal,F,52,AP,nofinding,opacity
+73d61c35-605f-435e-af98-5cc68b188a46,Lung Opacity,M,28,AP,opacity,opacity
+c3803501-05e4-4141-a61b-7af3187ade89,Lung Opacity,M,42,AP,opacity,opacity
+f1c8caa2-a6dc-40c0-ab85-4769688f1eec,Normal,M,27,PA,nofinding,nofinding
+3141838c-603b-47ea-8591-80a7e7c5bf12,Normal,F,59,PA,nofinding,nofinding
+f3b00827-c7ca-451d-a127-19e1f26ce6f3,No Lung Opacity / Not Normal,M,50,PA,nofinding,nofinding
+9836d1d6-e2e9-4070-8f44-cd1a2f6a8607,No Lung Opacity / Not Normal,F,44,PA,nofinding,opacity
+804c59d9-2ee5-4097-b637-aba8cb4e791b,No Lung Opacity / Not Normal,M,49,PA,nofinding,nofinding
+d41285e4-ae1c-47a5-8090-4b6068556f0b,No Lung Opacity / Not Normal,M,49,PA,nofinding,opacity
+88e97af6-fbb2-49f8-bd06-0744c08e8f70,No Lung Opacity / Not Normal,F,56,AP,nofinding,opacity
+81455866-90fe-4347-b355-160f0049ec78,No Lung Opacity / Not Normal,F,65,PA,nofinding,nofinding
+91fe51f6-17a3-43c7-a1ac-cd0e839829ba,No Lung Opacity / Not Normal,M,40,AP,nofinding,nofinding
+73b71f5a-ce2e-4571-b623-a7abe4af47de,No Lung Opacity / Not Normal,F,44,PA,nofinding,nofinding
+9ed27b99-3235-476c-a752-abdc005fb46b,Lung Opacity,M,45,AP,opacity,opacity
+bc7f4d5d-cc08-44d7-b091-4df20dba6556,Lung Opacity,M,47,AP,opacity,opacity
+3c0a97d7-6d90-46a6-a10a-1df9e4064d52,Lung Opacity,M,56,AP,opacity,opacity
+dd3b5e52-b682-4b16-b7ba-bfcc66dc5992,Lung Opacity,F,69,AP,opacity,opacity
+37853254-69f9-4bc4-bd2c-22a069218e57,Normal,M,50,PA,nofinding,nofinding
+cc2fa386-47c5-4e79-bb6a-3f7d15c2d149,No Lung Opacity / Not Normal,M,16,PA,nofinding,nofinding
+c2d15f19-8bac-437b-b9a3-662accde8500,No Lung Opacity / Not Normal,M,54,PA,nofinding,nofinding
+e87d8111-5071-446b-82f6-00a55f338954,Lung Opacity,M,69,AP,opacity,opacity
+7ba1a92f-88dc-47ad-9067-966b88125c52,Normal,M,11,PA,nofinding,nofinding
+b35a3c89-f199-4924-98f0-8d5beea4b41d,Lung Opacity,M,69,AP,opacity,opacity
+f3b015ab-e337-4e7f-971d-eb7cc3dd4e92,Normal,F,69,PA,nofinding,nofinding
+3e5e1e9c-4b31-416a-a068-a4e2fc100f10,Normal,M,26,PA,nofinding,nofinding
+df755417-896d-41aa-a6fd-b362ab89eb52,Normal,M,58,AP,nofinding,nofinding
+170f536e-0ccb-47fa-beea-1accce009fe7,No Lung Opacity / Not Normal,F,18,PA,nofinding,opacity
+15caed66-ea48-488f-8c54-4f6debd7645d,Normal,M,61,PA,nofinding,nofinding
+eb82b8a8-8710-4364-bb9b-8dcfe0edf813,No Lung Opacity / Not Normal,M,30,AP,nofinding,nofinding
+926ac0d1-2381-4f31-b885-8598694881ec,No Lung Opacity / Not Normal,M,54,PA,nofinding,opacity
+f6f6cb82-f83b-4abd-88b1-4ad5e9436bfd,Normal,F,38,PA,nofinding,nofinding
+456b9f50-58c8-4260-a3f6-513485bf45d7,No Lung Opacity / Not Normal,F,67,AP,nofinding,opacity
+87c025b9-0f2d-45cc-8d7a-bf6a7f817d15,Normal,F,64,AP,nofinding,nofinding
+90debc9d-2e7f-4b46-8f67-a8f5d645e965,No Lung Opacity / Not Normal,F,50,PA,nofinding,nofinding
+31a577cf-9e18-462a-b220-74bb2e2a850c,No Lung Opacity / Not Normal,F,66,PA,nofinding,nofinding
+dc41834d-bf13-424d-9c82-ba4965e210ea,Normal,F,46,PA,nofinding,nofinding
+43e51c0e-1a39-4476-bb12-c04d89783b8b,Lung Opacity,M,64,AP,opacity,opacity
+a8bf12b9-e24e-419a-80c2-1ec23e4da973,No Lung Opacity / Not Normal,F,37,AP,nofinding,opacity
+6a5d183e-915d-4493-980a-84e0a3810bc4,Normal,F,48,PA,nofinding,nofinding
+51daa411-4fb0-42f0-aa15-46c332656c04,Normal,F,27,PA,nofinding,nofinding
+4ac05784-cc3a-4dc5-95fa-9367d7d898a6,Lung Opacity,F,48,AP,opacity,opacity
+44b3b62c-b52b-4a6c-bbad-bd16a4895b6a,No Lung Opacity / Not Normal,F,63,PA,nofinding,opacity
+e9c7d2c4-5834-4c49-84bb-0bd9a67af1e8,No Lung Opacity / Not Normal,M,38,PA,nofinding,opacity
+78abc3f5-ac62-4e42-a6b4-1c44e09cb566,Lung Opacity,M,6,AP,opacity,opacity
+8937fe34-daec-4d5c-8add-b23b9b0f03fa,No Lung Opacity / Not Normal,M,54,AP,nofinding,opacity
+cc4e43bb-a9ad-4554-b060-2a64414cd6df,No Lung Opacity / Not Normal,F,44,PA,nofinding,nofinding
+dddfd40a-b3cf-4d0b-9710-22b73d6c4dd7,Normal,F,55,PA,nofinding,nofinding
+ae14bb5d-9134-43ab-ad0a-c44c4e52bd67,Normal,F,38,AP,nofinding,nofinding
+decff551-0bcd-4d66-82f8-b267b55531f3,No Lung Opacity / Not Normal,F,57,PA,nofinding,nofinding
+d5085a38-b7ee-45b6-a0a2-a08d706927ed,Normal,M,29,PA,nofinding,nofinding
+85461441-2f09-4d76-92a9-6b1742aaf173,No Lung Opacity / Not Normal,M,70,PA,nofinding,nofinding
+afd36690-c66b-435b-8f10-bbf7dd5a2216,Normal,M,52,PA,nofinding,nofinding
+8d428c40-37c4-4a95-bce1-eba03d848db4,Normal,F,25,PA,nofinding,nofinding
+a383f74d-3785-45f9-91d4-649f23fa7523,No Lung Opacity / Not Normal,F,62,AP,nofinding,nofinding
+98210fa6-3780-4640-ae65-bb3e83fd99ac,Normal,M,65,PA,nofinding,nofinding
+a232cfa5-b1de-4178-9de1-d506c8db2f62,Lung Opacity,M,18,AP,opacity,opacity
+da5b7e78-bd0a-4196-a048-614de821b2d6,No Lung Opacity / Not Normal,M,60,PA,nofinding,nofinding
+185968b1-eeb0-450a-8862-8cce9e6ed3ff,Normal,F,7,PA,nofinding,nofinding
+a679589b-9b88-4010-825a-cb3653587e78,Lung Opacity,F,57,PA,opacity,opacity
+a450a1e3-e46b-4b1a-a8d0-c07c894e4190,No Lung Opacity / Not Normal,F,80,PA,nofinding,nofinding
+4453b294-ce95-488a-a184-acf8bc81e72c,Normal,M,54,PA,nofinding,nofinding
+7e9a064b-33d7-4395-8244-d6bdb4dd0e2c,No Lung Opacity / Not Normal,M,75,PA,nofinding,nofinding
+87064cb1-4adb-4d7b-ad87-0fab792abaff,Normal,M,63,PA,nofinding,nofinding
+99b08cbb-1c89-467b-83d9-be31a534e801,No Lung Opacity / Not Normal,M,56,AP,nofinding,opacity
+41c24e94-d448-4ec6-8b41-1c2c7497664a,Normal,F,25,AP,nofinding,nofinding
+faea0fa1-5c99-445c-81fb-e9f5adb417c4,No Lung Opacity / Not Normal,F,69,AP,nofinding,opacity
+8626d87e-9618-4c5b-99c6-dade3e55960f,No Lung Opacity / Not Normal,F,56,PA,nofinding,nofinding
+89937639-13b7-4831-9d97-0473334260f1,No Lung Opacity / Not Normal,F,47,AP,nofinding,nofinding
+767b5c8d-d09b-4d2c-97ea-17dea981a4e4,Lung Opacity,F,38,PA,opacity,opacity
+de7f4d97-6730-4934-8b32-d979649b5389,Normal,M,57,AP,nofinding,opacity
+d984ecfc-6b4b-4f39-9e66-c0b79a3d00f9,Lung Opacity,M,35,AP,opacity,opacity
+cc5e82f4-2797-49c4-bcf9-643fdd46e85b,Normal,M,33,PA,nofinding,nofinding
+17a6c2d3-d218-4ef3-99c0-4da163fc9e52,Normal,M,43,PA,nofinding,nofinding
+b6138fc8-c652-4b7f-978d-895d10b0a0ea,Lung Opacity,F,47,PA,opacity,opacity
+b460b35c-214c-45b6-8306-3bf234116ca9,Lung Opacity,M,62,PA,opacity,opacity
+a2f72e43-6b8f-4e70-a54b-00e5e855e38d,Normal,M,59,PA,nofinding,nofinding
+fb771e55-ad38-4f26-8eee-30573851bc48,Lung Opacity,M,63,PA,opacity,opacity
+a5282399-d86c-4e4a-a91e-bd62a535d2ad,Lung Opacity,F,32,AP,opacity,opacity
+b95e1665-c2fc-4547-97d8-4ba8fb1807c7,Normal,M,53,AP,nofinding,nofinding
+988a4bbd-3a14-4b4b-b846-6729e35fcd91,Lung Opacity,F,46,AP,opacity,opacity
+a41f6e40-d536-46d9-8d24-4948704d5972,Lung Opacity,F,81,AP,opacity,opacity
+db750e84-7776-440f-a985-84f5fbfd010b,Normal,M,23,PA,nofinding,nofinding
+b6f02ca4-bbfe-4728-a2a3-74ec9c55b281,Lung Opacity,F,62,AP,opacity,opacity
+46dce163-b45b-4b43-9f69-bd8330b2ae6d,No Lung Opacity / Not Normal,F,61,AP,nofinding,opacity
+11827075-47dd-4f3c-a7b5-aae992cce35b,Lung Opacity,F,31,AP,opacity,opacity
+595786d9-b679-4722-90a8-bad34a40c350,No Lung Opacity / Not Normal,M,24,AP,nofinding,opacity
+83c485a7-1c15-481f-beee-021f912e9903,No Lung Opacity / Not Normal,M,58,AP,nofinding,opacity
+1101cedc-35e2-483c-9326-1f3232b88f06,Lung Opacity,M,9,AP,opacity,opacity
+2474f5d3-45d0-44d2-a859-90a39f7dd9f6,Normal,M,58,PA,nofinding,nofinding
+31bfce74-d914-4acd-9aeb-1155a3c52ecc,Normal,M,47,PA,nofinding,nofinding
+7577fb2b-9d5d-4717-a6b1-6300f8dcc7de,No Lung Opacity / Not Normal,F,25,AP,nofinding,opacity
+e03af9b0-0d2e-4cc3-b6b3-c3762bbdcf12,Normal,M,63,PA,nofinding,nofinding
+5675fd06-eb6c-49a2-b3a3-0df515e9a266,Lung Opacity,M,26,AP,opacity,opacity
+a3729a13-c791-4f7b-bd48-fbaf4f7fc0e4,Lung Opacity,F,49,AP,opacity,opacity
+5e44964f-bde6-425b-97fa-fb3b596190cc,No Lung Opacity / Not Normal,M,23,PA,nofinding,opacity
+d967c678-30f0-48b4-9563-167e746e972d,Lung Opacity,F,72,PA,opacity,opacity
+fafd4c8e-9a69-470f-a46f-ccd7ca767bcd,No Lung Opacity / Not Normal,F,29,AP,nofinding,opacity
+42cfa0cd-1806-4c78-9d47-36b5eaa38e53,No Lung Opacity / Not Normal,M,58,PA,nofinding,nofinding
+ace01ccc-dbc9-4d12-b6c4-6ca3dcafe11e,Normal,M,60,AP,nofinding,nofinding
+aec75bea-7a4a-4ca6-8e82-bf3f05963c9d,Lung Opacity,M,46,AP,opacity,opacity
+3e5a1e34-1feb-4021-9eb1-afdf382dc05d,Normal,F,54,PA,nofinding,nofinding
+095edab1-09c6-4f83-931e-f0a33b77639c,Lung Opacity,F,51,PA,opacity,nofinding
+2c9a388f-0042-4b88-b52b-ea0b21fb7960,Lung Opacity,M,50,AP,opacity,nofinding
+2b4c09a2-c8d7-4773-84e3-f1aa664fba9a,Lung Opacity,M,59,AP,opacity,opacity
+f79fc759-fde0-4e2e-8951-26ac8af5ef89,Lung Opacity,F,45,AP,opacity,opacity
+cae03a83-a903-4087-b324-a67fe98638d4,Lung Opacity,M,41,PA,opacity,opacity
+66ff9b21-0de0-4242-88e2-427cbde96968,No Lung Opacity / Not Normal,M,50,AP,nofinding,nofinding
+7c328c0b-3a48-4043-aa50-d592e59fbf96,No Lung Opacity / Not Normal,F,55,AP,nofinding,opacity
+8a58d9e2-9cf1-405b-8e7e-102117a8200d,Normal,F,14,PA,nofinding,opacity
+38817c65-dcb9-4078-8577-2b249c762f88,Normal,F,80,PA,nofinding,nofinding
+9f8cfaf8-3bf9-4d4d-a0be-40091e83cba1,No Lung Opacity / Not Normal,M,38,PA,nofinding,nofinding
+ab2122ca-8213-4b54-b15f-66fee8aff602,Normal,F,53,PA,nofinding,nofinding
+4e197ee9-4fe6-4ba7-8505-32003a547f39,Normal,M,67,PA,nofinding,opacity
+e9b6311a-63a7-4443-ac67-7cccb1b905e3,No Lung Opacity / Not Normal,M,39,PA,nofinding,nofinding
+d091c2c7-82d9-4f8c-a820-7a1a08257213,No Lung Opacity / Not Normal,F,64,AP,nofinding,nofinding
+7245635f-de15-4117-9069-e39743d9da2f,No Lung Opacity / Not Normal,F,42,AP,nofinding,nofinding
+6f385092-7131-4a80-afb0-4d51e1482959,No Lung Opacity / Not Normal,F,73,PA,nofinding,nofinding
+35c45480-3cfc-4988-8bd7-4c1ee56ed88b,Lung Opacity,M,52,PA,opacity,nofinding
+80b32290-e877-4945-8b0f-848d3f3dd36a,No Lung Opacity / Not Normal,F,42,AP,nofinding,nofinding
+359ce100-a41f-40e2-ba95-c91b83725a35,Lung Opacity,F,51,AP,opacity,opacity
+740e0410-19ae-4fb0-a0cb-3c6e1ca6d16a,Normal,M,53,PA,nofinding,nofinding
+8b007266-3691-4ac5-af94-79d8fe6f1bd5,Normal,F,60,PA,nofinding,nofinding
+cd6ec892-0c33-40b0-a4b3-8d29581e1782,No Lung Opacity / Not Normal,M,55,AP,nofinding,nofinding
+803ff18f-d723-43a7-b93b-be1a541e4404,Normal,M,36,AP,nofinding,nofinding
+26f86e0f-62b6-44c4-8463-4d0bd24df95b,No Lung Opacity / Not Normal,F,53,AP,nofinding,opacity
+48eb6bcf-ddda-49f3-9f80-5a7a11b5bccc,Lung Opacity,M,56,AP,opacity,opacity
+db41f495-510e-4d53-9440-b593e8394ff5,Lung Opacity,M,14,PA,opacity,nofinding
+6439bc8e-a134-4f5c-a801-e67379549322,Normal,M,72,PA,nofinding,nofinding
+54adda49-e4a2-4706-af0c-40174ba821a6,No Lung Opacity / Not Normal,F,68,AP,nofinding,opacity
+3b6a7c3f-6628-43e9-a4b9-227a7d6b7ef8,Normal,M,70,PA,nofinding,nofinding
+ee7d1bb3-2212-4a18-8799-ae40c9af255c,No Lung Opacity / Not Normal,M,69,AP,nofinding,nofinding
+e0dbac78-1be8-43dd-abc5-cf3f834b80ec,No Lung Opacity / Not Normal,M,49,PA,nofinding,nofinding
+9283e10a-d8f2-4a0d-a1a6-041b82f53a9d,No Lung Opacity / Not Normal,F,62,AP,nofinding,opacity
+f8c7e5a1-4367-4564-9efe-ec56082eeb71,No Lung Opacity / Not Normal,M,54,PA,nofinding,nofinding
+cfaf42f8-cd2d-4f21-aaf5-7113238418b2,Normal,F,30,PA,nofinding,nofinding
+40e894fe-57f0-48b9-8d7e-0898685827bd,Normal,M,36,AP,nofinding,nofinding
+f2a5e1cc-09f6-4cb9-95b5-702a910100ab,No Lung Opacity / Not Normal,F,47,AP,nofinding,opacity
+f1d4a238-6cfc-4875-843a-3b5044c7cdf7,Lung Opacity,M,62,AP,opacity,opacity
+ad67e243-e5b3-40fc-aa45-4f7faf7a2932,Normal,M,24,PA,nofinding,nofinding
+068b608d-f71c-4859-b909-62c1665b507f,Lung Opacity,M,58,PA,opacity,nofinding
+fadb0cca-fc28-4db8-9cb9-acad066ed8fa,No Lung Opacity / Not Normal,F,30,PA,nofinding,nofinding
+8bcb8037-5e16-4f00-9f99-49fac14e4cb2,No Lung Opacity / Not Normal,M,23,AP,nofinding,nofinding
+d29308aa-1deb-4c2c-b414-fdc0f49ef74f,Normal,F,17,PA,nofinding,nofinding
+7e278b62-38c0-4c4b-90a4-12a75778f0eb,Normal,F,47,AP,nofinding,nofinding
+9528063f-230e-4a25-b3b1-412caca2f750,Lung Opacity,M,54,AP,opacity,opacity
+0aa83e7d-e947-46e9-b5ca-a69cc9e5c8fe,Normal,F,21,PA,nofinding,nofinding
+c99e4ca2-87c7-46a3-b741-77e9bf50218e,Normal,F,27,PA,nofinding,nofinding
+10f2cb81-ad90-4857-a2f7-18e7d8f66907,Lung Opacity,F,55,AP,opacity,opacity
+d6fa7572-1ed2-4dfd-8350-503296856b45,No Lung Opacity / Not Normal,M,56,PA,nofinding,nofinding
+78b4b710-15b7-4ea3-b761-c2371594cbf1,Lung Opacity,F,53,PA,opacity,opacity
+0025d2de-bd78-4d36-9f72-e15a5e22ca82,Normal,F,28,PA,nofinding,nofinding
+bfc8780a-6911-4006-a427-0898ccd3a5f9,Lung Opacity,M,42,AP,opacity,opacity
+741e924e-b826-47e9-a349-879561029b24,Lung Opacity,F,52,AP,opacity,opacity
+5c1e55b7-e799-436f-a366-d7474c644e8a,Lung Opacity,F,31,AP,opacity,opacity
+732ec3fc-bba1-4127-a8b1-585683c9586d,Normal,M,68,PA,nofinding,nofinding
+c564f7d2-e018-4a58-b914-0ac5912e7a4a,No Lung Opacity / Not Normal,M,55,PA,nofinding,nofinding
+5432bc30-649e-4b4b-8f5d-ca06f27c3a30,Normal,F,64,AP,nofinding,nofinding
+71231f52-c755-4f52-956f-eab77b9434f5,Lung Opacity,F,57,AP,opacity,opacity
+4a0ac288-abcc-4e82-9080-c8d921cc35c5,Normal,F,28,PA,nofinding,nofinding
+4d5e9224-6558-4fb1-9a19-d9ea0f37f2b7,No Lung Opacity / Not Normal,M,58,AP,nofinding,opacity
+2b9ea83c-941d-4db3-8c6f-0b6ea714d520,Normal,F,46,PA,nofinding,nofinding
+08d8e57a-4835-445b-8c79-8dd31ab17819,Lung Opacity,M,53,AP,opacity,opacity
+96af8b25-6005-4833-a0bd-821f87cc84a8,No Lung Opacity / Not Normal,M,62,AP,nofinding,opacity
+3b81309b-5e5e-4d02-8eaf-265a770de5b7,Normal,M,19,PA,nofinding,nofinding
+94ea3fe9-7dbb-491d-8c47-0d76b6888dad,Normal,M,34,AP,nofinding,nofinding
+f8f84dd5-5c41-4f63-9d3b-23e6e04d7fe8,No Lung Opacity / Not Normal,F,63,AP,nofinding,nofinding
+b1976cfc-3bae-4bae-a968-4892e6f953ca,Lung Opacity,M,67,AP,opacity,opacity
+e41fdc8f-1cbd-4acd-94be-6a27df3b750c,Lung Opacity,F,11,AP,opacity,opacity
+6a0db98f-c1aa-4772-a578-a0548f909eef,No Lung Opacity / Not Normal,F,39,AP,nofinding,nofinding
+ba63a3ae-8814-4b3e-a773-0239d6f64dce,Lung Opacity,M,21,AP,opacity,opacity
+5d809cf5-357d-42d9-bd48-b93fd5bece05,No Lung Opacity / Not Normal,F,49,PA,nofinding,nofinding
+d22e3d9f-99a9-4537-a0ff-fc3c1f349ee2,Lung Opacity,F,60,PA,opacity,opacity
+229ccf92-77f4-4e97-8e1a-976128ae9f5a,No Lung Opacity / Not Normal,F,30,PA,nofinding,nofinding
+17c8b1fc-07c6-45e7-8328-2fa3bb75b5f9,Normal,F,45,PA,nofinding,nofinding
+849642c1-13eb-4521-9af0-43e25ac8134c,Normal,F,36,PA,nofinding,nofinding
+427202fe-671a-446f-b522-881db579dfb3,Normal,M,19,AP,nofinding,nofinding
+b51afcfc-3d2f-413a-b657-606313d0c093,No Lung Opacity / Not Normal,M,50,PA,nofinding,nofinding
+9efc0b02-fac6-434a-92c8-23532b871175,Normal,M,71,PA,nofinding,nofinding
+44067ad1-e8a8-4e0f-ba64-541626cd73bd,No Lung Opacity / Not Normal,F,62,PA,nofinding,nofinding
+5c0272f2-ae30-4865-8588-f3be15e74e41,No Lung Opacity / Not Normal,M,58,AP,nofinding,opacity
+99b2e6d0-1637-4270-b95b-7d1135165f87,Normal,M,46,PA,nofinding,nofinding
+d4d78866-6c1a-4632-879b-191b01045cc1,Normal,M,51,PA,nofinding,nofinding
+96f2ab32-f218-4475-89bd-8570c0c4835d,No Lung Opacity / Not Normal,F,53,AP,nofinding,nofinding
+d40d151f-e33e-403d-adb6-edb7f053698e,No Lung Opacity / Not Normal,M,50,AP,nofinding,opacity
+8fbc3760-fffd-4909-a6a2-95df3f2900c0,No Lung Opacity / Not Normal,M,62,AP,nofinding,nofinding
+e64850f0-0e2e-4dff-880a-b86992a6fca1,Normal,M,53,PA,nofinding,nofinding
+deffa472-a50f-43fa-bc8b-1eaa48adb8d3,Lung Opacity,M,76,AP,opacity,opacity
+a378eddb-1629-4d23-a4ca-e13abb065a77,No Lung Opacity / Not Normal,M,47,PA,nofinding,nofinding
+d716617f-d655-4127-ace8-18189299a28c,Normal,M,43,PA,nofinding,nofinding
+497f010c-5091-467a-bc3e-2c948ee696b0,No Lung Opacity / Not Normal,M,58,AP,nofinding,nofinding
+316314c3-dd21-4f89-8482-126db431406a,No Lung Opacity / Not Normal,M,38,AP,nofinding,nofinding
+4c66947c-027c-47a8-af4a-00fd68fdf8c7,No Lung Opacity / Not Normal,F,47,PA,nofinding,opacity
+e3eda227-7f29-4e7a-80c3-44337ce0b413,No Lung Opacity / Not Normal,F,23,AP,nofinding,nofinding
+5342f3b9-cb1f-498d-8974-8b771e359b7e,No Lung Opacity / Not Normal,M,73,PA,nofinding,nofinding
+dc27279e-5398-4d25-8519-d3aa0dfd4870,No Lung Opacity / Not Normal,F,53,PA,nofinding,opacity
+e4774725-d0ad-4529-94f8-9a47059e231a,Normal,M,40,PA,nofinding,nofinding
+dab2f334-331c-42c7-af09-a997092464b0,Normal,F,90,AP,nofinding,nofinding
+87997557-f548-49b5-b779-ef299507bc6c,No Lung Opacity / Not Normal,M,60,AP,nofinding,opacity
+5bc4887e-e2c6-468c-9372-6227649e4fca,No Lung Opacity / Not Normal,M,28,PA,nofinding,opacity
+a12b6a40-323c-4ead-8875-5b84ae4beb6f,Normal,M,40,PA,nofinding,nofinding
+b783741d-64ad-431c-82b7-ba1dab31c043,No Lung Opacity / Not Normal,M,52,PA,nofinding,nofinding
+06a07f16-f6b5-4ae5-8f68-a97131fe4701,Lung Opacity,M,25,AP,opacity,opacity
+d67dc3db-ef44-483c-abda-fe7d4f6dbd46,No Lung Opacity / Not Normal,F,65,AP,nofinding,nofinding
+6aae3572-8953-46be-a0fc-5f3e891dec7e,No Lung Opacity / Not Normal,M,44,AP,nofinding,opacity
+1a2b6a01-88f6-4907-adef-f396a00a15b4,Lung Opacity,M,51,AP,opacity,opacity
+bf99f510-56e1-421b-ad0f-ad10f4cdd3a3,Lung Opacity,M,22,AP,opacity,opacity
+8f367106-9b21-4df4-a4b8-968a2f9a6d7a,Normal,M,38,PA,nofinding,nofinding
+efe7f4f8-963f-40be-b2a4-41d335409fda,No Lung Opacity / Not Normal,F,66,PA,nofinding,nofinding
+85925157-b6c6-4fa2-8729-fa308380679f,No Lung Opacity / Not Normal,M,50,AP,nofinding,opacity
+4983585b-4334-466c-bff9-36a3e6c7c1ba,No Lung Opacity / Not Normal,M,80,PA,nofinding,nofinding
+73fdcfb6-42ad-4be4-92b4-641250252431,Normal,F,23,PA,nofinding,nofinding
+971dde1a-f458-491c-8c1f-6a0221be4c29,No Lung Opacity / Not Normal,F,48,PA,nofinding,nofinding
+995add3b-6d5f-42a4-ac2f-7e46ffe27897,Lung Opacity,M,54,AP,opacity,opacity
+46cfe8ef-549c-4b26-95b9-3a0b2cea22d5,Normal,F,22,PA,nofinding,nofinding
+69220eb7-f35f-4620-9a62-cd5478fc9f99,Lung Opacity,F,44,AP,opacity,opacity
+7d4b74a5-53e7-4b66-812c-ead6671c672e,Normal,F,59,PA,nofinding,nofinding
+6126c957-5789-4264-86c9-9fe21c0498b9,Lung Opacity,M,39,PA,opacity,opacity
+d2df9079-f91a-4fd7-87f2-b5de67ef2afb,No Lung Opacity / Not Normal,F,73,PA,nofinding,nofinding
+69b2c759-0002-4940-8bfc-03ea0f2477f1,No Lung Opacity / Not Normal,M,45,AP,nofinding,nofinding
+78ee7ed7-56ca-4fe5-8dad-2a04e9a5d1c6,No Lung Opacity / Not Normal,M,75,PA,nofinding,nofinding
+a05d6f9e-475b-4e47-b95b-45c6ac35e2b3,No Lung Opacity / Not Normal,F,76,PA,nofinding,nofinding
+f0678ab1-7a59-46b9-ba2c-def9ad6b8d22,Lung Opacity,M,72,AP,opacity,opacity
+9c446e54-0fde-4a4c-9b02-159b6278481e,No Lung Opacity / Not Normal,M,51,PA,nofinding,nofinding
+7f7b19d5-a1fa-4d22-bf1a-d2c0f6e1fbad,No Lung Opacity / Not Normal,F,29,AP,nofinding,opacity
+a5bce1d8-51c4-4904-9119-b902010752f7,No Lung Opacity / Not Normal,M,57,AP,nofinding,nofinding
+5b924690-7a86-49b8-b36e-1d12d5f4fff6,Lung Opacity,F,74,PA,opacity,nofinding
+b42c072c-9956-4397-bc22-3e52124905e8,No Lung Opacity / Not Normal,F,23,AP,nofinding,nofinding
+7e2a9bb1-b95a-4d72-9859-bb851216277b,Normal,M,59,PA,nofinding,nofinding
+7c919028-8325-42d6-8d89-c88595251616,Normal,F,24,AP,nofinding,nofinding
+b215a2cf-ddf6-4032-99a0-1c2b10ef2f9e,Normal,F,55,PA,nofinding,opacity
+5a4042ff-dbda-4278-a556-206e7d723a51,No Lung Opacity / Not Normal,F,66,AP,nofinding,opacity
+dfd43eeb-47e7-4c48-8418-4ec3c75cd13a,No Lung Opacity / Not Normal,F,14,AP,nofinding,opacity
+c7487750-fcfe-4b9c-8885-4466b9b85f3f,No Lung Opacity / Not Normal,M,34,AP,nofinding,opacity
+ca5defaa-00b9-4904-87dd-debcc3ed3d77,Lung Opacity,M,58,AP,opacity,opacity
+c804803b-b734-4bfd-ac2d-9245261214da,Normal,M,28,PA,nofinding,nofinding
+7b94fc31-0735-4840-beb8-c685f22ec90b,Lung Opacity,F,32,AP,opacity,opacity
+97f065bf-67c7-44a9-a1e2-6b86a1b16d62,No Lung Opacity / Not Normal,F,26,AP,nofinding,nofinding
+958ef5a8-9119-4b34-b009-6a3fa8abff64,Lung Opacity,F,43,PA,opacity,opacity
+bc88fe07-10a9-4032-9a0b-21f57f10d555,Lung Opacity,M,51,AP,opacity,opacity
+fb7e354c-d3d5-40c4-84ec-127621a5d38f,No Lung Opacity / Not Normal,M,49,AP,nofinding,opacity
+4c6f04e5-f7ca-4316-b5ef-70e305060357,No Lung Opacity / Not Normal,M,73,PA,nofinding,nofinding
+a93bed75-231d-47cc-a21e-9a70c0d072b2,Lung Opacity,F,32,AP,opacity,opacity
+abd5dadc-4ac4-414b-bf8a-4d6939b2a526,Normal,M,59,AP,nofinding,nofinding
+bf61a6a9-03d3-4e18-8576-c599934b9cbc,Lung Opacity,F,54,PA,opacity,opacity
+385ecf1e-e97c-4d79-b80c-6d0c04f8bfe9,Normal,M,61,PA,nofinding,nofinding
+ecb0e8b7-0f0f-40ed-848d-8b070a14bc8c,No Lung Opacity / Not Normal,M,2,AP,nofinding,nofinding
+dabc835b-4db1-4e50-8ea4-72e5ed872673,Normal,M,12,AP,nofinding,opacity
+7e90dcbb-3761-4488-899e-fa88e1bd00a5,No Lung Opacity / Not Normal,M,75,PA,nofinding,nofinding
+a158d5d7-9163-4def-aa23-5ca91cae2cb8,Normal,F,48,PA,nofinding,nofinding
+c6013f00-4b64-4b06-8d88-9a378df9585f,Normal,F,35,PA,nofinding,nofinding
+ff8a0582-abc9-4753-bb71-a9746d466743,Normal,F,7,PA,nofinding,nofinding
+d44dd021-1a9b-4250-a560-ae745a511fb1,Normal,F,40,PA,nofinding,nofinding
+9a739d03-2cb0-4cef-83af-62f23231042a,Normal,M,38,PA,nofinding,nofinding
+c2d5032a-d589-4c4f-a071-74f3899b3968,Normal,M,52,PA,nofinding,nofinding
+5494bfea-2292-4b0f-933f-64139dad5fa7,No Lung Opacity / Not Normal,F,81,AP,nofinding,opacity
+3adf7f71-3ded-406d-a08c-a61d152f78dc,Lung Opacity,M,35,PA,opacity,opacity
+7d3f2d28-c21b-4a64-940c-c635176f35e1,Lung Opacity,M,68,PA,opacity,opacity
+c52d38e9-b26f-4422-8880-6a4db0ba5bb9,No Lung Opacity / Not Normal,M,19,AP,nofinding,opacity
+d60cfe34-6753-44e1-ba22-7a106ff7be83,No Lung Opacity / Not Normal,F,58,PA,nofinding,nofinding
+5c3fe0d9-79e6-4f7a-8d31-f0747cfc28b3,No Lung Opacity / Not Normal,M,52,PA,nofinding,nofinding
+62ee3e3c-60a6-4ec4-91c4-fb8383abc679,Normal,M,55,PA,nofinding,nofinding
+b134c7f3-2f65-4734-93b0-12c482e2b016,Lung Opacity,M,71,AP,opacity,opacity
+d8e8cf3f-c1e6-4291-add7-9df2fa5b3d11,Normal,F,55,PA,nofinding,nofinding
+fbb96812-25b1-4354-85bc-9fdb50740c2d,No Lung Opacity / Not Normal,F,54,AP,nofinding,nofinding
+fd1550bf-b079-4ff1-a1f3-8aa821c4b83b,Normal,M,25,PA,nofinding,nofinding
+87e3961c-a02b-4a1b-80cc-a0f942897521,No Lung Opacity / Not Normal,F,71,PA,nofinding,nofinding
+f8a5a275-712b-433d-9578-84d44a87d062,No Lung Opacity / Not Normal,F,47,PA,nofinding,nofinding
+e013ecb3-5731-4e14-8fda-3a476d1a02c1,No Lung Opacity / Not Normal,F,46,AP,nofinding,nofinding
+54099dc6-3e4c-46ca-b675-cce4b65aa0d3,Normal,F,23,PA,nofinding,nofinding
+90de382f-ab3f-4d2a-a4c8-ef4085287976,Normal,M,52,PA,nofinding,nofinding
+77293530-8a74-449c-b423-85849cee8da2,Normal,M,40,AP,nofinding,nofinding
+d85b98d0-f007-4ac6-bd32-e7e2d705aa79,Normal,M,69,PA,nofinding,nofinding
+9aa71e73-be35-4de7-8709-a3c53b936db1,No Lung Opacity / Not Normal,F,69,PA,nofinding,nofinding
+e065606f-3368-47ff-b4d1-ef783e97813f,Lung Opacity,M,44,AP,opacity,opacity
+32307e74-5fa6-4aaf-acef-474a8807faec,Normal,M,23,PA,nofinding,nofinding
+cece4385-6101-44eb-915e-2ce093ef08e2,Normal,F,43,PA,nofinding,nofinding
+f05d72e2-dfe0-4a1a-8c04-b34874b218d7,No Lung Opacity / Not Normal,F,52,PA,nofinding,nofinding
+98ba42a5-8d3b-429c-8b79-5804271519d1,No Lung Opacity / Not Normal,F,45,PA,nofinding,opacity
+4ab9cc55-0553-4268-8172-a44fad76b97e,No Lung Opacity / Not Normal,F,61,PA,nofinding,opacity
+5eb5e5a8-076b-4bf8-ae80-26f6334e8790,Lung Opacity,F,55,AP,opacity,opacity
+38374ff9-e61d-45eb-97b9-ce4282402198,Normal,M,60,PA,nofinding,nofinding
+7ea6a920-a1ad-4cf1-91d5-a6634708b12c,No Lung Opacity / Not Normal,F,69,AP,nofinding,opacity
+41f0a2ea-1ea6-4058-9fa3-d1bd2d8dca8a,No Lung Opacity / Not Normal,M,45,AP,nofinding,nofinding
+53f9b85d-b057-46de-a4c6-8907c4a6ae5a,No Lung Opacity / Not Normal,M,65,PA,nofinding,opacity
+b51c3c24-f9aa-4039-9fc1-527a5567dff6,Lung Opacity,M,40,AP,opacity,nofinding
+07ec1c73-c77a-4b43-bcc6-96f94cbd32ac,Normal,M,51,PA,nofinding,nofinding
+4bb57856-c155-4099-bcd6-d254547994d2,Lung Opacity,M,34,PA,opacity,opacity
+41ebb681-82a0-420c-834b-1b56378749de,No Lung Opacity / Not Normal,F,56,PA,nofinding,nofinding
+ee695084-676c-48e9-a0d2-77945c936577,No Lung Opacity / Not Normal,F,59,AP,nofinding,nofinding
+8aaeb451-26b5-4192-9a82-1d7eded2e363,Lung Opacity,M,28,AP,opacity,opacity
+a9da9bbf-0ccc-4a8d-8a7f-855ad4657b67,No Lung Opacity / Not Normal,M,51,PA,nofinding,nofinding
+5ad76e11-782e-46eb-9eaa-5ce2403c5a89,No Lung Opacity / Not Normal,F,61,PA,nofinding,nofinding
+bec4c195-3308-4a5f-9a98-8abba25deda7,Normal,F,55,PA,nofinding,nofinding
+6bd155f1-693f-4343-8d38-dc0d1cd9347b,Lung Opacity,M,38,AP,opacity,opacity
+d63607bc-42c0-404d-9967-08613efd1fdc,Normal,F,38,PA,nofinding,nofinding
+203a63e3-238f-40ff-a0fc-de85641f7dd5,Normal,M,46,PA,nofinding,nofinding
+53891a86-1918-410b-8f0d-2170706be8a2,No Lung Opacity / Not Normal,F,63,AP,nofinding,opacity
+a550099a-36c5-4807-88ff-e77475bae0d9,Lung Opacity,F,19,AP,opacity,opacity
+a61c9969-4521-4436-85e7-0fcb71e61dd4,Lung Opacity,F,72,AP,opacity,opacity
+d7290a05-7b8c-4896-98b2-86952826ccd9,Normal,M,47,PA,nofinding,nofinding
+4f25ee23-6030-4da2-b262-755b2dbe0aad,No Lung Opacity / Not Normal,F,39,AP,nofinding,opacity
+06b64e36-9e61-4865-bfe4-d96eef86548c,Lung Opacity,M,9,AP,opacity,opacity
+09d79f22-df14-4e5a-bc98-7a1d6bcd6965,Normal,F,39,PA,nofinding,nofinding
+e5083984-ce39-441b-a37a-ec0b902947a9,Normal,M,58,PA,nofinding,nofinding
+78daac38-3778-42d1-890c-8c321ada2c11,Normal,F,29,AP,nofinding,nofinding
+d51f1922-c0ce-4391-9214-a31a90686659,No Lung Opacity / Not Normal,M,16,AP,nofinding,nofinding
+8d530b59-727f-4f00-89b1-26cdfb116a04,No Lung Opacity / Not Normal,M,38,PA,nofinding,nofinding
+7bbc888f-2a6a-4f8a-8aa0-a42b1a4861d9,No Lung Opacity / Not Normal,F,6,AP,nofinding,opacity
+74b3eae5-6d97-4d52-ab1c-20d9be51b413,Normal,F,65,PA,nofinding,nofinding
+ae505ed5-51b5-44f7-8145-6cfe7785b756,No Lung Opacity / Not Normal,F,24,PA,nofinding,nofinding
+88035956-1e69-4f8f-a9cb-fc3c471b03d3,No Lung Opacity / Not Normal,M,61,PA,nofinding,nofinding
+4999ef1e-b2b5-4ac1-85ad-c082281c0cbe,No Lung Opacity / Not Normal,F,73,AP,nofinding,nofinding
+ac2e60f3-e2dc-48e2-af1d-728fc8d838c1,No Lung Opacity / Not Normal,F,63,AP,nofinding,opacity
+e1f6ff93-eb5c-4da0-8f9f-0aeea7216484,No Lung Opacity / Not Normal,M,42,PA,nofinding,nofinding
+9f01e063-7de5-40ac-b075-d30e47f29c60,No Lung Opacity / Not Normal,M,57,PA,nofinding,nofinding
+aac8b967-4540-4826-b4ec-42bdeebae1ab,Normal,M,12,PA,nofinding,nofinding
+d6ea0603-0633-4cc8-8d36-f523370de74f,Lung Opacity,M,40,AP,opacity,opacity
+dd1fda93-1d28-4085-a857-b436feb780d1,No Lung Opacity / Not Normal,M,28,PA,nofinding,nofinding
+bf506a9c-19c7-4dd8-acb4-b8d6569091d8,Lung Opacity,M,44,PA,opacity,nofinding
+68afbac1-86dc-4ff1-be69-f936a9dfe342,No Lung Opacity / Not Normal,M,71,AP,nofinding,opacity
+f966c01e-ee55-4544-a700-032f9d538a2b,Lung Opacity,M,62,PA,opacity,opacity
+0c0a5c4b-a671-4ff2-bdaf-3e272ef0750b,No Lung Opacity / Not Normal,M,47,AP,nofinding,nofinding
+c4073ba6-181c-4421-9793-2c79fd9c005e,Normal,M,31,PA,nofinding,nofinding
+756db5a7-5547-4c51-90c6-b503a5997be2,Normal,M,83,PA,nofinding,nofinding
+9ce51c73-3da3-475e-ba21-29837e865ff8,Lung Opacity,M,60,AP,opacity,opacity
+c2ed72cd-0390-46c3-ac73-601b1a875d5d,Lung Opacity,M,67,AP,opacity,opacity
+b5c901dc-9e41-4ffd-b880-412e0f9b8ef9,Normal,F,25,PA,nofinding,nofinding
+b503befc-b2f0-44bf-bd80-eb2382deb122,No Lung Opacity / Not Normal,M,33,PA,nofinding,nofinding
+daf2da8f-5a61-431a-abd9-f46a3862673e,Normal,F,41,PA,nofinding,nofinding
+b163a08c-8dba-409a-b2d6-e30047625970,Lung Opacity,F,51,AP,opacity,opacity
+5859eac3-83db-4943-82e3-5a5859829d31,No Lung Opacity / Not Normal,F,63,PA,nofinding,opacity
+ecfdcc29-e54e-4565-ab0f-24d2c73df79e,Normal,M,70,PA,nofinding,nofinding
+c46051c9-1ad0-4741-bfe6-6ff641852d05,No Lung Opacity / Not Normal,F,68,PA,nofinding,opacity
+170632ff-5466-42a1-95f3-30ea4ef63e3b,Lung Opacity,M,31,PA,opacity,opacity
+3156adea-d1f0-4a8e-9dfd-fc1d9bf5fc1f,Lung Opacity,F,72,AP,opacity,opacity
+547b4a98-23d8-443b-8d42-30c90e74875a,No Lung Opacity / Not Normal,M,58,PA,nofinding,opacity
+503f7ddd-d9b7-495e-bf61-9ebd867607a4,No Lung Opacity / Not Normal,M,76,AP,nofinding,nofinding
+416b2485-3152-47b8-9aba-2d33822f1200,Normal,M,40,PA,nofinding,nofinding
+80a5c4a8-ce44-444e-a778-e6d374a39e59,Normal,M,22,PA,nofinding,nofinding
+ea358350-8f2a-433d-b687-96b05ebf4c1d,Normal,F,54,PA,nofinding,nofinding
+4fcf9fae-34c1-416b-bcf9-b974920fed65,No Lung Opacity / Not Normal,M,55,AP,nofinding,opacity
+8900dd48-98e7-4105-a272-909dcb6521c2,No Lung Opacity / Not Normal,F,62,PA,nofinding,nofinding
+074aea8f-d454-4590-9178-3183dbddcf30,No Lung Opacity / Not Normal,F,6,AP,nofinding,opacity
+bd2707a9-fae2-4e17-a14f-d1363d064920,No Lung Opacity / Not Normal,F,22,PA,nofinding,nofinding
+1f5f1dc7-7681-41c4-a380-a47e0c90057d,Normal,F,32,PA,nofinding,nofinding
+002c591d-df62-4e34-8eda-838c664430a9,Normal,M,57,AP,nofinding,nofinding
+3fd78890-11cf-4bb2-88ac-0a8e7fc54c61,Lung Opacity,F,18,AP,opacity,opacity
+4bf59f74-040e-470f-a269-2b37e54a79c7,No Lung Opacity / Not Normal,M,56,AP,nofinding,opacity
+3162d754-7972-47b0-ae60-1ae6e2bb4150,Lung Opacity,M,55,PA,opacity,opacity
+fdf04bbb-d289-4421-9ec5-020f71535fab,No Lung Opacity / Not Normal,M,19,PA,nofinding,opacity
+f9a26f29-b3dc-489a-8465-1335e88122a2,Normal,M,50,PA,nofinding,nofinding
+d24c400d-3d02-4317-a4a6-6a3e268b94cc,No Lung Opacity / Not Normal,F,52,PA,nofinding,nofinding
+362c13d9-0606-4ce4-8c29-01c7fbb846cf,Lung Opacity,M,16,AP,opacity,opacity
+d4bee165-b0e1-416d-9a12-0291ff70384b,Normal,M,61,PA,nofinding,nofinding
+461aa799-2a1f-4710-a115-7410b088db06,No Lung Opacity / Not Normal,M,74,AP,nofinding,opacity
+75ecaed3-c912-4459-9095-ec6674f524e3,Normal,M,8,PA,nofinding,nofinding
+cc113a07-858b-4a47-9805-cd66e07d10c7,No Lung Opacity / Not Normal,M,62,AP,nofinding,nofinding
+9921efe9-3266-4b3c-9d2a-393ae0bde041,No Lung Opacity / Not Normal,M,59,AP,nofinding,nofinding
+c7e1368e-a30f-4e11-9e91-3b4e753fcd1e,No Lung Opacity / Not Normal,M,46,PA,nofinding,opacity
+1682a002-e834-4696-8101-70afe4edeebf,Lung Opacity,M,62,AP,opacity,opacity
+6d144e7e-8e3b-494f-85d5-e56150f64f3a,No Lung Opacity / Not Normal,M,18,AP,nofinding,nofinding
+94e4edc2-92ab-48dc-9f2f-dfa5e6691e5b,No Lung Opacity / Not Normal,F,64,PA,nofinding,nofinding
+cd67900c-dafd-4978-9938-fc112ab25b0d,No Lung Opacity / Not Normal,F,40,PA,nofinding,nofinding
+d86b7b7f-27e3-4b54-b310-4a2821452529,No Lung Opacity / Not Normal,M,88,AP,nofinding,opacity
+169a956e-6c32-493e-ad41-31639b9d7ef4,Normal,F,33,AP,nofinding,nofinding
+ed82299b-6eed-4e46-82a3-db653a06b84a,No Lung Opacity / Not Normal,M,61,PA,nofinding,nofinding
+6d6c53eb-4b90-4149-a8f4-523b65375525,No Lung Opacity / Not Normal,M,56,AP,nofinding,nofinding
+32df6985-95b4-4624-a16a-f502702f1a0d,No Lung Opacity / Not Normal,M,43,PA,nofinding,nofinding
+c69ffd64-16bf-4237-b169-f7bab69978e4,Lung Opacity,F,34,AP,opacity,opacity
+c8f5de6e-8cf8-4f8c-b8c9-a844080da4f4,Normal,M,61,PA,nofinding,nofinding
+601dd9c6-3544-4a3b-94b7-f9b77ae19451,Normal,M,28,PA,nofinding,nofinding
+15602987-7fe1-4ff9-a7f7-24c9fe79e8df,No Lung Opacity / Not Normal,M,16,PA,nofinding,nofinding
+e155025b-b3b0-4049-94a5-f33c57572d7e,Normal,F,56,PA,nofinding,nofinding
+410ba4b1-4c3c-467e-b58e-838ded07e266,No Lung Opacity / Not Normal,F,50,AP,nofinding,opacity
+9c5c063c-a4c2-4b07-8ed9-61fac3340dde,No Lung Opacity / Not Normal,M,61,PA,nofinding,opacity
+5951a068-c3d8-4e8b-abec-c1a8052411b2,Normal,M,66,PA,nofinding,nofinding
+e2efa725-693d-46a1-9abc-545ea633794c,Lung Opacity,M,39,PA,opacity,nofinding
+533dd19d-7bd4-4178-9c3c-b10f0e44fd33,No Lung Opacity / Not Normal,F,39,PA,nofinding,nofinding
+0cac94e3-15f2-4657-beae-b508b5e0d176,Lung Opacity,M,49,PA,opacity,nofinding
+814289a3-9ce8-4cba-842f-45d6a36f540d,No Lung Opacity / Not Normal,F,69,PA,nofinding,nofinding
+bb20b32f-809f-494c-926e-ddad4436f5c2,No Lung Opacity / Not Normal,M,47,PA,nofinding,opacity
+a7bfee8a-971f-4164-ad8f-8b65930a7da6,No Lung Opacity / Not Normal,M,31,AP,nofinding,nofinding
+a92643fd-0f58-43e5-a400-7c35c2544610,Lung Opacity,F,69,AP,opacity,opacity
+917ea1aa-b1b2-402b-b831-cacf85756279,Lung Opacity,F,30,PA,opacity,opacity
+70c9a320-1095-4c41-b632-d634e2f90bab,No Lung Opacity / Not Normal,M,39,PA,nofinding,nofinding
+fcc31b16-52dc-4dd6-ac79-4ac0be052a96,Normal,M,36,PA,nofinding,nofinding
+bd164f7a-a3a5-40d0-933c-0d623be3ad94,Lung Opacity,M,17,AP,opacity,opacity
+4f9042e1-9a6c-4c81-8006-c19faff7a248,Normal,F,42,PA,nofinding,nofinding
+e13f5c5f-0eb3-43cb-bea6-c9634420b5a2,No Lung Opacity / Not Normal,M,48,PA,nofinding,nofinding
+8f1def19-2edc-4b6d-b256-5285fa392159,No Lung Opacity / Not Normal,M,62,AP,nofinding,opacity
+e862c6c9-71fd-45cf-b589-7714124d7462,Normal,M,60,PA,nofinding,nofinding
+324f9ed1-09e0-483e-9bdd-d139e77acb85,No Lung Opacity / Not Normal,F,60,PA,nofinding,nofinding
+53bed796-1a7b-406b-b37c-d37facb41158,Normal,M,27,PA,nofinding,nofinding
+a3e3264b-15b7-4cc5-983c-430a0b6c3b8e,Normal,F,39,PA,nofinding,nofinding
+3bc909dd-edaf-4482-9109-859aa1a108db,No Lung Opacity / Not Normal,M,77,PA,nofinding,nofinding
+52afc9f7-97f4-4fa4-9553-674213fcb1b8,Normal,F,62,PA,nofinding,nofinding
+e42ac421-014f-4125-a5f4-73567473d065,Normal,M,32,AP,nofinding,opacity
+78620ea2-436e-4355-8e61-3500f3d8ab70,Normal,M,48,PA,nofinding,nofinding
+55d4013d-62ec-43f1-a1dd-f8aaafe63efb,No Lung Opacity / Not Normal,F,15,PA,nofinding,nofinding
+f33c4b1b-b30d-4fe8-ba79-f5321fb0357d,No Lung Opacity / Not Normal,F,37,PA,nofinding,opacity
+98ffe9d8-ec74-43da-b35b-e511193e097f,Normal,F,63,PA,nofinding,nofinding
+7aeb3671-e373-4144-9393-6d8381113eb6,No Lung Opacity / Not Normal,F,55,PA,nofinding,nofinding
+c7885ae1-f82b-4ff7-a912-446e97e23209,Normal,F,60,PA,nofinding,nofinding
+d1d9bf55-e999-4e44-be02-aa94b7ab0e77,Normal,M,29,AP,nofinding,nofinding
+8c936ac2-e6a0-4649-bb46-9bf2d966d6c2,No Lung Opacity / Not Normal,M,63,PA,nofinding,nofinding
+852156be-0aab-4dc7-95d6-eda950096d0f,Lung Opacity,M,71,PA,opacity,opacity
+66dd98a0-ea0c-4a26-bf10-58298ea24fac,No Lung Opacity / Not Normal,M,48,AP,nofinding,opacity
+c5da93bd-dbe2-41aa-8f3a-6c9b3740202e,Normal,F,65,PA,nofinding,nofinding
+f35a1f9e-7b65-42cf-9678-7696737108c4,No Lung Opacity / Not Normal,F,60,AP,nofinding,nofinding
+2131a5d5-d3ca-4ce1-97a7-4ae34ef0d19f,Normal,F,32,PA,nofinding,nofinding
+f9145790-db17-4006-9fc0-5e90b9347d2c,No Lung Opacity / Not Normal,M,34,PA,nofinding,nofinding
+d71602f4-ca1e-4651-8eb1-86bfde77556f,Lung Opacity,F,53,PA,opacity,opacity
+c3ea903f-5779-4eb0-9026-b5ed1cd0e943,Lung Opacity,F,66,PA,opacity,nofinding
+d1edb21e-b737-4b6a-b80f-8c1c424870bd,Normal,F,48,PA,nofinding,nofinding
+b2753475-d0b2-4dde-8a7b-311e1db27397,Lung Opacity,M,44,PA,opacity,nofinding
+920a478b-7ae0-4d39-8c4f-2e2b6b22819f,No Lung Opacity / Not Normal,M,80,PA,nofinding,covid
+999e9144-e7f0-4898-903f-dd0d20296c73,Normal,M,47,PA,nofinding,nofinding
+cfca5fb2-0851-49fd-9dfb-f7b063992b0c,Lung Opacity,F,40,AP,opacity,opacity
+9aed29ce-85b0-4cc5-9dad-7a1aac9c28b5,Lung Opacity,F,56,AP,opacity,opacity
+fab18a7a-9b10-40a8-a2c3-e6f6644de5d6,No Lung Opacity / Not Normal,M,67,AP,nofinding,nofinding
+56a60039-bf00-44ea-aaf2-ea50b68c4dbc,Lung Opacity,M,65,PA,opacity,opacity
+c62a1483-825a-4a3e-a487-dee5feeec058,Normal,F,49,PA,nofinding,nofinding
+6d56b245-eb64-4175-806a-9a7fb88034f8,No Lung Opacity / Not Normal,F,42,AP,nofinding,nofinding
+798cc681-1bc3-4421-a2a3-eb6712925d7e,Normal,M,70,PA,nofinding,nofinding
+828a07b4-78cc-4ec6-8f16-863a6b308ade,No Lung Opacity / Not Normal,M,67,PA,nofinding,nofinding
+c4a9e5af-2b13-4dd5-b5e7-094c2ce33c34,No Lung Opacity / Not Normal,M,67,PA,nofinding,opacity
+75b939dc-925a-4718-883c-08fb45019a3b,Normal,F,59,PA,nofinding,nofinding
+eade2cca-dc25-404f-85a9-3da7772c2b7e,No Lung Opacity / Not Normal,M,24,AP,nofinding,nofinding
+43614f7e-c741-455c-99fe-e5960b87c9d2,No Lung Opacity / Not Normal,M,72,PA,nofinding,opacity
+44b01e01-e102-4ae9-8ba2-fb3f951e1cb8,No Lung Opacity / Not Normal,F,51,AP,nofinding,opacity
+c96b3f7d-9a75-4248-a00b-a66b060349ed,No Lung Opacity / Not Normal,M,42,PA,nofinding,nofinding
+07534f30-58a1-4043-b70e-156cdfafe1c6,Normal,M,47,PA,nofinding,nofinding
+90ec4fa0-4405-4fcd-926c-6323158fded2,Normal,F,26,PA,nofinding,nofinding
+7ae2c398-06c6-486c-bd97-b6f672d4771d,No Lung Opacity / Not Normal,M,39,AP,nofinding,opacity
+44f25bee-b705-4e42-a599-abb8a9ec9221,Normal,M,64,PA,nofinding,nofinding
+4668a90c-d352-47d0-a3ac-a54aa8ce053b,Lung Opacity,F,61,AP,opacity,opacity
+200613d9-e461-4836-ae40-b349087e01a2,No Lung Opacity / Not Normal,M,13,AP,nofinding,opacity
+388718ee-17f8-446c-9e25-688100629227,No Lung Opacity / Not Normal,M,22,AP,nofinding,nofinding
+19377a2b-4f78-42f5-bbde-27c797d84cfb,Lung Opacity,M,40,AP,opacity,opacity
+dec5c8de-c916-441c-a23d-16b8815658d1,Normal,M,76,PA,nofinding,nofinding
+76d2bb0c-5802-4909-8e70-079710022536,Normal,F,42,PA,nofinding,nofinding
+8515710f-aec4-45a6-a8a0-f67a7ca79097,No Lung Opacity / Not Normal,F,78,AP,nofinding,nofinding
+bb2b1f50-cfac-4a69-896c-3033513b241c,No Lung Opacity / Not Normal,F,52,PA,nofinding,opacity
+fe463b9d-b949-4018-ae41-9b8dbc815e37,No Lung Opacity / Not Normal,M,55,AP,nofinding,opacity
+9433b6d4-c05f-4a31-b7d6-0a002ca386bc,Normal,M,25,PA,nofinding,nofinding
+f244ee07-26ec-4393-8739-4bf02b3e2660,No Lung Opacity / Not Normal,F,36,PA,nofinding,nofinding
+a20c1c8f-e16e-440b-89d0-2393ea43b340,Lung Opacity,F,56,AP,opacity,opacity
+a5759426-c3cc-407f-8abb-8c4314d85caa,No Lung Opacity / Not Normal,F,29,AP,nofinding,nofinding
+fe765ddd-3cee-49ef-8cec-d33accd7a5e5,No Lung Opacity / Not Normal,M,27,AP,nofinding,nofinding
+2f9c1b97-74a7-4781-bad3-c46cc08c69c8,Lung Opacity,M,49,AP,opacity,opacity
+a5f02069-52d6-4ee1-84ea-b22bbf63c4b0,Normal,F,50,PA,nofinding,nofinding
+0a7162ad-b2bc-4132-b15a-7fdc80957618,Lung Opacity,F,48,AP,opacity,opacity
+c449f880-250a-4146-885b-b06bacb8fe5a,Normal,F,27,PA,nofinding,nofinding
+6611a83b-ab07-4ffd-bbad-b62d35e93f73,No Lung Opacity / Not Normal,M,62,PA,nofinding,nofinding
+5fd71b69-86d4-4fba-bb0b-1fbfc4a58f01,No Lung Opacity / Not Normal,M,39,AP,nofinding,nofinding
+50908a8f-e286-4304-8d97-562654d734c4,Normal,F,43,PA,nofinding,nofinding
+d9171b01-37ee-435c-830d-9cc3bc93e245,Normal,M,58,PA,nofinding,nofinding
+f54f2bdd-5ae9-4fa1-b411-fee73631f191,Normal,F,23,PA,nofinding,nofinding
+d18f4964-da90-4c37-bb7b-4ce1b2bbb6af,Lung Opacity,M,28,AP,opacity,opacity
+6e41d590-a6ce-4769-ba8f-2beb6bda198e,No Lung Opacity / Not Normal,F,49,AP,nofinding,opacity
+d4c8e2cd-9348-419f-91d0-524e6373d028,No Lung Opacity / Not Normal,F,71,PA,nofinding,nofinding
+79e61065-3922-4c61-a56b-eaa574f406f2,Normal,M,64,PA,nofinding,nofinding
+e4bc0f9a-f9cb-4489-8b2f-7ab1197f148b,No Lung Opacity / Not Normal,F,75,PA,nofinding,nofinding
+7191407b-65df-4a48-8cb0-560eac8a025e,No Lung Opacity / Not Normal,F,37,PA,nofinding,nofinding
+6b0cc08a-825e-4396-9aea-6d9548f87cc7,No Lung Opacity / Not Normal,M,57,AP,nofinding,nofinding
+d174137d-e2e4-402b-be23-e1abdc66b645,No Lung Opacity / Not Normal,F,63,PA,nofinding,nofinding
+705e0a68-4c09-44d1-90ee-6fe5e992d3f9,Lung Opacity,F,59,AP,opacity,opacity
+9b2d7e34-af22-45b1-a619-4995b7118919,Lung Opacity,F,51,AP,opacity,opacity
+0a03fbf6-3c9a-4e2e-89ce-c7629ae43a27,Lung Opacity,M,53,AP,opacity,opacity
+94587397-55fa-4ba5-820d-acbcf806c00c,Normal,M,70,PA,nofinding,nofinding
+8263fd36-1344-4daa-8783-35c639ea5a9c,No Lung Opacity / Not Normal,M,28,AP,nofinding,nofinding
+c1051685-99dc-41aa-be48-a3d120194035,No Lung Opacity / Not Normal,F,68,AP,nofinding,opacity
+e4251bdc-9ead-472e-96b5-7c010fc91246,Normal,M,65,PA,nofinding,nofinding
+97c4d952-46d1-4d31-b8ef-2b555e7ceb2b,Normal,M,55,PA,nofinding,nofinding
+85ed61bb-2c3c-4192-b48c-a1732e822731,No Lung Opacity / Not Normal,F,23,PA,nofinding,nofinding
+fb06bc98-4c80-4b67-94d2-b9e20e168f3c,Lung Opacity,F,58,AP,opacity,opacity
+cba1116e-deb7-4b99-b956-635bfa08a235,No Lung Opacity / Not Normal,F,48,PA,nofinding,nofinding
+f5755261-fe82-4af9-9086-b7c7558d6738,No Lung Opacity / Not Normal,F,52,AP,nofinding,nofinding
+89fe1bc2-7a5c-468f-8202-fef9fd13eba7,Lung Opacity,F,37,AP,opacity,nofinding
+26a531e7-92fa-4b87-85ae-c520a2a1e2df,No Lung Opacity / Not Normal,M,65,AP,nofinding,opacity
+9131bb85-6251-4f0e-9ccb-4a4189f84087,Lung Opacity,M,26,AP,opacity,opacity
+a8bcd430-f45b-44c4-b552-827e79070181,No Lung Opacity / Not Normal,M,7,AP,nofinding,opacity
+9aa7851f-8f7b-4087-9506-0b003006f153,Normal,M,43,PA,nofinding,nofinding
+79d2fd30-abad-4848-b9d6-bb30d9269341,Normal,M,51,PA,nofinding,nofinding
+43b42736-57c4-447d-9c50-19b92dcde9e3,No Lung Opacity / Not Normal,F,57,AP,nofinding,opacity
+3c8f377b-05a9-49e2-89eb-fa03c711acb3,Normal,M,24,PA,nofinding,nofinding
+9a4213ba-f410-46a1-87f0-56e0d4b9e767,Normal,M,67,PA,nofinding,nofinding
+75c152a4-eebd-42ad-b642-98221a946b49,No Lung Opacity / Not Normal,F,43,PA,nofinding,opacity
+b7f61871-5e78-4b27-bcc8-7c452c4c746a,Lung Opacity,M,76,AP,opacity,opacity
+b54f769a-aa2e-408a-a3ca-ddce2daf42af,No Lung Opacity / Not Normal,F,66,AP,nofinding,nofinding
+93a3e425-4665-4852-b3f6-faf3e916ce58,Normal,F,31,PA,nofinding,nofinding
+d48705e2-4955-466c-b361-3a7bbfd03022,Normal,M,67,PA,nofinding,nofinding
+e23d69c1-6409-439b-8d4b-730e2d412e48,No Lung Opacity / Not Normal,F,42,AP,nofinding,opacity
+4f909216-d127-4bc2-9fb5-cc8b69d4defa,No Lung Opacity / Not Normal,M,58,PA,nofinding,nofinding
+6c50cf48-ff5a-4644-bf1c-1e22374332a1,No Lung Opacity / Not Normal,F,66,PA,nofinding,nofinding
+4412fc95-4db8-4aa0-a20e-33088eff5032,No Lung Opacity / Not Normal,M,50,AP,nofinding,opacity
+4ecd54ea-056c-4c06-b23a-1c0ef3cd07c7,No Lung Opacity / Not Normal,F,48,PA,nofinding,opacity
+91a5a1c1-812a-4e4d-ba2d-e0c3d64c8b65,No Lung Opacity / Not Normal,M,42,AP,nofinding,opacity
+f3990d71-733e-4311-b425-f8aacc8f5b40,No Lung Opacity / Not Normal,F,61,AP,nofinding,nofinding
+a5df2a4d-ea25-496b-942a-2145905f206e,No Lung Opacity / Not Normal,M,68,PA,nofinding,nofinding
+99eb99db-2d71-4749-a64d-170e01243353,Normal,M,29,PA,nofinding,nofinding
+a535c1bb-53cc-4faf-a4c4-50156f46e673,No Lung Opacity / Not Normal,F,60,PA,nofinding,nofinding
+be35c13b-705d-4466-ae3f-ed690080ac9d,Lung Opacity,F,59,AP,opacity,opacity
+917400c2-5cc1-4fd3-8ce6-6d7299d4616a,No Lung Opacity / Not Normal,M,45,AP,nofinding,nofinding
+6e318106-e492-45f7-9393-dd642359f08f,Normal,F,14,PA,nofinding,nofinding
+9fd1c79a-428c-4fb0-af04-bfdaecf1d579,Normal,M,47,PA,nofinding,nofinding
+c4bc45e4-b893-464b-b0a5-df5ef62dfa06,Normal,M,37,PA,nofinding,nofinding
+75741e40-4136-4b9e-986b-83b353cc5183,No Lung Opacity / Not Normal,F,63,PA,nofinding,nofinding
+86fdf8ff-76e8-46e3-a80e-b98921801131,No Lung Opacity / Not Normal,F,41,AP,nofinding,opacity
+8b3a7974-3b99-49c5-863a-f692944080b6,Normal,M,47,PA,nofinding,nofinding
+06463240-3dd5-4d64-ad20-0956af60d1a2,No Lung Opacity / Not Normal,F,33,PA,nofinding,opacity
+805f684c-7781-45ba-83db-4ae332bd2cd7,Lung Opacity,F,59,AP,opacity,opacity
+d78f378a-ced0-479f-bc0f-9ba8d6ba0195,No Lung Opacity / Not Normal,M,34,PA,nofinding,opacity
+938ecad9-47f8-4b3e-a0f9-902f2f65b15b,Normal,M,23,PA,nofinding,nofinding
+60494030-dacc-4c84-ad0b-8037a97963fd,Normal,F,58,PA,nofinding,nofinding
+68c13574-a0dc-49e3-8004-923f0b2d278f,Normal,M,50,AP,nofinding,nofinding
+d9c7d6ac-d99f-4f2d-b50b-52b6df45d5a8,Normal,M,61,PA,nofinding,nofinding
+857de893-ea75-4045-8e38-522da92d523b,Normal,F,9,PA,nofinding,nofinding
+4af96201-f655-4ee8-af0c-0cd3cbe64df7,No Lung Opacity / Not Normal,F,56,AP,nofinding,nofinding
+2cc8447b-642b-4fb7-9e8f-44abe8c90d65,No Lung Opacity / Not Normal,M,64,PA,nofinding,nofinding
+5b80895c-63a9-4cdc-a869-5ca00043e862,Normal,M,45,PA,nofinding,nofinding
+c9c92e48-b002-49a2-ba82-d75ae38258eb,Normal,M,13,PA,nofinding,nofinding
+53e19ad2-b78a-489b-a7af-45b11462f734,No Lung Opacity / Not Normal,F,72,PA,nofinding,opacity
+2bdfab0d-4192-4a7f-a366-587c379ecdba,Lung Opacity,F,37,AP,opacity,nofinding
+a680fb61-719f-4e22-af95-ce92c24277dd,Normal,M,46,AP,nofinding,nofinding
+c7a06b07-2d04-4c98-a037-c420d0ee52d9,No Lung Opacity / Not Normal,M,60,AP,nofinding,nofinding
+b3c66cb2-3aa5-4b2f-ba06-19ea7c5efde2,No Lung Opacity / Not Normal,F,48,PA,nofinding,nofinding
+169e144f-7374-4d11-b9f8-96ebb8ed56b2,No Lung Opacity / Not Normal,F,43,AP,nofinding,nofinding
+056f6beb-c3c8-4ee3-8db5-d1b50aabf7c9,No Lung Opacity / Not Normal,F,45,AP,nofinding,nofinding
+925a855b-3392-4de2-898b-471a8caf341a,No Lung Opacity / Not Normal,M,57,AP,nofinding,opacity
+ff1c102f-8294-4156-8771-aab8c6f9a819,No Lung Opacity / Not Normal,F,43,AP,nofinding,nofinding
+fbdd7e42-8db2-4228-a4e1-b671e5414942,No Lung Opacity / Not Normal,F,59,PA,nofinding,opacity
+781c3177-0d28-4a95-902d-070104584431,Normal,F,47,PA,nofinding,nofinding
+5d1d4b97-459b-457a-b7cd-729c494ddb60,Lung Opacity,M,35,AP,opacity,nofinding
+fa483c6f-9d87-4b50-b748-b0f6edded7bb,No Lung Opacity / Not Normal,F,26,AP,nofinding,opacity
+6ed32587-0518-4b4b-95e6-a4b0651b1a6d,Lung Opacity,M,30,AP,opacity,opacity
+8e835512-0787-4ea6-8c83-e55bd9592dc0,Normal,M,54,PA,nofinding,nofinding
+e678a93a-0519-420a-9b4b-4f9ae4e0a006,Lung Opacity,M,16,AP,opacity,opacity
+b6c41458-6f35-4054-93be-084611afe2b2,Normal,F,32,PA,nofinding,nofinding
+fb7c7c19-3c2c-452e-84ad-16a435b1ee6e,Normal,F,65,PA,nofinding,nofinding
+d85e0414-682b-45c3-a331-ab4624482105,Normal,M,20,PA,nofinding,nofinding
+9a9cec58-b096-4661-8a89-f536aa33adcd,Lung Opacity,F,73,AP,opacity,opacity
+4b3ad8a6-b188-4455-817e-8c9fb7429ec5,No Lung Opacity / Not Normal,M,52,AP,nofinding,opacity
+fdbb8350-5309-4124-9206-a7db3e795a1f,Normal,M,22,AP,nofinding,nofinding
+76487cbf-9dd3-4e1e-b2f6-57c86d408317,No Lung Opacity / Not Normal,M,64,AP,nofinding,opacity
+01b56434-4dd9-4994-bcc5-0b70a36e415a,No Lung Opacity / Not Normal,F,49,PA,nofinding,nofinding
+cb195ea7-1d1b-48ba-85ae-57d7a9288aaa,No Lung Opacity / Not Normal,F,44,PA,nofinding,opacity
+86fa7c71-ada6-46b5-8209-441192a806f6,Normal,F,9,PA,nofinding,nofinding
+d4c5fcac-821b-4ae0-87bc-d852e3f87ee8,No Lung Opacity / Not Normal,M,18,PA,nofinding,nofinding
+4b76319b-47c3-466b-80f2-6dc1e046b0ba,Normal,F,54,PA,nofinding,nofinding
+48578223-0a8d-4974-8f3d-aea6b709ccc9,No Lung Opacity / Not Normal,M,19,PA,nofinding,nofinding
+7ad52aa1-d4da-4d9d-b259-47cd23dea84d,No Lung Opacity / Not Normal,M,69,PA,nofinding,nofinding
+619b2035-d95c-420d-8722-caec8512902a,No Lung Opacity / Not Normal,F,55,PA,nofinding,nofinding
+263abde3-1556-40de-bf7d-7e523c37c010,No Lung Opacity / Not Normal,M,29,AP,nofinding,nofinding
+cf42b86b-5320-4983-9c98-e5a1c925d3f4,No Lung Opacity / Not Normal,F,55,PA,nofinding,nofinding
+eb2b4101-f03d-424e-a141-565262d0e84f,No Lung Opacity / Not Normal,M,52,AP,nofinding,nofinding
+eb408099-a39c-4562-918a-c21c1afc1d82,Lung Opacity,M,25,AP,opacity,opacity
+8ddb703e-4cbf-4570-8395-70d0c4b7fff0,Normal,F,44,PA,nofinding,nofinding
+fc63a669-3be5-404c-97f2-0902c10ed218,Normal,F,63,PA,nofinding,nofinding
+c05d778f-0ba9-4825-94f4-27fdab33a4e6,Normal,F,63,PA,nofinding,nofinding
+8cdafb91-e1cc-4051-800e-1d03cccca035,Normal,M,37,AP,nofinding,nofinding
+6b3aabe3-7a8f-43dd-bc7d-09e653f56c69,No Lung Opacity / Not Normal,F,62,PA,nofinding,nofinding
+c538cfaa-3ee3-4a05-a67d-0224e244bf34,Normal,M,58,PA,nofinding,nofinding
+3c8cc0d1-be7f-493d-9570-542d851f623b,Lung Opacity,M,35,AP,opacity,opacity
+e46bf3ce-4426-4f41-bcf5-4afb112164b5,No Lung Opacity / Not Normal,M,49,AP,nofinding,nofinding
+d442daf0-cc56-4c05-8874-94712aa53704,Normal,M,58,AP,nofinding,nofinding
+5840f27f-0a9e-45b8-a849-4a379ecace6f,Normal,M,10,AP,nofinding,nofinding
+50cbc243-6654-4b10-b063-95b939f9eeca,Lung Opacity,M,42,AP,opacity,opacity
+badbcf00-4431-4336-ba44-c519688be0e4,Lung Opacity,M,44,AP,opacity,opacity
+7efb172c-23b7-4d57-bd57-bd461b9e7ca7,Normal,F,67,PA,nofinding,nofinding
+f6ba1426-6cf9-42a8-ab35-ab0dcead78e2,No Lung Opacity / Not Normal,F,39,PA,nofinding,nofinding
+4e8e683f-b8ac-4a07-8ab2-b93dad788801,No Lung Opacity / Not Normal,M,54,AP,nofinding,opacity
+c8607ede-6694-4cee-abd7-89f3274c2c10,No Lung Opacity / Not Normal,M,23,PA,nofinding,nofinding
+69571ac9-2ac8-4256-9584-cdc1848870bc,No Lung Opacity / Not Normal,M,68,PA,nofinding,nofinding
+a5193f5a-e9f4-4e32-a520-5b06d13f1d2a,Lung Opacity,F,61,AP,opacity,opacity
+45257ef3-5af3-4969-b0e8-a73e716f240e,No Lung Opacity / Not Normal,F,65,PA,nofinding,nofinding
+55e6396f-23e1-4553-a2be-a825dc70a57a,Normal,M,20,PA,nofinding,nofinding
+e2a3c100-08f9-4cb8-a169-87ebce9af615,No Lung Opacity / Not Normal,M,60,AP,nofinding,opacity
+65f038e8-a727-472c-bb76-7a71cd4397f2,Lung Opacity,M,49,AP,opacity,opacity
+c10ae3e5-822f-49e9-8c02-b0e2a98eddc1,No Lung Opacity / Not Normal,M,32,PA,nofinding,nofinding
+d99cb748-c56c-499b-9de7-6e2b097ee0d2,No Lung Opacity / Not Normal,F,53,AP,nofinding,opacity
+67128833-fc5c-441a-8467-875a513e0bcf,No Lung Opacity / Not Normal,M,39,AP,nofinding,nofinding
+bcc62394-8f62-47a6-a67a-316558298c49,Lung Opacity,F,32,PA,opacity,opacity
+5191672e-bf9d-4e17-aab0-951c29559165,No Lung Opacity / Not Normal,M,27,AP,nofinding,nofinding
+eaedf844-ed41-41bf-8146-2124e4f0fd74,No Lung Opacity / Not Normal,M,55,PA,nofinding,nofinding
+3d952d28-d05f-434c-a8bb-ce78cf8ab240,No Lung Opacity / Not Normal,M,37,PA,nofinding,nofinding
+bb6291b5-9f76-4f55-80d2-45edf39b85be,No Lung Opacity / Not Normal,F,43,PA,nofinding,nofinding
+85d9875a-9fac-4422-a92b-08a593461a51,Normal,F,39,PA,nofinding,nofinding
+03a9498c-549d-4e7d-800b-e74797f7f625,Lung Opacity,M,76,AP,opacity,opacity
+88d29b61-2730-4f6f-98bb-4ce5e5de3b24,Normal,M,10,PA,nofinding,nofinding
+70338dbe-6db2-410b-89b6-3d4e3fef82d2,Lung Opacity,M,58,PA,opacity,opacity
+494b5858-a56a-4016-a4ab-be74c50128f5,No Lung Opacity / Not Normal,F,59,AP,nofinding,nofinding
+66dfedde-7e6f-4ee9-8bf2-cbcefea5a5bf,No Lung Opacity / Not Normal,M,53,PA,nofinding,nofinding
+78c33a1a-8f22-476c-ae97-8190192102df,Lung Opacity,M,19,AP,opacity,opacity
+166d5e60-e48a-41d8-85d3-4e853a3d5929,No Lung Opacity / Not Normal,M,45,AP,nofinding,nofinding
+34b275e2-88a3-44a1-a8ad-16d8d79b1999,Lung Opacity,M,38,PA,opacity,opacity
+4a0ce646-2995-4efc-9fef-e85698fdbcb6,No Lung Opacity / Not Normal,M,63,PA,nofinding,nofinding
+3d05e434-3e9c-41f2-9664-68b91045c493,No Lung Opacity / Not Normal,M,53,AP,nofinding,nofinding
+cb3816db-93c9-4d0a-a163-eb40363c45fe,Lung Opacity,M,6,AP,opacity,opacity
+905f015d-8475-463d-aaa6-20953f0edd9e,Normal,M,64,PA,nofinding,nofinding
+b1f74e4d-e64a-4555-b60e-8dad24766fd5,Lung Opacity,M,9,AP,opacity,opacity
+b3ff1c40-552b-44f9-9cc9-4362905f5eef,Lung Opacity,M,59,AP,opacity,opacity
+bdd44f36-4634-44d1-b90f-3cbc8dc639f1,Lung Opacity,M,52,AP,opacity,opacity
+18f8382a-edb1-4e16-b0a0-9cccf86a895c,Normal,M,34,PA,nofinding,nofinding
+37067b6c-b928-42dd-9c56-8112cf4cb95f,No Lung Opacity / Not Normal,M,14,AP,nofinding,nofinding
+fa087745-6e5e-414b-9900-f15f597c76ab,Normal,M,39,PA,nofinding,nofinding
+a5e4533f-113e-4a3a-8a9f-c0873d172e48,Normal,F,47,PA,nofinding,nofinding
+f76b1745-cadc-4b8b-af5d-12ad18cb6166,Normal,M,61,PA,nofinding,nofinding
+e7fdbfd4-5ee2-4218-a3d2-6844bd75b84e,No Lung Opacity / Not Normal,M,14,AP,nofinding,nofinding
+10155593-ee63-4405-861a-81ef41ddeb56,No Lung Opacity / Not Normal,M,70,PA,nofinding,nofinding
+b829950f-6e68-4f84-9d7c-65a0aa3d0cab,Lung Opacity,M,22,AP,opacity,opacity
+677104bc-647f-4bad-9a5e-2aafe5ccd847,Normal,M,48,PA,nofinding,opacity
+cf31f348-a20a-45be-b5f5-44dfd84e0864,No Lung Opacity / Not Normal,M,58,AP,nofinding,nofinding
+503fa416-d6bf-4cc3-b876-13210dc070c8,No Lung Opacity / Not Normal,M,40,AP,nofinding,opacity
+62829608-8d5e-4159-bcc6-366960fd1949,No Lung Opacity / Not Normal,F,49,PA,nofinding,nofinding
+b607b534-48a2-445d-8579-29ef85752d16,Normal,M,45,PA,nofinding,nofinding
+7ae6b106-4569-486b-886f-e7d5baf48f87,No Lung Opacity / Not Normal,F,44,AP,nofinding,opacity
+bc749ca9-15cb-4cad-9e99-06685f803507,Normal,M,30,PA,nofinding,nofinding
+477cd50b-52f1-4994-871b-91cf32fa3174,No Lung Opacity / Not Normal,M,65,PA,nofinding,nofinding
+e060ed9a-8978-41c1-8dba-e55385d906e9,Normal,M,67,PA,nofinding,nofinding
+bb6d8e4b-f416-435a-8dee-fe3f60b4db11,Lung Opacity,M,42,PA,opacity,opacity
+a5a1d7a8-e44a-4514-b849-835c602eabc7,Normal,M,58,PA,nofinding,nofinding
+7754aa7b-9db3-474a-8423-78924dcc4a33,No Lung Opacity / Not Normal,M,53,PA,nofinding,opacity
+6c62faa3-ce21-438a-9add-298af630062b,Normal,M,58,PA,nofinding,nofinding
+4fde5c43-28d3-4f6f-afa2-ba572b7e11e7,No Lung Opacity / Not Normal,F,70,AP,nofinding,nofinding
+680297ea-1afd-40e5-b2cd-5a7d56a27024,No Lung Opacity / Not Normal,M,51,AP,nofinding,nofinding
+6876141d-e5f2-4523-a0ae-c6d0a8f30169,No Lung Opacity / Not Normal,M,57,AP,nofinding,opacity
+37a09cbb-e618-486f-bf4c-011cb5b5d69c,Normal,F,62,PA,nofinding,nofinding
+4c445a68-b7af-455c-b8f0-a94a4cc6eb13,No Lung Opacity / Not Normal,M,35,PA,nofinding,opacity
+5560d6b5-4441-4e3b-93bb-c68e3a142aed,No Lung Opacity / Not Normal,F,57,PA,nofinding,opacity
+37f5c61c-c395-468f-a4ea-7108343a22cb,Lung Opacity,M,40,AP,opacity,opacity
+23f122ac-3693-45bb-8769-273cd644f643,No Lung Opacity / Not Normal,F,66,PA,nofinding,nofinding
+7faa26c0-80ae-411f-a331-6dbc1fa34168,No Lung Opacity / Not Normal,M,48,AP,nofinding,nofinding
+43e186b6-93c2-4f9c-9bda-2de20f09f043,No Lung Opacity / Not Normal,M,64,AP,nofinding,nofinding
+881a416d-a997-40db-b41c-51979462bad1,No Lung Opacity / Not Normal,F,35,AP,nofinding,opacity
+b0faf7e1-82d4-45f1-a6f3-59efa529946a,Normal,M,23,PA,nofinding,nofinding
+f2a43464-f2a3-4cb5-a4c8-b8fbe8553813,No Lung Opacity / Not Normal,M,57,PA,nofinding,opacity
+8cfec33b-e4eb-4c7c-b31e-584300416467,Normal,F,53,PA,nofinding,nofinding
+9b2685e1-a093-4572-a171-07c244436f4c,No Lung Opacity / Not Normal,F,19,PA,nofinding,nofinding
+06c50ad5-8ffd-480b-8424-dd38df7ca86c,Lung Opacity,M,22,AP,opacity,opacity
+c7cea557-31d9-42a6-8177-4a0e4b8ec7c4,No Lung Opacity / Not Normal,F,45,PA,nofinding,nofinding
+d5d6f7e3-5143-4955-901e-cad92024fee0,Normal,F,39,PA,nofinding,nofinding
+b87a09c7-b7fa-4869-b7aa-0b2a395a4215,Lung Opacity,M,49,AP,opacity,opacity
+3a183229-e56b-4c3e-9d3c-127adec8a2f3,Lung Opacity,M,70,AP,opacity,opacity
+37da81d1-ca9e-4ad3-90a2-cf7af05c4def,No Lung Opacity / Not Normal,M,63,AP,nofinding,nofinding
+9bc28409-22f1-40b5-8203-9e4f8fb45c8e,No Lung Opacity / Not Normal,M,11,AP,nofinding,opacity
+9b1481f4-69c0-4c6d-84ef-b495a0d7bd66,No Lung Opacity / Not Normal,M,68,AP,nofinding,opacity
+f0a5ef60-aa28-4dc7-b5fe-9fc0d39f8e9a,No Lung Opacity / Not Normal,F,59,AP,nofinding,nofinding
+a0923c73-57fa-4fcf-8284-5c77abafb036,No Lung Opacity / Not Normal,M,45,AP,nofinding,nofinding
+cc4e0483-9ba7-4d4e-84f2-2589399e7961,No Lung Opacity / Not Normal,M,76,PA,nofinding,nofinding
+fd616534-a079-4323-818c-912a3cc972be,No Lung Opacity / Not Normal,M,54,PA,nofinding,nofinding
+9f29c2b5-9c22-445f-83f7-d0015376df00,No Lung Opacity / Not Normal,F,50,AP,nofinding,nofinding
+af7cdf5f-6fcc-44a1-9d51-0a9f26e78a7f,Normal,F,62,PA,nofinding,nofinding
+fd060e38-c89d-4bef-b9aa-427a97a1cf9a,Normal,M,77,PA,nofinding,nofinding
+191782c0-7007-44a3-a774-31524e20111d,No Lung Opacity / Not Normal,M,68,AP,nofinding,opacity
+15df7a1f-a2a4-4d5e-8771-3280fa1184c3,Lung Opacity,M,46,AP,opacity,opacity
+c70d9bf5-764d-4e5c-b8bb-cbad489d3f2c,No Lung Opacity / Not Normal,M,66,PA,nofinding,nofinding
+6129213e-1ab7-465d-a84d-e871246fa712,Lung Opacity,F,58,AP,opacity,opacity
+18b0c02d-4023-49a3-9a47-ad663cc1c7c6,No Lung Opacity / Not Normal,F,72,PA,nofinding,nofinding
+90519cd3-09c1-4c20-92b7-f494a19f0ae0,No Lung Opacity / Not Normal,M,27,AP,nofinding,nofinding
+063a4fc6-ef5d-4370-8b0b-c2752a4c905c,No Lung Opacity / Not Normal,M,29,AP,nofinding,nofinding
+6366d2b6-c1a7-40da-998d-981aa684a7f6,Normal,F,30,PA,nofinding,nofinding
+39072ec7-b587-4b1b-b63f-b5b1f36c5aad,Normal,M,45,PA,nofinding,nofinding
+c208db34-d893-4a2b-9cf2-45490f5b78a3,Lung Opacity,F,10,AP,opacity,opacity
+45fbaca3-7b67-4e9a-bc9b-a960abc26e1a,No Lung Opacity / Not Normal,F,56,PA,nofinding,nofinding
+d493c726-b86a-4f13-9eda-8c2cd354ac8f,No Lung Opacity / Not Normal,M,34,AP,nofinding,opacity
+8e277feb-212f-4f1b-9d42-39ab4e0cefa1,No Lung Opacity / Not Normal,M,19,AP,nofinding,nofinding
+671df183-b755-4587-b74c-84ed20291663,No Lung Opacity / Not Normal,M,69,PA,nofinding,opacity
+8ddd4aaf-983e-4a98-9cc3-b275887b95e5,Normal,F,71,PA,nofinding,nofinding
+f40fc29a-01f1-4b0a-94ab-967c74fbc524,No Lung Opacity / Not Normal,F,48,PA,nofinding,nofinding
+8a0d16d4-5824-4bd6-a6b9-987e2bf71f3c,Lung Opacity,M,9,AP,opacity,opacity
+ee7fec9a-c1fb-43d4-8e2d-704de5a3ab2e,No Lung Opacity / Not Normal,F,52,PA,nofinding,nofinding
+70a0cd6a-43c0-4cf3-add5-be674c5a9de6,No Lung Opacity / Not Normal,F,26,PA,nofinding,nofinding
+5d10c9a4-48bf-42b4-b561-871ce4a80ccc,No Lung Opacity / Not Normal,F,55,AP,nofinding,opacity
+e3295022-dbdb-4dc1-8b9a-e929df6844ad,No Lung Opacity / Not Normal,F,52,AP,nofinding,opacity
+f8dbc41b-06f8-4fca-9495-d35f49cf0130,Normal,F,52,PA,nofinding,nofinding
+d29dee03-1ae6-472d-9685-0d3201fd8689,Lung Opacity,F,31,AP,opacity,opacity
+64a40621-079a-44ec-a015-62ab39588a5b,No Lung Opacity / Not Normal,F,59,PA,nofinding,nofinding
+0409d9ce-34d6-4ef9-8a80-6f01f68e6762,Normal,F,33,PA,nofinding,nofinding
+8cb4b33a-335e-4488-832f-4369941d4a6c,Normal,F,66,PA,nofinding,nofinding
+8dad1a61-dbab-4f1b-a71f-a0a9237b0e2a,No Lung Opacity / Not Normal,M,83,PA,nofinding,nofinding
+bd3c6f87-6678-4189-9462-75cb2d31ce50,No Lung Opacity / Not Normal,M,51,PA,nofinding,nofinding
+477c40d9-9cba-4d45-a5d1-c691fc01adb0,No Lung Opacity / Not Normal,M,49,PA,nofinding,nofinding
+86d67e58-0f49-40f8-a99a-ea61996caae1,No Lung Opacity / Not Normal,F,48,PA,nofinding,nofinding
+b936a067-9d6c-43b4-81a3-74ae3be03971,No Lung Opacity / Not Normal,M,35,PA,nofinding,nofinding
+5b59235b-fe0c-4900-b7fd-927e8f4ec262,No Lung Opacity / Not Normal,F,58,PA,nofinding,nofinding
+5018aa71-340b-430e-9017-0c5cf8e4b816,No Lung Opacity / Not Normal,M,51,PA,nofinding,nofinding
+3fc0ad26-a4e5-47a1-8074-80686ef85821,Normal,M,51,PA,nofinding,nofinding
+0353021e-7391-4aa5-80ca-d57a51123304,Normal,F,50,PA,nofinding,nofinding
+2a607bec-696e-4248-b6cc-21a6266744bd,Normal,M,68,PA,nofinding,nofinding
+bfea966c-f72f-42f7-9712-9cf77b66bad6,Lung Opacity,M,18,PA,opacity,opacity
+350f4912-22e9-43d2-8ed6-18adc0f61b12,Normal,F,46,PA,nofinding,nofinding
+f91c1b44-d084-441a-83ef-97dc5a71cac8,Normal,F,47,PA,nofinding,nofinding
+78043d25-8992-46b6-b846-ffbfafbe6b6a,Normal,M,48,AP,nofinding,nofinding
+37a40c9f-fa3d-4819-85c0-531d0ba6b991,Lung Opacity,M,43,AP,opacity,nofinding
+aa78c204-135e-4605-8310-7202c41e08cc,Lung Opacity,F,33,AP,opacity,opacity
+8008f996-bee6-4ed5-b861-6f7de7b59f2c,Normal,F,52,PA,nofinding,nofinding
+e5d58e52-f77d-4fb6-9aff-9fc5715521a1,Normal,M,60,PA,nofinding,nofinding
+2eb0a283-bb6d-48ef-9c11-a0924f32e67b,Normal,M,33,PA,nofinding,nofinding
+bf1a0294-0d43-4d78-938c-24c0e426544b,Normal,F,44,PA,nofinding,nofinding
+7d7fd5c2-f00f-4bc7-91b4-2f2d4f5cf92d,No Lung Opacity / Not Normal,M,59,AP,nofinding,nofinding
+6712b830-bb81-4536-8145-3ec571b860bf,Normal,M,9,PA,nofinding,nofinding
+2b76f7eb-f9ed-4b9a-aab6-10091c363221,Normal,F,65,PA,nofinding,nofinding
+5ed18df5-3701-4657-a87b-7a4481a65800,Normal,F,33,AP,nofinding,nofinding
+d89f8d29-3832-4d89-8647-d16f9079c25a,No Lung Opacity / Not Normal,F,52,AP,nofinding,nofinding
+6046124b-1c72-4d22-b383-de338aa5e828,No Lung Opacity / Not Normal,F,54,PA,nofinding,nofinding
+6e9e13b1-7d5f-4871-94fb-1b1e1b69c6f7,No Lung Opacity / Not Normal,F,73,AP,nofinding,nofinding
+69ea6479-ba87-4988-8271-996981133a0c,No Lung Opacity / Not Normal,F,77,PA,nofinding,nofinding
+cb510a17-89c1-4fad-9a47-89952abd7aae,Lung Opacity,M,52,AP,opacity,opacity
+4e75169b-0e7d-47e5-becd-7d69be08dcf4,Normal,F,59,PA,nofinding,nofinding
+c236d6e2-1fca-40c5-a0fe-a91ff60883c9,Lung Opacity,F,24,AP,opacity,opacity
+2a15b6f2-2a17-454d-b14c-ba1bb4bd79f4,Lung Opacity,M,9,AP,opacity,opacity
+4142f454-5785-4748-8f42-d32580595129,No Lung Opacity / Not Normal,M,67,AP,nofinding,opacity
+6b82bee3-afeb-47da-8db2-7a0195438d3b,No Lung Opacity / Not Normal,F,56,AP,nofinding,opacity
+ca3d47d8-af70-4742-b53c-2cb77aaf63b7,Lung Opacity,M,59,AP,opacity,opacity
+e6429b1b-7c98-403c-8999-ff1ae2aa917e,No Lung Opacity / Not Normal,M,20,AP,nofinding,opacity
+5bf1b746-f4c1-41c8-aeeb-b19e42b0dd7b,Normal,M,49,PA,nofinding,nofinding
+f694c8f4-978d-484d-be6f-e201c64a0206,No Lung Opacity / Not Normal,F,70,PA,nofinding,opacity
+7acb350f-d188-44c2-a726-e812c347bd75,No Lung Opacity / Not Normal,F,57,AP,nofinding,nofinding
+df5fc041-24a9-44f3-8f22-d2bfca421bfc,Normal,F,21,PA,nofinding,nofinding
+bfbbedfe-0ab1-42bd-ac7f-e67b2a8e842a,Lung Opacity,M,39,AP,opacity,opacity
+f33d80d4-83d0-4f00-ab0e-0f5542ad88d2,No Lung Opacity / Not Normal,F,34,PA,nofinding,nofinding
+f21f4bda-4f3e-40db-a018-1ba1fb78ce5a,Normal,M,72,PA,nofinding,nofinding
+01cd2ba5-2baf-44b2-bf15-ee57e1ea4599,Lung Opacity,M,58,PA,opacity,opacity
+31559539-9087-4bd0-806a-30413a980cf1,No Lung Opacity / Not Normal,F,26,AP,nofinding,nofinding
+77563978-96a9-4687-838e-328917066492,No Lung Opacity / Not Normal,M,75,PA,nofinding,opacity
