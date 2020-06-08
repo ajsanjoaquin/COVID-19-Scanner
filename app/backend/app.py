@@ -10,6 +10,7 @@ import pydicom
 import png
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
 
 import torch,torchvision
 from torch import nn
@@ -146,6 +147,8 @@ def get_metadata(folder,filename, attribute):
 #for original images
 @app.route('/uploads/<path:filename>')
 def download_file(filename):
+    #argument is in the form of filename.extension
+    filename=os.path.splitext(os.path.basename(filename))[0]
     if filename[-1]==".":
         filename = filename[:-1]
     if os.path.exists('./input_folder/{}.png'.format(filename)):
@@ -159,10 +162,11 @@ def download_file(filename):
 
 #for gradcam images
 @app.route('/gradcam/<path:filename>')
-def get_gradcam(filename):
-    return use_gradcam(os.path.join(UPLOAD_FOLDER,filename),GRADCAM_FOLDER,model_r34,test_transforms)
-def download_gradcam_file(filename):        
-    return send_from_directory(GRADCAM_FOLDER,'(gradcam){}.png'.format(filename), as_attachment=True)
+def download_gradcam_file(filename):
+    #argument is in the form of filename.extension 
+    use_gradcam(os.path.join(UPLOAD_FOLDER,filename),GRADCAM_FOLDER,model_r34,test_transforms)
+    filename=os.path.splitext(os.path.basename(filename))[0]
+    return send_from_directory(GRADCAM_FOLDER,'(gradcam){}.png'.format(filename), as_attachment=True)       
 
 @app.route('/', methods=['POST'])
 def predict():
@@ -177,6 +181,7 @@ def predict():
             os.makedirs(GRADCAM_FOLDER)
         for filename in os.listdir(UPLOAD_FOLDER):
             file_path = os.path.join(UPLOAD_FOLDER, filename)
+            print(file_path,file=sys.stderr)
             try:
                 if os.path.isfile(file_path) or os.path.islink(file_path):
                     os.unlink(file_path)
@@ -194,9 +199,8 @@ def predict():
             except Exception as e:
                 print('Failed to delete %s. Reason: %s' % (file_path, e))
         data = dict(request.files)
-
         for key in data.keys():
-            data[key].save('./input_folder/{}'.format(data[key].filename))
+            data[key].save(os.path.join(UPLOAD_FOLDER,'{}'.format(data[key].filename)))
 
         print("images saved!")
 
@@ -237,10 +241,6 @@ def predict():
 
         print("Generating Results!")
         result = final_df.to_json(orient='records') #format: [{"filename":a,... metadata( 'PatientID','PatientSex', 'PatientAge', 'ViewPosition')..., "Predicted Label":f}]
-
-        #GRADCAM
-        #get gradcam for images with predictions of either covid or opacity only
-        grad_df=predictions_df[(predictions_df['Predicted Label'] == 'covid') | (predictions_df['Predicted Label'] == 'opacity')]['filename']
         return result;
 
 if __name__ == '__main__':

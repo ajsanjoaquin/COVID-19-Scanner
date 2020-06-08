@@ -36,7 +36,7 @@ const TableRow = (props) => {
     useEffect(() => {
         // Create an scoped async function in the hook
         async function getImage() {
-            fetch(`http://backend:5000/uploads/${props.filename}`)
+            fetch(`http://localhost:5000/uploads/${props.filename}`)
             .then(response => response.blob())
             .then(blob => updateImage(URL.createObjectURL(blob)))
         }
@@ -53,7 +53,7 @@ const TableRow = (props) => {
       }, []);
 
     async function getGradcam() {
-        fetch(`http://backend:5000/gradcam/${props.filename}`)
+        fetch(`http://localhost:5000/gradcam/${props.filename}`)
         .then(response => response.blob())
         .then(blob => updateGradCam(URL.createObjectURL(blob)))
     }
@@ -98,7 +98,7 @@ const TableRow = (props) => {
                     { image && <img style = {{minWidth:"130px",maxWidth:"130px"}} alt="home" src={ image }></img> }
                 </td>
                 <td class="px-5 py-5 bg-white text-sm">
-                    {props.prediction === "nofinding" ? "No Gradcam Avaliable" : renderGradcam()}
+                    {props.prediction === "nofinding" ? "No Gradcam Avaliable" : renderGradcam(GradCam)}
                 </td>
             </tr>
         )
