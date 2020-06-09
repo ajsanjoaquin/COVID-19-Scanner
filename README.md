@@ -11,6 +11,8 @@ The model analyzes each image for features predominant to COVID-19 images and fo
 
 **For example**, a 54-year old patient predicted to have lung opacity is flagged as higher priority for action by the model over a 20-year old patient predicted to have symptoms of COVID-19. Both are still flagged as higher priority for COVID-19 testing compared to those who were predicted to have no findings.
 
+[![Demo Video](http://img.youtube.com/vi/NSQoiGwCB80/0.jpg)](https://www.youtube.com/watch?v=NSQoiGwCB80)
+
 ## Features
 
 <img src="images/app%20screenshot.png">
@@ -33,7 +35,7 @@ Updated Model (Use with Pytorch; .pth) : https://www.dropbox.com/s/o27w0dik8hdja
 
 Datasets used: 1. https://github.com/ieee8023/covid-chestxray-dataset <br/>
 
-               2. https://www.kaggle.com/c/rsna-pneumonia-detection-challenge <br/>
+2. https://www.kaggle.com/c/rsna-pneumonia-detection-challenge <br/>
 
 Test_results: check the csv file in the repository <br/>
 
@@ -55,6 +57,10 @@ II. In the terminal:
 For the first iteration of the model, I built a CNN neural network that classifies a given Chest X-ray as positive for pneumonia caused by COVID-19 or not. This model is originally meant to demonstrate a proof-of-concept. The model was trained, and accepts, Posteroanterior views only. 
 
 Rationale/More information: https://towardsdatascience.com/using-deep-learning-to-detect-ncov-19-from-x-ray-images-1a89701d1acd<br/>
+
+## Acknowledgements
+
+We thank Dr. Jianshu Weng, Mr. Najib Ninaba and their organisation, [AI Singapore](http://www.aisingapore.org/) (AISG), for their generous support in providing the infrastructure to train the latest iteration of the model.
 
 ## LICENSE
 <a rel="license" href="https://opensource.org/licenses/MIT"><img alt="Creative Commons Licence" style="border-width:0" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/220px-MIT_logo.svg.png" /></a>
