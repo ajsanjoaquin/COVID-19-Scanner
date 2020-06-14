@@ -16,7 +16,6 @@ RUN apt-get update
 RUN apt-get -y install wget
 RUN apt-get install libgtk2.0-dev -y
 RUN wget -O corona_resnet34.pth https://www.dropbox.com/s/o27w0dik8hdjaab/corona_resnet34.pth?dl=1
-RUN mv corona_resnet34.pth /corona_resnet34.pth
 
 COPY . ./
 # RUN mv /corona_resnet34.pth /app/corona_resnet34.pth
