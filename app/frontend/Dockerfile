@@ -14,4 +14,5 @@ COPY . ./
 
 # start app
 #CMD ["cd", "frontend"]
+EXPOSE 5000
 CMD ["npm", "start"]
