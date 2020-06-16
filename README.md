@@ -68,7 +68,7 @@ Rationale/More information: https://towardsdatascience.com/using-deep-learning-t
 
 We thank Dr. Jianshu Weng, Mr. Najib Ninaba and their organisation, [AI Singapore](http://www.aisingapore.org/) (AISG), for their generous support in providing the infrastructure to train the latest iteration of the model.
 
-Thank you to Ivan Leo for developing the application. Thank you to Chris, Raphael and Sunny for assisting in the application debugging!
+Thank you to Ivan Leo for developing the application. Thank you to Chris, Raphael and Sunny for assisting in the application debugging.
 
 ## LICENSE
 <a rel="license" href="https://opensource.org/licenses/MIT"><img alt="Creative Commons Licence" style="border-width:0" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/220px-MIT_logo.svg.png" /></a>
