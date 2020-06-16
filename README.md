@@ -11,6 +11,8 @@ The model analyzes each image for features predominant to COVID-19 images and fo
 
 **For example**, a 54-year old patient predicted to have lung opacity is flagged as higher priority for action by the model over a 20-year old patient predicted to have symptoms of COVID-19. Both are still flagged as higher priority for COVID-19 testing compared to those who were predicted to have no findings.
 
+**Demo Video:**
+
 [![Demo Video](http://img.youtube.com/vi/NSQoiGwCB80/0.jpg)](https://www.youtube.com/watch?v=NSQoiGwCB80)
 
 ## Features
@@ -65,6 +67,8 @@ Rationale/More information: https://towardsdatascience.com/using-deep-learning-t
 ## Acknowledgements
 
 We thank Dr. Jianshu Weng, Mr. Najib Ninaba and their organisation, [AI Singapore](http://www.aisingapore.org/) (AISG), for their generous support in providing the infrastructure to train the latest iteration of the model.
+
+Thank you to Ivan Leo for developing the application. Thank you to Chris, Raphael and Sunny for assisting in the application debugging!
 
 ## LICENSE
 <a rel="license" href="https://opensource.org/licenses/MIT"><img alt="Creative Commons Licence" style="border-width:0" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/220px-MIT_logo.svg.png" /></a>
