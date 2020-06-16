@@ -30,6 +30,10 @@ Training dataset size before Resampling: <br/>
 3. "nofinding" - 19884 <br/>
 *Note: "nofinding" images include both healthy and non-healthy lungs that do not exhibit opacity
 
+Area under the Receiver Operator Characteristic (AUROC) was the chief metric used to determine model performance. It was calculated with a one-vs-all approach.
+
+AUROC for "covid", "opacity", "nofinding" were at 99.97%, 92.64%, and 92.73%, respectively.
+
 ## Resources
 Updated Model (Use with Pytorch; .pth) : https://www.dropbox.com/s/o27w0dik8hdjaab/corona_resnet34.pth?dl=0 <br/>
 
