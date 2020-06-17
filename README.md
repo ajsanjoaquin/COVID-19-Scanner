@@ -27,10 +27,13 @@ The model analyzes each image for features predominant to COVID-19 images and fo
 Architecture: Resnet 34 <br/>
 Training dataset: 26,000 images with weighted resampling <br/>
 Training dataset size before Resampling: <br/>
+
 1. "covid" - 186 <br/>
 2. "opacity" - 5801 <br/>
 3. "nofinding" - 19884 <br/>
 *Note: "nofinding" images include both healthy and non-healthy lungs that do not exhibit opacity
+
+The model was trained on both AP and PA Chest X-rays.
 
 Area under the Receiver Operator Characteristic (AUROC) was the chief metric used to determine model performance. It was calculated with a one-vs-all approach.
 
